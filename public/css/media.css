@@ -1,0 +1,49 @@
+/* media query */
+@media screen and (min-width:500px) {
+    body {
+        font-size: larger;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .welcome-card {
+        width: 40%;
+    }
+
+    #back-btn::after {
+        content: "BACK";
+        font-size: small;
+        margin-left: 10px;
+    }
+
+    section {
+        margin-right: 200px;
+    }
+
+    .post-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .about-section {
+        width: 40vw;
+    }
+
+    .card-shrink {
+        height: fit-content;
+    }
+
+    footer {
+        bottom: auto;
+        right: 0px;
+        z-index: 10;
+        top: 35px;
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        justify-content: flex-start;
+    }
+}
