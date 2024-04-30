@@ -1,9 +1,9 @@
-import ForgetPassPage from './pages/ForgetPassPage';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
     <>
-      <ForgetPassPage />
+      <SearchPage />
     </>
   );
 }
