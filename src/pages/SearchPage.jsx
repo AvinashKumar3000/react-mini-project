@@ -1,21 +1,49 @@
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
-import PostSection from "../components/section/PostSection";
+import Card from '../components/section/Card';
+import { MUSICS_MOCK } from '../mockData/musicDataMock';
+import { useEffect, useState } from 'react';
 
 function SearchPage() {
+    const [songsList, setSongsList] = useState(MUSICS_MOCK);
+    const [searchInput, setSearchInput] = useState("");
+    useEffect(() => {
+        if (searchInput === "") {
+            setSongsList(MUSICS_MOCK);
+        }
+    }, [searchInput])
+
+    function handleClick() {
+        if (searchInput !== "") {
+            const temp = songsList.filter((value) => {
+                return value.title.toLowerCase().includes(searchInput);
+            });
+            setSongsList(temp);
+        }
+    }
+
     return (
         <>
-            <Header />
             <section>
                 <div className="search-section">
-                    <input type="text" placeholder="search" />
-                    <button>search</button>
+                    <input
+                        type="text"
+                        placeholder="search"
+                        value={searchInput}
+                        onChange={e => setSearchInput(e.target.value)}
+                    />
+                    <button onClick={handleClick}>search</button>
                 </div>
-                <PostSection />
+                <div className="post-section">
+                    {
+                        songsList.map((value, idx) => {
+                            return (
+                                <Card cardInfo={value} key={idx} />
+                            );
+                        })
+                    }
+                </div>
             </section>
-            <Footer />
-        </>
 
+        </>
     );
 }
 

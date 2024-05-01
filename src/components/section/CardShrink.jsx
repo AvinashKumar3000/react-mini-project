@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-function CardShrink() {
-    const [count, setCount] = useState(1000);
+function CardShrink({ cardInfo, handleClick, idx }) {
+    const [count, setCount] = useState(0);
     const [value, setValue] = useState("fa-regular fa-heart");
     function handleLike() {
         setValue("fa-solid fa-heart");
@@ -13,19 +13,21 @@ function CardShrink() {
             setValue("fa-regular fa-heart");
         }
     }
+
     return (
-        <div className="card-shrink">
-            <div className="post-by">@account-name</div>
-            <div className="title">Heading</div>
-            <div className="desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                doloremque, omnis laborum quis perspiciatis quae iusto, modi
-                accusantium voluptatibus nesciunt sequi? Cumque provident esse error
-                modi, nihil eum quisquam illum.
-            </div>
-            <div className="tags">
-                <div className="tag">hello</div>
-                <div className="tag">hello</div>
+        <div className="card-shrink" >
+            <div className="card-main-section" onClick={() => handleClick(idx)}>
+                <div className="post-by">@{cardInfo?.by}</div>
+                <div className="title">{cardInfo?.title}</div>
+                <br />
+                <div className="desc">
+                    {cardInfo?.desc}
+                </div>
+                <div className="tags">
+                    {cardInfo?.tags?.map((value, idx) => {
+                        return <div key={idx} className="tag">{value}</div>
+                    })}
+                </div>
             </div>
             <div className="like" >
                 <span className="like-count">{count} </span>

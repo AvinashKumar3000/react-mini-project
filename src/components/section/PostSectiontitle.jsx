@@ -1,9 +1,9 @@
-function PostSectionTitle() {
+function PostSectionTitle({ title }) {
     return (
         <div className="post-section-title">
             <div>
                 <i className="fa-solid fa-signs-post" />
-                <span>MY POSTS</span>
+                <span> {title}</span>
             </div>
         </div>
     );

@@ -1,17 +1,10 @@
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
-import PostSection from "../components/section/PostSection";
+import ListAnyCard from "../components/section/ListAnyCard";
 
 function LibraryPage() {
     return (
-        <>
-            <Header></Header>
-            <section>
-                <PostSection />
-            </section>
-            <Footer />
-        </>
-
+        <section>
+            <ListAnyCard />
+        </section>
     );
 }
 

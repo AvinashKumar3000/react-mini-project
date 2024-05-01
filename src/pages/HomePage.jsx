@@ -1,14 +1,11 @@
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import PostSection from "../components/section/PostSection";
+import ListAnyCard from "../components/section/ListAnyCard";
 function HomePage() {
     return (
         <>
-            <Header />
             <section>
-                <PostSection />
+
+                <ListAnyCard />
             </section>
-            <Footer />
         </>
 
     );

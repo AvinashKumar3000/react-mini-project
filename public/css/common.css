@@ -27,5 +27,41 @@
         margin-bottom: 20px;
     }
 
-   
-   
+
+    /* content editable css */
+    .content-editable {
+        border: 2px solid red;
+        padding: 5px;
+    }
+
+    .content-editable::before {
+        content: "⚠️ editing in progress 📝 ⚠️ : 😰";
+        background-color: white;
+        color: black;
+        padding: 1px;
+        padding-right: 10px;
+    }
+
+    /* music player */
+    img {
+        width: inherit;
+        width: inherit;
+    }
+
+    summary {
+        background: white;
+        /* width: fit-content; */
+        color: black;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: skyblue;
+        text-transform: capitalize;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5px;
+    }

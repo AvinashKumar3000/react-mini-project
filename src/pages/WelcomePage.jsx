@@ -1,14 +1,15 @@
-function WelcomePage() {
+function WelcomePage({ setTab }) {
+
     return (
         <div className="container welcome-page">
             <section className="welcome-section">
                 <h2>Welcome</h2>
                 <p>share your photo music, movies and information.</p>
-                <button>sign-in</button>
+                <button onClick={() => { setTab("sign-in") }}>sign-in</button>
                 <br />
-                <button>sign-up</button>
+                <button onClick={() => { setTab("sign-up") }}>sign-up</button>
                 <br />
-                <a href="#">forget password</a>
+                <button onClick={() => { setTab("forget-pass") }}>forget password</button>
             </section>
         </div>
 

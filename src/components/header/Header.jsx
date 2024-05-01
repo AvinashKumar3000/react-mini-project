@@ -1,12 +1,12 @@
-function Header() {
+function Header({ title, icon, handleBack }) {
     return (
         <header>
             <div>
-                <i className="fa-solid fa-chevron-left" id="back-btn" />
+                <i onClick={handleBack} className="fa-solid fa-chevron-left" id="back-btn" />
             </div>
             <div id="page-title">
-                <i className="fa-solid fa-house" />
-                <span>home</span>
+                {icon}
+                <span> {title}</span>
             </div>
             <div>
                 <i className="fa-solid fa-circle-info" />
