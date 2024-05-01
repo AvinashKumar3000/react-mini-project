@@ -28,6 +28,7 @@ footer>div {
     width: 50%;
     text-align: center;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 footer {
