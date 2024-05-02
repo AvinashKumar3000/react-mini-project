@@ -1,28 +1,32 @@
-// This is Parent Compenent
-
-import { useState } from "react";
 import ChildComponent from "./ChildComponent";
 function ParentComponent() {
-    const [count, setCount] = useState(0);
-    function handleClick() {
-        setCount(count + 1);
-    }
+    let movies = [
+        { name: "gilli", desc: "vijay and tirisha" },
+        { name: 'ayan', desc: 'surya and tamana' },
+        { name: 'I', desc: 'vikram and Amy Jackson' },
+    ];
     return (<>
-        <button onClick={handleClick}>parent count {count}</button>
-        <ChildComponent value={count} />
-        <ChildComponent value={count} />
+        {
+            movies.map((value, index) => {
+                return <ChildComponent key={index} value={value} />
+            })
+        }
         <br />
     </>)
 }
 
 export default ParentComponent;
 
-
-// ---------------------------------------------------------------------------------
-// This is child component
-
-function ChildComponent(props) {
-    return <button>child count {props.value}</button>;
+// ---------------------------------------------
+// using props with destructuring concept
+function ChildComponent({ value }) {
+    return (
+        < form >
+            <fieldset>
+                <legend>{value.name}</legend>
+                <p>{value.desc}</p>
+            </fieldset>
+        </form >
+    );
 }
-
 export default ChildComponent;
