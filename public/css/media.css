@@ -18,6 +18,13 @@
         margin-left: 10px;
     }
 
+    section {
+        margin-right: 187px;
+    }
+
+    .welcome-section {
+        margin-right: 0px;
+    }
 
     .post-section {
         display: grid;
