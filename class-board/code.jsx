@@ -1,4 +1,13 @@
-import ChildComponent from "./ChildComponent";
+function ChildComponent({ value }) {
+    return (
+        < form >
+            <fieldset>
+                <legend>{value.name}</legend>
+                <p>{value.desc}</p>
+            </fieldset>
+        </form >
+    );
+}
 function ParentComponent() {
     let movies = [
         { name: "gilli", desc: "vijay and tirisha" },
@@ -17,16 +26,3 @@ function ParentComponent() {
 
 export default ParentComponent;
 
-// ---------------------------------------------
-// using props with destructuring concept
-function ChildComponent({ value }) {
-    return (
-        < form >
-            <fieldset>
-                <legend>{value.name}</legend>
-                <p>{value.desc}</p>
-            </fieldset>
-        </form >
-    );
-}
-export default ChildComponent;
