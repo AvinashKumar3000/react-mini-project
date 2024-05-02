@@ -17,3 +17,27 @@ function TestingComponent() {
 }
 
 export default TestingComponent;
+
+
+
+function TestingComponent() {
+    // normal function
+    function handleClick(value) {
+        alert("button clicked " + value);
+    }
+    // function expression
+    // let handleClick = function () {
+    //     alert("button clicked ");
+    // }
+    return (
+        <>
+            <button onClick={() => {
+                alert("arrow function");
+            }}> 1 </button>
+            <button onClick={() => handleClick(2)}> 2 </button>
+            <button onClick={() => handleClick(3)}> 3 </button>
+        </>
+    );
+}
+
+export default TestingComponent;
