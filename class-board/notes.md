@@ -1,38 +1,39 @@
+# Using Hooks
 
-# Rendering lists
+	- Functions starting with use are called Hooks. useState is a built-in Hook provided by React.
+ - Hooks are more restrictive than other functions. You can only call Hooks at the top of your components (or other Hooks). 
 
-	- It is about displaying items within the array.
- - To display, we use map concept.
-steps:
- 1. you need a array to render list.
- 2. use below syntax.
-    {
-     arr.map((value) => {
-           return <li>{value}</li>;
-        })
-    }
-    3. You can replace above markup with component also.
+# Updating the screen ( states )
 
-# Responding to events
+## what is state in react ?
 
-	- used to handle events like button click.
- # steps:
-  1. You need any function, can be
-   normal function,
-   function expression,
-   arrow function
-  2. pass your function to handle events
-  3. 
- - onClick={handleClick}
- - by default handleClick will accept a parameter named event
- - event mostly used for below purpose.
+React components has a built-in state object.
+The state object is where you store property values that belong to the component.
+When the state object changes, the component re-renders.
 
-## preventDefault
+## why to use useState
 
-eg: event.preventDefault();
-The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+	Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
 
-For example, this can be useful when:
+## syntax
 
-Clicking on a "Submit" button, prevent it from submitting a form
-Clicking on a link, prevent the link from following the URL
+	const [ variable , setVariable ] = useState( initialValue );
+
+## example
+
+const [count, setCount] = useState(10);
+
+function handleLike() {
+    setCount(count + 1);
+}
+
+### rules to follow for states
+
+	- The variable which need to updated on screen
+ should be kept as state.
+
+[NOTE:] react have one-way binding.
+  But we can achieve two-way binding like concept using
+  events.
+
+One-way means that the binding happens in one direction. In this case, changes in the data automatically update the UI, but changes in the UI do not automatically update the data. That’s why it is referred to as one-way data binding. React achieves one-way data binding by using state and props.
