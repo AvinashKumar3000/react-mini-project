@@ -6,9 +6,11 @@ function TestingComponent() {
     }
     return (
         <>
-            <button onClick={() => handleClick(1)}>1</button>
-            <button onClick={() => handleClick(2)}>2</button>
-            <button onClick={() => handleClick(3)}>3</button>
+            {
+                arr.map((value) => {
+                    return <button onClick={() => handleClick(value)}>{value}</button>;
+                })
+            }
         </>
     );
 }
