@@ -1,7 +1,7 @@
 # Using Hooks
 
-	- Functions starting with use are called Hooks. useState is a built-in Hook provided by React.
- - Hooks are more restrictive than other functions. You can only call Hooks at the top of your components (or other Hooks). 
+- Functions starting with use are called Hooks. useState is a built-in Hook provided by React.
+- Hooks are more restrictive than other functions. You can only call Hooks at the top of your components (or other Hooks).
 
 # Updating the screen ( states )
 
@@ -13,23 +13,22 @@ When the state object changes, the component re-renders.
 
 ## why to use useState
 
-	Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
+Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
 
 ## syntax
 
-	const [ variable , setVariable ] = useState( initialValue );
+`const [ variable , setVariable ] = useState( initialValue );`
 
 ## example
 
-const [count, setCount] = useState(10);
-
-function handleLike() {
-    setCount(count + 1);
-}
+`const [count, setCount] = useState(10);`
+`function handleLike() {`
+`setCount(count + 1);`
+`}`
 
 ### rules to follow for states
 
-	- The variable which need to updated on screen
+- The variable which need to updated on screen
  should be kept as state.
 
 [NOTE:] react have one-way binding.
