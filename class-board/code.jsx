@@ -1,23 +1,24 @@
-import { useState } from "react";
 
-function ChildComponent({ value }) {
-    return (
-        <button>Child btn {value}</button>
-    )
-}
-function ParentComponent() {
-    const [count, setCount] = useState(0);
-    function handleClick() {
-        setCount(count + 1)
+const movies = [
+    {
+        title: "Enthiran",
+        hero: "Rajini",
+        heroine: "Aishwarya Rai"
+    },
+    {
+        title: "Leo",
+        hero: "Vijay",
+        heroine: "trisha"
+    },
+    {
+        title: "Mangatha",
+        hero: "Ajith kumar",
+        heroine: "trisha"
+    },
+    {
+        title: "PK",
+        hero: "Amir khan",
+        heroine: "Anushka sharma"
     }
-    return (
-        <>
-            <button onClick={handleClick}>Parent btn {count}</button>
-            <ChildComponent value={count} />
-            <ChildComponent value={count} />
-            <br />
-        </>
-    );
-}
 
-export default ParentComponent;
+]
