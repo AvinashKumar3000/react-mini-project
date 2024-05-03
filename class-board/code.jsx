@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-function ChildComponent(props) {
+function ChildComponent({ value }) {
     return (
-        <button>Child btn {props}</button>
+        <button>Child btn {value}</button>
     )
 }
 function ParentComponent() {
