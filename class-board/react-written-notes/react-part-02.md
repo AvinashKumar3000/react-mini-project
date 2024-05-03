@@ -118,9 +118,9 @@ Ways to write conditional rendering:
 # steps
 
 1. You need any function, It can be
-  1. normal function,
-  2. function expression,
-  3. arrow function
+1. normal function,
+2. function expression,
+3. arrow function
 
 4. pass your function to handle events
 
