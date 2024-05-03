@@ -41,6 +41,8 @@ eg:`import { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
 
 - using `{ }` we can display data inside markups
 
+  ![enter image description here](https://raw.githubusercontent.com/avicreationstudio/avinash-portfolio/main/images/image.png)
+
 eg:
 
 - **undefined** and null will show nothing in webpage.
@@ -78,10 +80,8 @@ eg:
 ## Conditional rendering
 
 - we can use both close tag or self close tag in react.
-
 - You can store Markup in a variable also.
-
-eg: let result = <h1>Hello world</h1>;
+eg: `let result = <h1>Hello world</h1>;`
 
 - You can store Component in a variable also.
 
@@ -101,12 +101,12 @@ Ways to write conditional rendering:
 
 - To display, we use map concept.
 
-steps:
-
 1. you need a array to render list.
 
-2. use below syntax.
+2. use below example.
 
+![steps:](https://raw.githubusercontent.com/avicreationstudio/avinash-portfolio/main/images/react-003.png)
+  
 3. You can replace above markup with component also.
 
 # Responding to events
