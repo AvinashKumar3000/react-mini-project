@@ -1,64 +1,19 @@
-import Card from "./Card";
-import { NARUTO_ANIME } from "./data";
+import { useState } from "react";
 
-function Anime() {
-    return (
-        <>
-            {
-                NARUTO_ANIME.map((value, index) => {
-                    return <Card key={index} obj={value} />
-                })
-            }
-        </>
-    );
+function ChildComp({ handleClick }) {
+    return <button onClick={() => handleClick(8055)}> update Parent value to 8055 </button>;
 }
 
-export default Anime;
-
-
-// Card.jsx
-
-function Card({ obj }) {
-    return (
-        <>
-            <h2>{obj.name}</h2>
-            <ol>
-                <li>power : {obj.power}</li>
-                <li>strength : {obj.strength_level}</li>
-                <li>hair color : {obj.hair_color}</li>
-            </ol>
-        </>
-    );
-}
-
-export default Card;
-
-// data.js
-const NARUTO_ANIME = [
-    {
-        name: "Naruto Uzumaki",
-        power: "Rasengan",
-        strength_level: "High",
-        hair_color: "Blond"
-    },
-    {
-        name: "Sasuke Uchiha",
-        power: "Chidori",
-        strength_level: "High",
-        hair_color: "Black"
-    },
-    {
-        name: "Sakura Haruno",
-        power: "Medical Ninjutsu",
-        strength_level: "Medium",
-        hair_color: "Pink"
-    },
-    {
-        name: "Kakashi Hatake",
-        power: "Sharingan",
-        strength_level: "High",
-        hair_color: "White"
+function ParentComp() {
+    const [value, setValue] = useState(0);
+    function handleClick(x) {
+        setValue(x);
     }
-];
-
-export { NARUTO_ANIME };
+    return (
+        <>
+            <p> value in parent {value} </p>
+            <ChildComp handleClick={handleClick} />
+        </>
+    );
+}
+export default ParentComp;
