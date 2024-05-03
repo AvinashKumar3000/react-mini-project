@@ -1,19 +1,24 @@
 import { useState } from "react";
 
-function ChildComp({ handleClick }) {
-    return <button onClick={() => handleClick(8055)}> update Parent value to 8055 </button>;
-}
-
 function ParentComp() {
-    const [value, setValue] = useState(0);
-    function handleClick(x) {
-        setValue(x);
+    const [arr, setArr] = useState(["message 1"]);
+    const [inputValue, setInputValue] = useState("");
+    function handleClick() {
+        setArr([...arr, inputValue]);
     }
     return (
-        <>
-            <p> value in parent {value} </p>
-            <ChildComp handleClick={handleClick} />
-        </>
+        <div>
+            <label>msg :</label>
+            <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+            <button onClick={handleClick}>submit</button>
+            <ol>
+                {
+                    arr.map((value) => {
+                        return <li>{value}</li>
+                    })
+                }
+            </ol>
+        </div>
     );
 }
 export default ParentComp;
