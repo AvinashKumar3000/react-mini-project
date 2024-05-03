@@ -1,28 +1,23 @@
-function ChildComponent({ value }) {
+import { useState } from "react";
+
+function TestingComponent() {
+    const [count, setCount] = useState(0);
+    const [value, setValue] = useState("fa-regular fa-heart");
+    function handleClick() {
+        if (value === "fa-regular fa-heart") {
+            setCount(count + 1);
+            setValue("fa-solid fa-heart")
+        } else {
+            setCount(count - 1);
+            setValue("fa-regular fa-heart")
+        }
+    }
     return (
-        < form >
-            <fieldset>
-                <legend>{value.name}</legend>
-                <p>{value.desc}</p>
-            </fieldset>
-        </form >
+        <>
+            <p>{count}</p>
+            <i onClick={handleClick} class={value}></i>
+        </>
     );
 }
-function ParentComponent() {
-    let movies = [
-        { name: "gilli", desc: "vijay and tirisha" },
-        { name: 'ayan', desc: 'surya and tamana' },
-        { name: 'I', desc: 'vikram and Amy Jackson' },
-    ];
-    return (<>
-        {
-            movies.map((value, index) => {
-                return <ChildComponent key={index} value={value} />
-            })
-        }
-        <br />
-    </>)
-}
 
-export default ParentComponent;
-
+export default TestingComponent;
