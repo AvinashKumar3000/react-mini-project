@@ -1,23 +1,23 @@
 import { useState } from "react";
 
-function TestingComponent() {
+function ChildComponent(props) {
+    return (
+        <button>Child btn {props}</button>
+    )
+}
+function ParentComponent() {
     const [count, setCount] = useState(0);
-    const [value, setValue] = useState("fa-regular fa-heart");
     function handleClick() {
-        if (value === "fa-regular fa-heart") {
-            setCount(count + 1);
-            setValue("fa-solid fa-heart")
-        } else {
-            setCount(count - 1);
-            setValue("fa-regular fa-heart")
-        }
+        setCount(count + 1)
     }
     return (
         <>
-            <p>{count}</p>
-            <i onClick={handleClick} class={value}></i>
+            <button onClick={handleClick}>Parent btn {count}</button>
+            <ChildComponent value={count} />
+            <ChildComponent value={count} />
+            <br />
         </>
     );
 }
 
-export default TestingComponent;
+export default ParentComponent;
