@@ -46,6 +46,21 @@ const companies = [
         employees: "Over 70,000 (2021)"
     }
 ];
+function ChildComp({ obj }) {
+    return (
+        <fieldset>
+            <legend>{obj.name}</legend>
+            <ol>
+                <li>industry: {obj.industry}</li>
+                <li>headquarters: {obj.headquarters}</li>
+                <li>founded: {obj.founded}</li>
+                <li>ceo: {obj.ceo}</li>
+                <li>revenue: {obj.revenue}</li>
+                <li>employees: {obj.employees}</li>
+            </ol>
+        </fieldset>
+    );
+}
 function ParentComp() {
     const [index, setIndex] = useState(0);
     function handleClick(idx) {
@@ -58,18 +73,8 @@ function ParentComp() {
             <button onClick={() => handleClick(2)}>Amazon</button>
             <button onClick={() => handleClick(3)}>Microsoft</button>
             <button onClick={() => handleClick(4)}>Tesla</button>
+            <ChildComp obj={companies[index]} />
 
-            <fieldset>
-                <legend>{companies[index].name}</legend>
-                <ol>
-                    <li>industry: {companies[index].industry}</li>
-                    <li>headquarters: {companies[index].headquarters}</li>
-                    <li>founded: {companies[index].founded}</li>
-                    <li>ceo: {companies[index].ceo}</li>
-                    <li>revenue: {companies[index].revenue}</li>
-                    <li>employees: {companies[index].employees}</li>
-                </ol>
-            </fieldset>
         </>
     );
 }
