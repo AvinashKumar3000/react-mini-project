@@ -1,13 +1,17 @@
 import { useState } from "react";
 
 function ParentComp() {
-    let arr = ["student", "student"];
+    const [arr, setArr] = useState([]);
+    function handleClick() {
+        setArr([...arr, "new item"]);
+    }
     return (
         <>
+            <button onClick={handleClick}>add student</button>
             <ol>
                 {
-                    arr.map((value) => {
-                        return <li>{value}</li>
+                    arr.map((value, index) => {
+                        return <li key={index}>{value + (index + 1)}</li>
                     })
                 }
             </ol>
