@@ -4,11 +4,11 @@ function ParentComp() {
     const [count, setCount] = useState(0);
     function handleAddBtn() {
         setCount(count + 1)
-        console.log(count)
     }
     function handleMinusBtn() {
-        setCount(count - 1)
-        console.log(count)
+        if (count > 0) {
+            setCount(count - 1)
+        }
     }
     return (
         <>
