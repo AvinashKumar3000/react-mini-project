@@ -9,6 +9,12 @@ function ParentComp() {
             setInputValue("")
         }
     }
+    function handleDeleteItems(idx) {
+        let result_arr = arr.filter((value, index) => {
+            return index !== idx;
+        });
+        setArr(result_arr);
+    }
     return (
         <>
             <label>TODO items:</label>
@@ -17,7 +23,12 @@ function ParentComp() {
             <ol>
                 {
                     arr.map((value, index) => {
-                        return <li key={index}>{value}</li>
+                        return (
+                            <div key={index}>
+                                <li>{value}</li>
+                                <button onClick={() => handleDeleteItems(index)}>delete</button>
+                            </div>
+                        );
                     })
                 }
             </ol>
