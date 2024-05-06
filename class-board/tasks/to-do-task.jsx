@@ -15,6 +15,13 @@ function ParentComp() {
         });
         setArr(result_arr);
     }
+    function handleEditItems(idx) {
+        let updatedContent = prompt("your new content");
+        if (updatedContent !== "") {
+            arr[idx] = updatedContent;
+            setArr([...arr]);
+        }
+    }
     return (
         <>
             <label>TODO items:</label>
@@ -27,6 +34,7 @@ function ParentComp() {
                             <div key={index}>
                                 <li>{value}</li>
                                 <button onClick={() => handleDeleteItems(index)}>delete</button>
+                                <button onClick={() => handleEditItems(index)}>edit</button>
                             </div>
                         );
                     })
