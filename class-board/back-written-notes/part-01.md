@@ -18,8 +18,9 @@ Response:
 
 Protocol:
  A set of rules and conventions that govern communication between clients and servers. Common protocols used in client-server architecture include
- - HTTP (Hypertext Transfer Protocol)
- - TCP/IP (Transmission Control Protocol/Internet Protocol)
+
+- HTTP (Hypertext Transfer Protocol)
+- TCP/IP (Transmission Control Protocol/Internet Protocol)
 
 Statelessness:
  In many client-server architectures, servers do not maintain information about the state of client sessions between requests. Each request from a client must contain all the information necessary for the server to fulfill the request. This simplifies server design and scalability but may require additional mechanisms for managing user sessions.
