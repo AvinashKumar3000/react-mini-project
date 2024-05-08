@@ -1,3 +1,5 @@
+# REACT NOTES
+
 ## React setup steps
 
 download and install node js in your computer.
@@ -24,10 +26,7 @@ download and install node js in your computer.
 - give `npm start` command.
 - Hurray! your first React Application.
 
----------------------------------------
-
-Node JS
----------
+## Node JS
 
 - To use React in production, you need npm which is included with Node.js.
 - npx ( **N**ode **P**ackage e**X**ecute ):
@@ -35,18 +34,14 @@ Node JS
 - npm ( **N**ode **P**ackage **M**anager ):
   - Use to manage, install and remove packages for Node JS.
 
----------------------------------------------------
-
-React
-----------------------------------------
+## React
 
 - React is a JavaScript library for building user interfaces.
 - Created by Facebook / Meta.
 - React is used to build single-page applications.
 - React is a tool for building UI components.
 
-VIRTUAL DOM
------------
+## VIRTUAL DOM
 
 *React creates a VIRTUAL DOM in memory.*
 *Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.*
@@ -59,14 +54,12 @@ VIRTUAL DOM
 **version 16** has major changes
 Current React latest version **18**
 
-React Docs
------------
+## React Docs
 
 legacy : <https://legacy.reactjs.org/>  
 modern : <https://react.dev/>
 
-How React works ?
-----------------
+## How React works ?
 
  1. index.html  
  2. index.js  
@@ -77,21 +70,18 @@ React uses ES6,
 
 - React uses some of the new features.
 
-JSX in React
--------------
+## JSX in React
 
 JSX vs JS
 `HTML -> XHTML -> XML -> JS -> JSX`
 
-XHTML
-------
+### XHTML
 
 always tag name should be smaller
 always if tag is open then close tag should be there
 self close tag must be closed <br/>
 
-XML
-----
+### XML
 
 used to store values in HTML format
 and it follows XHTML rules.
@@ -103,8 +93,7 @@ and it follows XHTML rules.
      <pincode>6000009</pincode>
     </address>
 
-xml vs xhtml
--------------
+### xml vs xhtml
 
 can create our own tag name in xml.
 
@@ -115,15 +104,13 @@ You are not required to use JSX, but JSX makes it easier to write React applicat
 .jsx
 .js
 
-Other Front end frameworks or libraries
----------------------------------------
+## Other Front end frameworks or libraries
 
 1. Angular
 2. Vue JS
 3. Svelte
 
-TO check if node js is installed
----------------------------------
+## TO check if node js is installed
 
 1. open command prompt
 2. check below commands are working
@@ -132,15 +119,14 @@ TO check if node js is installed
 `npm --version`
 `npx --version`
 
-React coding started
----------------------
+## React coding started
 
-1. Remove
+### Remove
 
 - `src/App.test.js`
 - `src/logo.svg`
 
-2. open to src/App.js
+### open to src/App.js
 
 - remove `<header></header>`
 - remove line : `import logo from './logo.svg';`
@@ -148,9 +134,9 @@ React coding started
 In react when javascript files are saved as below extension.
 Following properties are enabled.
 
- 1. `.js`  => emmet abbrivation shortcuts won't work.
+ 1. `.js`  => emmet abbreviation shortcuts won't work.
  2. `.jsx` => emmet
-    abbrivation shortcuts will work.
+    abbreviation shortcuts will work.
 
 **NOTE:**  React will consider both .js and .jsx as .jsx file only.
 
@@ -205,7 +191,7 @@ or we can use `<></>`
 *you can use a "fragment" to wrap multiple lines.*
 [NOTE]: JSX will throw an error if the HTML is not properly closed.
 
-# diff between components and other tags
+## diff between components and other tags
 
 - Components has names start with Capital letters
 - In react a function is a component only if It has Name start with Capital letter.
