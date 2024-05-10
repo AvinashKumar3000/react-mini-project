@@ -51,32 +51,4 @@ useEffect is a React Hook that lets you synchronize a component with an external
 
 1. when a variable should not get affected by re-rendering.
 2. used to get reference of DOM elements
-
-# context api
-
-- How to handle data across multi layer of components
-- to avoid prop drilling we use to create context API.
-- we use below functions to create and use context API.
-  - createContext
-  - useContext
-
-STEPS:
-
- 1. **creating Context**  : `const SampleContext = createContext( defaultValue );`
- 2. **Providing Context** : `<SampleContext.Provider value={}> </SampleContext.Provider>`
- 3. **using context**     : `let sampleContext = useContext ( SampleContext )`
-
-# routing
-
-    import react-router-dom
-    const router = createBrowserRouter([
-        {
-          path: "/",
-          element: <AuthPage />,
-        },
-        {
-          path: "app",
-          element: <MainApp />,
-        }
-    ]);
-    <RouterProvider router={router} />
+3. [https://react.dev/reference/react/useRef#manipulating-the-dom-with-a-ref] follow this link to see example
