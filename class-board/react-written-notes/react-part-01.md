@@ -62,8 +62,8 @@ modern : <https://react.dev/>
 ## How React works ?
 
 - Here All our component jsx files are converted to pure js files.
-This file is named as bundle.js file. and included in <head> tag.
-- Mainly all our Components are loaded inside <div id="root">
+This file is named as bundle.js file. and included in `<head>` tag.
+- Mainly all our Components are loaded inside `<div id="root">`
 
 ## JSX in React
 
