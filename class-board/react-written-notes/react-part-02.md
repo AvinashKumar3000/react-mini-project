@@ -163,6 +163,8 @@ steps:
 
 - event mostly used for below purpose.
 
+- Events are achieved using JS callback concept.
+
 ## preventDefault
 
 eg: `event.preventDefault();`
