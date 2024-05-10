@@ -321,4 +321,4 @@ This is called re-rendering
 
 # re-conciliation
 
-The process of rendering page using virtual DOM and diff algorithm.
+The process of displaying page using virtual DOM and diff algorithm.
