@@ -233,16 +233,6 @@ syntax;
         export default ParentComp;
 </pre>  
 
-# useEffect
-
-useEffect is a React Hook that lets you synchronize a component with an external system.
-
-- do something when change in dependencies
-
-- mostly used to connect APIs
-
-- doing asynchronous tasks
-
 # React Dev Tools
 
 A browser extension used to debug react application.
