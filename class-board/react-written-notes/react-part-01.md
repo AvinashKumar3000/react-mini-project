@@ -103,8 +103,11 @@ RULES:
 
 `JSX -> JS XML`
 
-- **.JSX** : we can have html tags within javascript file.
-- **.JS** : we cannot have html tags within javascript file. It will through error.
+- IN REACT WE CAN CREATE COMPONENTS INSIDE BOTH .js and .jsx file.
+- BECAUSE React consider .js as .jsx file only.
+
+- In react we can have html tags within javascript file.
+- In pure JS or vanilla javascript we cannot have html tags within javascript file. It will through error.
 
 ---
 
