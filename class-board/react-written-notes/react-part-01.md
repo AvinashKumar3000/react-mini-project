@@ -42,17 +42,21 @@ download and install node js in your computer.
 - React is a tool for building UI components.
 **NOTE:** React follows a component based architecture.
 
-## diff between components and other tags
+## COMPONENTS
 
-- Components has names start with Capital letters
 - In react a function is a component only if It has Name start with Capital letter.
+- React components are JavaScript functions **that return markup**
 **NOTE**
 - React apps are made out of components.
 - A component is a piece of the UI (user interface)
  that has its own **logic and appearance**.
 - A component can be as small as a button,
   or as large as an entire page.
-- React components are JavaScript functions **that return markup**
+
+## diff between components and other tags
+
+- `<SampleComp>` Components has names start with Capital letters
+- `<p></p>` Always in small letters
 
 ## VIRTUAL DOM
 
