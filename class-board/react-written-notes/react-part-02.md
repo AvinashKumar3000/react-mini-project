@@ -31,7 +31,7 @@ eg: `import Cartoon from './Cartoon.jsx';`
 
 eg: `import { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
 
-3. import both
+3. import both in single line
 
 eg: `import Cartoon, { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
 
