@@ -9,13 +9,10 @@
 2. export multiple items | eg: `export { Ben10, Ben10AlienForce };`
 3. export, export default in function declaration
 
-- The export default keywords
-
-specify the main component in the file.
-
+- The export default keywords specify the main component in the file.
 - only one export default can be written.
 
-### import
+### IMPORT
 
 1. import default | eg: `import Cartoon from './Cartoon.jsx';`
 2. import multiple items | eg: `import { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
@@ -23,26 +20,19 @@ specify the main component in the file.
 
 ## Displaying data
 
-- using {} we can display data inside markups
+- using `{ }` we can display data inside markups
 
 eg:
 
     export default function LeaveLetter() {
-    
          let name = "roshan";
- 
          let problem = "cold and Cough";
-    
          return (
-    
              <p> My name is {name}, As I am suffering from {problem} </p>
-    
           );
-    
     }
 
 - undefined and null will show nothing in webpage.
-
 - BigInt, Boolean will only show after using toString method.
 
 ## Adding styles
@@ -50,15 +40,12 @@ eg:
 ### Adding styles inside public/index.html file
 
 - using link tag. we can add our custom styles sheet
-
 - using link tag. we can add CDN like bootstrap.
-
 - using link tag. we can add CDN for icons like. Font Awesome.
 
 ### Adding styles outside javascript components
 
 - Create a file name DisplayData.css
-
 - Import above css in any components
 
 eg:
@@ -68,19 +55,14 @@ eg:
 ### Adding styles as inline style within the components
 
 - Create a object consists of css styles.
-
 - And by using `{ }` we can apply styles
-
-- eg:
-
- `<div style={{ color: "red" }}> content </div>`
+- eg: `<div style={{ color: "red" }}> content </div>`
 
 # OTHER POINTS IN REACT
 
 - we can use both close tag or self close tag in react components.
 - eg: `<SampleComp/>`
 - eg: `<SampleComp></SampleComp>`
-
 - You can store Markup in a variable also.
 
 eg:  `let result = <h1>Hello world</h1>;`
@@ -94,31 +76,24 @@ eg: `let result = <HomePage></HomePage>;`
 Ways to write conditional rendering:
 
 - using `if`
-
 - using `switch`
-
 - using ternary operator `?:`
 
 # Rendering lists
 
 - It is about displaying items within the array.
-
 - To display, we use map concept.
 
-steps:
+## steps
 
 1. you need a array to render list.
 2. use below syntax.
 
 <pre>
 {
-
       arr.map( ( value ) => {
-
          return &lt;li&gt; { value } &lt;/li&gt;
-
       })
-
 }
 </pre>
 
@@ -280,7 +255,7 @@ A browser extension used to debug react application.
 
 - to avoid loading twice
 
-<StrictMode> lets you find common bugs in your components early during development.
+`<React.StrictMode>` lets you find common bugs in your components early during development.
 
 ## Strict Mode enables the following development-only behaviors
 
