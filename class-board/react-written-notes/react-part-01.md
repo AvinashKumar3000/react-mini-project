@@ -85,12 +85,12 @@ RULES:
 - always if there is **open tag** then **close tag** should be there.
 - **self close tag** must be closed `<br/>`
 
-    <address>
-     <city>coimbatore</city>
-     <pincode>641007</pincode>
-     <city>chennai</city>
-     <pincode>6000009</pincode>
-    </address>
+      <address>
+      <city>coimbatore</city>
+      <pincode>641007</pincode>
+      <city>chennai</city>
+      <pincode>6000009</pincode>
+      </address>
 
 ### XHTML
 
