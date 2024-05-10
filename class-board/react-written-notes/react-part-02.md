@@ -246,7 +246,11 @@ syntax;
 
 ### CHILD TO PARENT
 
-- passing values up to parent component using function ( call back function )
+- passing values up to parent component using function ( call back function ) as props
+
+- `<ComponentName  setCount={setCount}  handleClick={handleClick}/>`
+
+- `function ComponentName({ setCount, handleClick })`
 
 # how to get inputvalue from input tag
 
