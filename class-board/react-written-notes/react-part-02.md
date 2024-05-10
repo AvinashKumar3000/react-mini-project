@@ -5,14 +5,8 @@
 
 ### export
 
-1. export default
-
-eg: `export default Cartoon;`
-
-2. export multiple items
-
-eg: `export { Ben10, Ben10AlienForce };`
-
+1. export default | eg: `export default Cartoon;`
+2. export multiple items | eg: `export { Ben10, Ben10AlienForce };`
 3. export, export default in function declaration
 
 - The export default keywords
@@ -23,17 +17,9 @@ specify the main component in the file.
 
 ### import
 
-1. import default
-
-eg: `import Cartoon from './Cartoon.jsx';`
-
-2. import multiple items
-
-eg: `import { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
-
-3. import both in single line
-
-eg: `import Cartoon, { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
+1. import default | eg: `import Cartoon from './Cartoon.jsx';`
+2. import multiple items | eg: `import { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
+3. import both in single line | eg: `import Cartoon, { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
 
 ## Displaying data
 
@@ -122,7 +108,6 @@ Ways to write conditional rendering:
 steps:
 
 1. you need a array to render list.
-
 2. use below syntax.
 
 <pre>
@@ -254,27 +239,23 @@ syntax;
 
 # how to get inputvalue from input tag
 
-  <pre>
+<pre>
         import { useState } from "react";
-         function ParentComp() {
+        function ParentComp() {
           const [value, setValue] = useState("");
-           return (
+          return (
                 &lt;div&gt;
-     &lt;input
-       type="text"
-       placeholder="input value"
-       value={ value }
-       onChange={ ( e )  => setValue( e.target.value ) }
-     /&gt;&lt;br/&gt;
-     &lt;p&gt; component has this value : {value} &lt;/p&gt;
-    &lt;/div&gt;
-
-    );
-
-   }
-
-  export default ParentComp;
-
+                    &lt;input
+                          type="text"
+                          placeholder="input value"
+                          value={ value }
+                          onChange={ ( e )  => setValue( e.target.value ) }
+                        /&gt;&lt;br/&gt;
+                    &lt;p&gt; component has this value : {value} &lt;/p&gt;
+                &lt;/div&gt;
+          );
+        }
+        export default ParentComp;
 </pre>  
 
 # useEffect
