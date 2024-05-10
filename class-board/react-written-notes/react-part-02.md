@@ -187,11 +187,9 @@ Clicking on a link, prevent the link from following the URL
 
 ## what is state in react ?
 
-React components has a built-in state object.
+The state is where you store property values that belong to the component.
 
-The state object is where you store property values that belong to the component.
-
-When the state object changes, the component re-renders.
+When the state changes, the component re-renders.
 
 ## why to use useState
 
