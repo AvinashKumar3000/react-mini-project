@@ -68,18 +68,22 @@ This file is named as bundle.js file. and included in `<head>` tag.
 ## JSX in React
 
 JSX vs JS
-`HTML -> XHTML -> XML -> JS -> JSX`
+`HTML -> XML -> XHTML  -> JS -> JSX`
 
-### XHTML
+### HTML
 
-always tag name should be smaller
-always if tag is open then close tag should be there
-self close tag must be closed <br/>
+  used to create webpage using markups.
 
 ### XML
 
 used to store values in HTML format
-and it follows XHTML rules.
+and it follows rules.
+
+RULES:
+
+- always tag name should be **smaller**.
+- always if there is **open tag** then **close tag** should be there.
+- **self close tag** must be closed `<br/>`
 
     <address>
      <city>coimbatore</city>
@@ -88,16 +92,21 @@ and it follows XHTML rules.
      <pincode>6000009</pincode>
     </address>
 
+### XHTML
+
+- A normal HTML page which follow XML rules.
+  
 ### xml vs xhtml
 
-can create our own tag name in xml.
+- **XML :** Can create our own tag name.
+- **XHMTL :** Cannot create our own tag name.
 
 `JSX -> JS XML`
 
-You are not required to use JSX, but JSX makes it easier to write React applications.
+- **.JSX** : we can have html tags within javascript file.
+- **.JS** : we cannot have html tags within javascript file. It will through error.
 
-.jsx
-.js
+---
 
 ## Other Front end frameworks or libraries
 
