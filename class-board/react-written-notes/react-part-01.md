@@ -144,14 +144,14 @@ RULES:
 
 ---
 
-very very important
-**NOTE:**
-  JSX follows new rules to write HTML and CSS codes.
-  **eg:**
-   **HTML example:**
-    `<div class="container"></div>`
-   **JSX example:**
-    `<div className="container"></div>`
+- very very important
+- **NOTE:**
+- JSX follows new rules to write HTML and CSS codes.
+- **eg:**
+- **HTML example:**
+- `<div class="container"></div>`
+- **JSX example:**
+- `<div className="container"></div>`
 
 **NOTE:** we use className because in JS already a keyword named **class** is used by javascript.
 
@@ -160,6 +160,7 @@ Rules to create JSX Files.
 - File name must be started with Capital letter
 - Must have one function with same name as File name
 - apply `export default`  on above function.
+- That component is default component
 
 ## 2 components in REACT
 
