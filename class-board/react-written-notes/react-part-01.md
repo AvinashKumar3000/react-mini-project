@@ -40,6 +40,19 @@ download and install node js in your computer.
 - Created by Facebook / Meta.
 - React is used to build single-page applications.
 - React is a tool for building UI components.
+**NOTE:** React follows a component based architecture.
+
+## diff between components and other tags
+
+- Components has names start with Capital letters
+- In react a function is a component only if It has Name start with Capital letter.
+**NOTE**
+- React apps are made out of components.
+- A component is a piece of the UI (user interface)
+ that has its own **logic and appearance**.
+- A component can be as small as a button,
+  or as large as an entire page.
+- React components are JavaScript functions **that return markup**
 
 ## VIRTUAL DOM
 
@@ -156,7 +169,7 @@ very very important
    **JSX example:**
     `<div className="container"></div>`
 
-NOTE: we use className because in JS already a keyword named class is used.
+**NOTE:** we use className because in JS already a keyword named **class** is used by javascript.
 
 Rules to create JSX Files.
 
@@ -164,20 +177,20 @@ Rules to create JSX Files.
 - Must have one function with same name as File name
 - apply `export default`  on above function.
 
-React V16
-**NOTE:** React is a component based architecture.
+## 2 components in REACT
 
 ### class components
 
 - uses javascript class to create components
-- is a statefull component
+- is a state full component
 
 ### function components
 
 - uses javascript function to create components.
-- is a stateless component
-- we will achieve all class component features in functional component using
-  hooks
+- is a stateless component.
+- we will achieve all class component features in functional component using hooks.
+
+---
 
 ## Expressions in JSX
 
@@ -201,15 +214,3 @@ Must have one parent element.
 or we can use `<></>`
 *you can use a "fragment" to wrap multiple lines.*
 [NOTE]: JSX will throw an error if the HTML is not properly closed.
-
-## diff between components and other tags
-
-- Components has names start with Capital letters
-- In react a function is a component only if It has Name start with Capital letter.
-**NOTE**
-- React apps are made out of components.
-- A component is a piece of the UI (user interface)
- that has its own **logic and appearance**.
-- A component can be as small as a button,
-  or as large as an entire page.
-- React components are JavaScript functions **that return markup**
