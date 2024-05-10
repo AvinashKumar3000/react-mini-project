@@ -220,6 +220,10 @@ But we can achieve two-way binding like concept using events.
 - That’s why it is referred to as one-way data binding.
 - React achieves one-way data binding by using state and props.
 
+- But we can achieve two way binding using events. eg: onChange
+
+---
+
 class components don't use hooks concept.
 
 where as functional components supports hooks concepts.
