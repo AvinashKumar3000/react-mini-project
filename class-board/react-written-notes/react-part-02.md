@@ -157,9 +157,11 @@ steps:
 
 - by default handleClick will accept a parameter named event
 
-- event mostly used for below purpose.
+- Some times you have to send data in handleClick
 
 `onClick={()=> handleClick(1)}`
+
+- event mostly used for below purpose.
 
 ## preventDefault
 
