@@ -61,7 +61,7 @@ eg:
 
 ## Adding styles
 
-### Adding styles inside pulic/index.html file
+### Adding styles inside public/index.html file
 
 - using link tag. we can add our custom styles sheet
 
@@ -89,7 +89,7 @@ eg:
 
  `<div style={{ color: "red" }}> content </div>`
 
-# Conditional rendering
+# OTHER POINTS IN REACT
 
 - we can use both close tag or self close tag in react.
 
@@ -100,6 +100,8 @@ eg:  `let result = <h1>Hello world</h1>;`
 - You can store Component in a variable also.
 
 eg: `let result = <HomePage></HomePage>;`
+
+# Conditional rendering
 
 Ways to write conditional rendering:
 
