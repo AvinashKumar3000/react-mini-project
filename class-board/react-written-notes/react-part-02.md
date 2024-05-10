@@ -232,6 +232,10 @@ where as functional components supports hooks concepts.
 
 ## Sharing data between components ( props )
 
+- Props is used to share data between components
+
+### PARENT to CHILD
+
 - passing values down to children component using props
 
 syntax;
@@ -240,7 +244,9 @@ syntax;
 
     function ComponentName({ count, name })
 
-- passing values up to parent component using function
+### CHILD TO PARENT
+
+- passing values up to parent component using function ( call back function )
 
 # how to get inputvalue from input tag
 
