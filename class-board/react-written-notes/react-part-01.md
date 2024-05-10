@@ -163,10 +163,14 @@ React V16
 ### class components
 
 - uses javascript class to create components
+- is a statefull component
 
 ### function components
 
 - uses javascript function to create components.
+- is a stateless component
+- we will achieve all class component features in functional component using
+  hooks
 
 ## Expressions in JSX
 
