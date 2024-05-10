@@ -168,11 +168,13 @@ Rules to create JSX Files.
 
 - uses javascript class to create components
 - is a state full component
+- it is state full because by default all class components has state.
 
 ### function components
 
 - uses javascript function to create components.
 - is a stateless component.
+- because by default function component don't have state. we will include using `useState()` hooks.
 - we will achieve all class component features in functional component using hooks.
 
 ---
