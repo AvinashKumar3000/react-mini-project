@@ -91,7 +91,9 @@ eg:
 
 # OTHER POINTS IN REACT
 
-- we can use both close tag or self close tag in react.
+- we can use both close tag or self close tag in react components.
+- eg: `<SampleComp/>`
+- eg: `<SampleComp></SampleComp>`
 
 - You can store Markup in a variable also.
 
