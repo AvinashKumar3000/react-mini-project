@@ -24,6 +24,8 @@
 
 eg:
 
+```javascript
+
     export default function LeaveLetter() {
          let name = "roshan";
          let problem = "cold and Cough";
@@ -31,6 +33,7 @@ eg:
              <p> My name is {name}, As I am suffering from {problem} </p>
           );
     }
+```
 
 - undefined and null will show nothing in webpage.
 - BigInt, Boolean will only show after using toString method.
