@@ -208,15 +208,17 @@ Often, you’ll want your component to “**remember**” some information and d
 
 ### rules to follow for states
 
-- The variable which need to updated on screen
-
-should be kept as state.
+- The variable which need to updated on screen should be keep as state.
 
 **NOTE:** react have one-way binding.
 
 But we can achieve two-way binding like concept using events.
 
-**One-way** means that the binding happens in one direction. In this case, changes in the data automatically update the UI, but changes in the UI do not automatically update the data. That’s why it is referred to as one-way data binding. React achieves one-way data binding by using state and props.
+- **One-way** means that the binding happens in one direction.
+- In this case, changes in the data automatically update the UI.
+- but changes in the UI do not automatically update the data.
+- That’s why it is referred to as one-way data binding.
+- React achieves one-way data binding by using state and props.
 
 class components don't use hooks concept.
 
