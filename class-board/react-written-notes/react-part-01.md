@@ -46,7 +46,6 @@ download and install node js in your computer.
 
 - In react a function is a component only if It has Name start with Capital letter.
 - React components are JavaScript functions **that return markup**
-**NOTE**
 - React apps are made out of components.
 - A component is a piece of the UI (user interface)
  that has its own **logic and appearance**.
@@ -143,26 +142,7 @@ RULES:
 `npm --version`
 `npx --version`
 
-## React coding started
-
-### Remove
-
-- `src/App.test.js`
-- `src/logo.svg`
-
-### open to src/App.js
-
-- remove `<header></header>`
-- remove line : `import logo from './logo.svg';`
-
-In react when javascript files are saved as below extension.
-Following properties are enabled.
-
- 1. `.js`  => emmet abbreviation shortcuts won't work.
- 2. `.jsx` => emmet
-    abbreviation shortcuts will work.
-
-**NOTE:**  React will consider both .js and .jsx as .jsx file only.
+---
 
 very very important
 **NOTE:**
@@ -218,3 +198,24 @@ Must have one parent element.
 or we can use `<></>`
 *you can use a "fragment" to wrap multiple lines.*
 [NOTE]: JSX will throw an error if the HTML is not properly closed.
+
+---
+
+## React coding started
+
+### Remove
+
+- `src/App.test.js`
+- `src/logo.svg`
+
+### open to src/App.js
+
+- remove `<header></header>`
+- remove line : `import logo from './logo.svg';`
+
+In react when javascript files are saved as below extension.
+Following properties are enabled.
+
+ 1. `.js`  => emmet abbreviation shortcuts won't work.
+ 2. `.jsx` => emmet
+    abbreviation shortcuts will work.
