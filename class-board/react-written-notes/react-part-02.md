@@ -33,7 +33,7 @@ eg: `import { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
 
 3. import both
 
-eg: `import Cartoon, { Ben10, Ben10AlienForce } from './Character.jsx';`
+eg: `import Cartoon, { Ben10, Ben10AlienForce } from './Cartoon.jsx';`
 
 ## Displaying data
 
@@ -142,9 +142,9 @@ steps:
 # steps
 
 - You need any function, can be
-    - normal function,
-    - function expression,
-    - arrow function
+  - normal function,
+  - function expression,
+  - arrow function
 - pass your function to handle events
 
 `function handleClick() { }`

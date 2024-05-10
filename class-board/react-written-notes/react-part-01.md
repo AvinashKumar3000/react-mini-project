@@ -194,13 +194,12 @@ You need enclose with `( )`
 
 ## One Top Level Element
 
-Must have one parent element.
-**NOTE:** JSX will throw an error if the HTML is not correct, or if the HTML misses a parent element.
+- Must have one parent element.
+- **NOTE:** JSX will throw an error if the HTML is not correct, or if the HTML misses a parent element.
 
-*The HTML code must be wrapped in ONE top level element*
-or we can use `<></>`
-*you can use a "fragment" to wrap multiple lines.*
-[NOTE]: JSX will throw an error if the HTML is not properly closed.
+- The HTML code must be wrapped in ONE top level element or we can use `<></>`
+- you can use a "fragment" to wrap multiple lines.
+- [NOTE]: JSX will throw an error if the HTML is not properly closed.
 
 ---
 
