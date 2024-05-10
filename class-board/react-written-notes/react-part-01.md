@@ -61,14 +61,9 @@ modern : <https://react.dev/>
 
 ## How React works ?
 
- 1. index.html  
- 2. index.js  
- 3. App.js
-
-Here All our component codes will get collected in `App.js` then it is being redirected to `index.js`. Finally in will be included to `index.html` file
-React uses ES6,
-
-- React uses some of the new features.
+- Here All our component jsx files are converted to pure js files.
+This file is named as bundle.js file. and included in <head> tag.
+- Mainly all our Components are loaded inside <div id="root">
 
 ## JSX in React
 
