@@ -9,9 +9,9 @@
 
 ## Browser Engine
 
-Blink : google
-Gecko : firefox
-WebKit: Apple safari
+- Blink : google
+- Gecko : firefox
+- WebKit: Apple safari
 
 ## JavaScript Engine
 
