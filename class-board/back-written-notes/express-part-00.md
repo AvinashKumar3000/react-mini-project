@@ -5,6 +5,7 @@
 1. create a project folder `back-end-project`.
 1. open your vscode inside above folder.
 1. `npm init` command
+1. Then just press enter till command gets completed.
 1. `package.json` file will be created.
 
 add code `"start": "nodemon index.js",` as shown in `package.json`.
