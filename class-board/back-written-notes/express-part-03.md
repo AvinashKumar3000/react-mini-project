@@ -18,3 +18,12 @@ what exactly is middle ware.
 - do something in middle
   - why to create.
   - Check for authorization.
+
+## TODO
+
+### callback parameters : req, res, next
+
+- create custom middle ware
+- req
+- res
+- next
