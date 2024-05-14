@@ -74,3 +74,9 @@ app.delete('/', (req, res) => {
   3. Redirection messages (300 – 399)
   4. Client error responses (400 – 499)
   5. Server error responses (500 – 599)
+
+---
+
+How to validate POST and OTHER API calls.
+
+- using POSTMAN.
