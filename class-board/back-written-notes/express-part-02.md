@@ -18,11 +18,16 @@ Route definition takes the following structure:
 - CRUD : **C**reate **R**ead **U**pdate **D**elete
 
       get    :  request data
+             - mostly used when we won't send any data, but we want response from server.
+             - [ CRUD Read ]
       post   :  submit data
+             -  I will send data, submit new data.
+             - [ CRUD Create ]
       put    :  update data
+            - [ CRUD Update ]
       patch  :  apply partial modifications      
       delete :  delete a specified resource
-      
+            - [ CRUD Delete ]
       head   :  similar to GET, but it requests the headers of the 
                response without the actual content.
               It is often used to check the validity or 
