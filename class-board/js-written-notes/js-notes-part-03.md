@@ -24,4 +24,4 @@
 - nested callback
 - callback hell
 - Promise
-- api calls with asynchronous
+- async await
