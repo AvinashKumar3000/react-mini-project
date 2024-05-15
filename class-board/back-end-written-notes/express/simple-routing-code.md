@@ -17,6 +17,7 @@ app.listen(PORT, () => {
 // import
 const express = require("express");
 const logger = require('morgan');
+const bodyParser = require('body-parser');
 
 const movieRouter = require("./routes/movie");
 
@@ -25,6 +26,7 @@ const app = express();
 
 // middle ware
 app.use(logger("tiny"));
+app.use(bodyParser.json());
 
 // routing
 app.use('/movie', movieRouter);
@@ -41,13 +43,36 @@ const express = require('express');
 
 const movieRouter = express.Router();
 
+const db = {
+    movies_list: ["godzilla", "king kong"]
+};
+
 // movie routing
+// CRUD : READ
 movieRouter.get('/', (req, res) => {
-    res.send("movie from server");
+    res.json({
+        msg: 'data coming from server',
+        data: db
+    });
 });
 
-movieRouter.get('/all', (req, res) => {
-    res.send("all movies are here");
+// CRUD : CREATE
+movieRouter.post('/', (req, res) => {
+    const obj = req.body;
+    db.movies_list.push(obj.name);
+    res.json({
+        msg: 'new item added in db'
+    });
+});
+
+// CRUD : DELETE
+movieRouter.put('/:id', (req, res) => {
+    const idx = req.params.id;
+    const obj = req.body;
+    db.movies_list[idx] = obj.name;
+    res.json({
+        msg: 'your data has been updated'
+    });
 });
 
 module.exports = movieRouter;
