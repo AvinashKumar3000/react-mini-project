@@ -76,7 +76,7 @@ movieRouter.post('/', (req, res) => {
     });
 });
 
-// CRUD : DELETE
+// CRUD : UPDATE
 movieRouter.put('/:id', (req, res) => {
     const idx = req.params.id;
     const obj = req.body;
