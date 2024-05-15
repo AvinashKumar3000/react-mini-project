@@ -1,5 +1,16 @@
 # simple routing code
 
+`package.json`
+
+```json
+   "scripts": {
+      "start": "nodemon index.js",
+      "main": "node index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   }
+
+```
+
 `index.js`
 
 ```javascript
