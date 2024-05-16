@@ -31,7 +31,6 @@
 - var vs let
 - let vs const
 - arrow functions
-- `Higher-order-functions` passing function as arguments and receiving function from another function is called higher order function.
 - `foreach`, `map`, `filter`, `reduce`
 - default parameters
 - function rest parameters
