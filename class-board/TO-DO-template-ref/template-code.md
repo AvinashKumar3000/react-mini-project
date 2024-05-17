@@ -26,90 +26,136 @@ app.listen(PORT, () => {
 ## `app.js`
 
 ```javascript
-// package imports
-const express = require("express");
-const morgan = require("morgan");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
+const express = require('express');
+const { getAllSongs, addAllSongs, addSong, updateSong, deleteSong } = require('../controllers/song-controller');
 
-// custom files imports
-const studentRouter = require("./routes/student-route");
+const songRouter = express.Router();
 
-// mongodb connection 
-// TODO: enter your database name below 👇
-const DB_NAME = "afternoon";
-const URI = "mongodb://127.0.0.1:27017/" + DB_NAME;
-mongoose.connect(URI);
-mongoose.connection.on("connected", () => {
-    console.log("mongodb is connected successfully");
-})
-
-// declaration
-const app = express();
-// middle ware
-app.use(morgan("tiny"));
-app.use(cors());
-app.use(bodyParser.json());
-
-// routers
-// TODO: add your router below 👇
-app.use('/student', studentRouter);
+// CRUD
+// Read   - GET
+songRouter.get('/', getAllSongs);
+// Create - POST
+songRouter.post('/', addSong);
+songRouter.post('/all', addAllSongs);
+// Update - PUT
+songRouter.put('/', updateSong);
+// Delete - DELETE
+songRouter.delete('/:id', deleteSong);
 
 
+module.exports = songRouter;
 
-// exports
-module.exports = app;
 ```
 
 ## `routes/student-router.js`
 
 ```javascript
 const express = require('express');
-const { getAllStudentDetails, logic01, logic02 } = require('../controller/student-controller');
-//                👆            👆       👆    <--  these are imported from here 👆
+const { getAllSongs, addAllSongs, addSong, updateSong, deleteSong } = require('../controllers/song-controller');
 
-const studentRouter = express.Router();
+const songRouter = express.Router();
+
 // CRUD
-// Create - POST
 // Read   - GET
+songRouter.get('/', getAllSongs);
+// Create - POST
+songRouter.post('/', addSong);
+songRouter.post('/all', addAllSongs);
 // Update - PUT
+songRouter.put('/', updateSong);
 // Delete - DELETE
+songRouter.delete('/:id', deleteSong);
 
-// GET
-studentRouter.get('/', getAllStudentDetails); // 👈 just add your controllers logic here as you wish
-// POST
-// PUT
-// DELETE
 
-module.exports = studentRouter;
+module.exports = songRouter;
+
 ```
 
 ## `controllers/student-controller.js`
 
 ```javascript
-const StudentModel = require("../model/student-model");
+const SongModel = require("../models/song-model");
 
 // Add your controller logics as you wish below. 👇
 //          these are mandatory      👇  👇
-async function getAllStudentDetails(req, res) {
-    const students = await StudentModel.find({});
+async function getAllSongs(req, res) {
+    const songs = await SongModel.find({});
     // 💀 don't change the JSON structure below ⚠️ 
     res.json({
         status: true,
         msg: "data retrieved successfully",
-        data: students   // 👈 your data that need to send back to client 🧑‍💻
+        data: songs   // 👈 your data that need to send back to client 🧑‍💻
         // data: null   👈 give as shown here. if you are sending nothn
     });
 }
 
-function logic01() {
-
+async function addAllSongs(req, res) {
+    const payload = req.body;
+    for (let i = 0; i < payload.length; i++) {
+        await SongModel.create(payload[i]);
+    }
+    // 💀 don't change the JSON structure below ⚠️ 
+    res.json({
+        status: true,
+        msg: "data added successfully",
+        data: null   // 👈 your data that need to send back to client 🧑‍💻
+        // data: null   👈 give as shown here. if you are sending nothn
+    });
 }
-function logic02() {
 
+async function addSong(req, res) {
+    const payload = req.body;
+    const newSong = await SongModel.create(payload);
+    // 💀 don't change the JSON structure below ⚠️ 
+    res.json({
+        status: true,
+        msg: "data added successfully",
+        data: newSong   // 👈 your data that need to send back to client 🧑‍💻
+        // data: null   👈 give as shown here. if you are sending nothn
+    });
 }
-module.exports = { getAllStudentDetails, logic01, logic02 };
+
+async function addSong(req, res) {
+    const payload = req.body;
+    const newSong = await SongModel.create(payload);
+    // 💀 don't change the JSON structure below ⚠️ 
+    res.json({
+        status: true,
+        msg: "data added successfully",
+        data: newSong   // 👈 your data that need to send back to client 🧑‍💻
+        // data: null   👈 give as shown here. if you are sending nothn
+    });
+}
+
+async function updateSong(req, res) {
+    const payload = req.body;
+    const updatedSong = await SongModel.updateOne({
+        _id: payload._id
+    }, payload);
+    // 💀 don't change the JSON structure below ⚠️ 
+    res.json({
+        status: true,
+        msg: "updated song successfully",
+        data: updatedSong   // 👈 your data that need to send back to client 🧑‍💻
+        // data: null   👈 give as shown here. if you are sending nothn
+    });
+}
+
+async function deleteSong(req, res) {
+    const songId = req.params.id;
+    await SongModel.deleteOne({
+        _id: songId
+    });
+    // 💀 don't change the JSON structure below ⚠️ 
+    res.json({
+        status: true,
+        msg: "deleted song successfully",
+        data: null   // 👈 your data that need to send back to client 🧑‍💻
+        // data: null   👈 give as shown here. if you are sending nothn
+    });
+}
+
+module.exports = { getAllSongs, addAllSongs, addSong, updateSong, deleteSong };
 ```
 
 ### `models\student-model.js`
@@ -118,20 +164,21 @@ module.exports = { getAllStudentDetails, logic01, logic02 };
 const mongoose = require('mongoose');
 
 // TODO: change your Schema name 👇
-const studentSchema = new mongoose.Schema({
+const songSchema = new mongoose.Schema({
     // TODO: insert your schema below 👇
     // reference : https://github.com/AvinashKumar3000/react-mini-project/blob/master/class-board/back-end-written-notes/mongoose/mongoose-part-02.md#example
-    name: String,
-    rollNo: Number,
-    batchNo: Number,
-    gender: String,
-    age: Number,
-    phoneNo: String,
-    mailId: String
+    title: String,
+    artist: String,
+    album: String,
+    release_year: Number,
+    genre: String,
+    duration: String,
+    writers: [String],
+    producers: [String],
 });
 
 //[model-name]👇    [db collection name]👇          👇your schema here
-const StudentModel = mongoose.model("student", studentSchema);
+const SongModel = mongoose.model("song", songSchema);
 // export your model here 👇
-module.exports = StudentModel;
+module.exports = SongModel;
 ```
