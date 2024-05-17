@@ -62,7 +62,7 @@ app.use('/song', songRouter);
 module.exports = app;
 ```
 
-## `routes/song-router.js`
+## `routes/song-route.js`
 
 ```javascript
 const express = require('express');
