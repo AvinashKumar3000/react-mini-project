@@ -26,25 +26,40 @@ app.listen(PORT, () => {
 ## `app.js`
 
 ```javascript
-const express = require('express');
-const { getAllSongs, addAllSongs, addSong, updateSong, deleteSong } = require('../controllers/song-controller');
+// package imports
+const express = require("express");
+const morgan = require("morgan");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
-const songRouter = express.Router();
+// custom files imports
+const studentRouter = require("./routes/student-route");
 
-// CRUD
-// Read   - GET
-songRouter.get('/', getAllSongs);
-// Create - POST
-songRouter.post('/', addSong);
-songRouter.post('/all', addAllSongs);
-// Update - PUT
-songRouter.put('/', updateSong);
-// Delete - DELETE
-songRouter.delete('/:id', deleteSong);
+// mongodb connection 
+// TODO: enter your database name below 👇
+const DB_NAME = "afternoon";
+const URI = "mongodb://127.0.0.1:27017/" + DB_NAME;
+mongoose.connect(URI);
+mongoose.connection.on("connected", () => {
+    console.log("mongodb is connected successfully");
+})
+
+// declaration
+const app = express();
+// middle ware
+app.use(morgan("tiny"));
+app.use(cors());
+app.use(bodyParser.json());
+
+// routers
+// TODO: add your router below 👇
+app.use('/student', studentRouter);
 
 
-module.exports = songRouter;
 
+// exports
+module.exports = app;
 ```
 
 ## `routes/song-router.js`
