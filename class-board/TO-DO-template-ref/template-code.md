@@ -47,7 +47,7 @@ module.exports = songRouter;
 
 ```
 
-## `routes/student-router.js`
+## `routes/song-router.js`
 
 ```javascript
 const express = require('express');
@@ -71,7 +71,7 @@ module.exports = songRouter;
 
 ```
 
-## `controllers/student-controller.js`
+## `controllers/song-controller.js`
 
 ```javascript
 const SongModel = require("../models/song-model");
@@ -158,7 +158,7 @@ async function deleteSong(req, res) {
 module.exports = { getAllSongs, addAllSongs, addSong, updateSong, deleteSong };
 ```
 
-### `models\student-model.js`
+### `models\song-model.js`
 
 ```javascript
 const mongoose = require('mongoose');
