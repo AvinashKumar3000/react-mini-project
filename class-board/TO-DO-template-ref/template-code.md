@@ -66,7 +66,7 @@ module.exports = app;
 
 ```javascript
 const express = require('express');
-const { getAllSongs, addAllSongs, addSong, updateSong, deleteSong, getByQuery, deleteAllSongs } = require('../controllers/song-controller');
+const { getAllSongs, addSong, updateSong, deleteSong } = require('../controllers/song-controller');
 
 const songRouter = express.Router();
 
@@ -74,14 +74,11 @@ const songRouter = express.Router();
 // Read   - GET
 songRouter.get('/', getAllSongs);
 // Create - POST
-songRouter.post('/query', getByQuery);
 songRouter.post('/', addSong);
-songRouter.post('/all', addAllSongs);
 // Update - PUT
 songRouter.put('/', updateSong);
 // Delete - DELETE
 songRouter.delete('/:id', deleteSong);
-songRouter.delete('/all', deleteAllSongs);
 
 module.exports = songRouter;
 
@@ -104,33 +101,6 @@ async function getAllSongs(req, res) {
         // data: null   👈 give as shown here. if you are sending nothn
     });
 }
-
-async function addAllSongs(req, res) {
-    const payload = req.body;
-    for (let i = 0; i < payload.length; i++) {
-        await SongModel.create(payload[i]);
-    }
-    // 💀 don't change the JSON structure below ⚠️ 
-    res.json({
-        status: true,
-        msg: "data added successfully",
-        data: null   // 👈 your data asd need to send back to client 🧑‍💻
-        // data: null   👈 give as shown here. if you are sending nothn
-    });
-}
-
-async function getByQuery(req, res) {
-    const query = req.body;
-    const arr = SongModel.find(query);
-    // 💀 don't change the JSON structure below ⚠️ 
-    res.json({
-        status: true,
-        msg: "data retrieved successfully",
-        data: arr   // 👈 your data that need to send back to client 🧑‍💻
-        // data: null   👈 give as shown here. if you are sending nothn
-    });
-}
-
 
 async function addSong(req, res) {
     const payload = req.body;
@@ -174,21 +144,9 @@ async function deleteSong(req, res) {
     });
 }
 
-async function deleteAllSongs(req, res) {
-    const payload = req.body;
-    await SongModel.deleteOne({
-        genre: "Rock"
-    });
-    res.json({
-        status: true,
-        msg: "deleted songs successfully",
-        data: null   // 👈 your data that need to send back to client 🧑‍💻
-        // data: null   👈 give as shown here. if you are sending nothn
-    });
-}
 
 
-module.exports = { deleteAllSongs, getAllSongs, addAllSongs, addSong, updateSong, deleteSong, getByQuery };
+module.exports = { getAllSongs, addSong, updateSong, deleteSong };
 ```
 
 ### `models\song-model.js`
