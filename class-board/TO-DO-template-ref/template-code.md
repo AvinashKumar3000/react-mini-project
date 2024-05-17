@@ -34,11 +34,11 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 // custom files imports
-const studentRouter = require("./routes/student-route");
+const songRouter = require("./routes/song-route");
 
 // mongodb connection 
 // TODO: enter your database name below 👇
-const DB_NAME = "afternoon";
+const DB_NAME = "Musthafa";
 const URI = "mongodb://127.0.0.1:27017/" + DB_NAME;
 mongoose.connect(URI);
 mongoose.connection.on("connected", () => {
@@ -51,11 +51,11 @@ const app = express();
 app.use(morgan("tiny"));
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static('public'))
 
 // routers
 // TODO: add your router below 👇
-app.use('/student', studentRouter);
-
+app.use('/song', songRouter);
 
 
 // exports
@@ -66,7 +66,7 @@ module.exports = app;
 
 ```javascript
 const express = require('express');
-const { getAllSongs, addAllSongs, addSong, updateSong, deleteSong } = require('../controllers/song-controller');
+const { getAllSongs, addAllSongs, addSong, updateSong, deleteSong, getByQuery, deleteAllSongs } = require('../controllers/song-controller');
 
 const songRouter = express.Router();
 
@@ -74,13 +74,14 @@ const songRouter = express.Router();
 // Read   - GET
 songRouter.get('/', getAllSongs);
 // Create - POST
+songRouter.post('/query', getByQuery);
 songRouter.post('/', addSong);
 songRouter.post('/all', addAllSongs);
 // Update - PUT
 songRouter.put('/', updateSong);
 // Delete - DELETE
 songRouter.delete('/:id', deleteSong);
-
+songRouter.delete('/all', deleteAllSongs);
 
 module.exports = songRouter;
 
@@ -113,26 +114,28 @@ async function addAllSongs(req, res) {
     res.json({
         status: true,
         msg: "data added successfully",
-        data: null   // 👈 your data that need to send back to client 🧑‍💻
+        data: null   // 👈 your data asd need to send back to client 🧑‍💻
         // data: null   👈 give as shown here. if you are sending nothn
     });
 }
 
-async function addSong(req, res) {
-    const payload = req.body;
-    const newSong = await SongModel.create(payload);
+async function getByQuery(req, res) {
+    const query = req.body;
+    const arr = SongModel.find(query);
     // 💀 don't change the JSON structure below ⚠️ 
     res.json({
         status: true,
-        msg: "data added successfully",
-        data: newSong   // 👈 your data that need to send back to client 🧑‍💻
+        msg: "data retrieved successfully",
+        data: arr   // 👈 your data that need to send back to client 🧑‍💻
         // data: null   👈 give as shown here. if you are sending nothn
     });
 }
 
+
 async function addSong(req, res) {
     const payload = req.body;
     const newSong = await SongModel.create(payload);
+
     // 💀 don't change the JSON structure below ⚠️ 
     res.json({
         status: true,
@@ -158,6 +161,7 @@ async function updateSong(req, res) {
 
 async function deleteSong(req, res) {
     const songId = req.params.id;
+    SongModel.dele
     await SongModel.deleteOne({
         _id: songId
     });
@@ -170,7 +174,21 @@ async function deleteSong(req, res) {
     });
 }
 
-module.exports = { getAllSongs, addAllSongs, addSong, updateSong, deleteSong };
+async function deleteAllSongs(req, res) {
+    const payload = req.body;
+    await SongModel.deleteOne({
+        genre: "Rock"
+    });
+    res.json({
+        status: true,
+        msg: "deleted songs successfully",
+        data: null   // 👈 your data that need to send back to client 🧑‍💻
+        // data: null   👈 give as shown here. if you are sending nothn
+    });
+}
+
+
+module.exports = { deleteAllSongs, getAllSongs, addAllSongs, addSong, updateSong, deleteSong, getByQuery };
 ```
 
 ### `models\song-model.js`
