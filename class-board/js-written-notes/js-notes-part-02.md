@@ -37,7 +37,6 @@
 - ... operator
 0 destructuring
 - class keyword
-- call apply bin
 
 ```javascript
 // array destructuring

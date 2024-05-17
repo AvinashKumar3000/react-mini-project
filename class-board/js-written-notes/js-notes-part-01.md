@@ -448,6 +448,40 @@ Other data types:
 |why are we using this ?   | To simplify `if else` ladder              |          |
 |when do we use this ?     | like to switch tab in `React`             |          |
 
+```javascript
+
+let day = 3;
+let dayName;
+
+switch (day) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Invalid day";
+}
+
+console.log("Today is " + dayName);
+```
+
 ### loops
 
 for in, for of
@@ -506,6 +540,11 @@ for (let i = 0; i < 5; i++) {
 ---
 
 ## FUNCTIONS
+
+    don't forget to cover below topics
+    - arguments vs parameters
+    - passing function as arguments
+    - return a function from a
 
 ### Normal Function Declaration
 
@@ -582,3 +621,14 @@ some function used to display and get user input data in javascript
 - Variables declared with var can be re-declared within the same scope without generating an error.
 - Variables declared with let and const cannot be re-declared within the same scope. Attempting to do so results in a SyntaxError.
 - Following these rules ensures that variables are declared and used correctly in JavaScript programs, helping to avoid errors and maintain code readability and consistency.
+
+## ES6 features
+
+- let
+- const
+- arrow functions
+- `foreach`, `map`, `filter`, `reduce`
+- default parameters
+- function rest parameters
+- ... operator
+- destructuring
