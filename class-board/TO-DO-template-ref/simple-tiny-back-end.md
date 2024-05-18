@@ -2,8 +2,13 @@
 
 ## Basic below project details
 
--
-- All CRUD operation with user-route.js.
+- A simple version of route code. 🌸 `user-routes.js` 🌸
+  - 🍭 which includes just schema, model, routes.
+  - 🍭 It doesn't include mongoose validation.
+  - 🍭 It doesn't include try catch block.
+  - 🍭 logics have been written separately.
+  - 🍭 It doesn't include ?: ternary operator to efficiently handle status.
+- All CRUD operation with 💪 `user-routes.js` 💪
   - ⚡ which includes mongoose validation in Schema.
   - ⚡ try catch block to handle data-base error.
   - ⚡ Efficiently handle status using ?: ternary operator.
@@ -33,19 +38,21 @@
 ### your folder structure will look as shown below
 
 ```al
-project/
-│                         // these items are kept as static files.
-├── public/               // your images. or other items
-│   └── videos/
-│   └── audios/
-│   └── images/
-│       └── background.png
+📂project
+│                                 // these items are kept as static files.
+├──📂public                      // your images. or other items
+│   ├──📂videos                  // To access this below are the links.
+│   │   └──🎬 movie.mp4          // 🔗http://localhost:3434/videos/movie.mp4
+│   ├──📂audios
+│   │   └──🎼 favorite_song.mp3  // 🔗http://localhost:3434/videos/favorite_song.mp3
+│   └──📂images
+│       └──📷 background.png     // 🔗http://localhost:3434/images/background.png
 │        
-├── like-routes.js
-├── user-routes.js
-├── app.js                 // Main application file
-├── index.js               // The starting file
-└── package.json           // Node.js package configuration
+├──📄 like-routes.js
+├──📄 user-routes.js
+├──📄 app.js                 // Main application file
+├──📄 index.js               // The starting file
+└──📄 package.json           // Node.js package configuration
 ```
 
 ### `index.js`
@@ -91,6 +98,7 @@ app.use(cors());
 app.use(bodyParser.json());
 // 🔖 to store your images, video or audio files in back-end and 
 //    access it on front-end side.
+// NOTE: eg: http://localhost:3434/
 app.use(express.static('public'));
 
 // 🔖 routers
