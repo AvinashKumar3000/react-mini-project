@@ -127,11 +127,14 @@ likeRouter.put('/', async (req, res) => {
     // 🔖 Every data base operation will return something for sure.
     //    Make sure to check it. Eg. console.log(data);
     //    By this way you can know, what is being stored in variable 'data' 
-    const data = await LikeModel.updateOne({
-        by: payload.by          //   updateOne, has 2 args.  1. condition
-    }, {                        //                           2. what is update
+    
+    const condition = {
+        by: payload.by
+    };
+    const newObj = {
         count: payload.count
-    });
+    };
+    const data = await LikeModel.updateOne(condition, newObj);
     // 🔖 Finally what to send as response.
     res.json({
         status: true,
