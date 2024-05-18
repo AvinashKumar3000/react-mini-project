@@ -6,7 +6,7 @@
 - All CRUD operation with user-route.js.
   - ⚡ which includes mongoose validation in Schema.
   - ⚡ try catch block to handle data-base error.
-  - ⚡ efficiently handle status using ?: ternary operator.
+  - ⚡ Efficiently handle status using ?: ternary operator.
 
 ## pre requirement
 
