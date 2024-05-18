@@ -1,16 +1,53 @@
 # TEMPLATE CODES
 
-## Pre requisite
+## Basic below project details
 
-Make sure below packages are installed.
+- A cleaner version of codes.
+  - 🍭 which includes separate folder for
+    - 📂 model
+    - 📂 controller
+    - 📂 routes
 
-- `npm install express morgan cors body-parser mongoose`
-- If below 👇 packages are not installed. then use 👆 command to install them.
-- express
-- morgan
-- cors
-- body-parser
-- mongoose
+## pre requirement
+
+- basic theory concepts of back-end
+- starting from node.js, express, mongodb, mongoose
+
+## project setup
+
+1. create your project folder. eg: `my-app-back-end`
+2. use below commands
+3. `npm init`, then press enter until `package.json` file got created.
+4. `npm install nodemon --save-dev`
+5. `npm install express morgan cors body-parser mongoose`
+6. update your `package.json` with code given below.
+
+```json
+     "scripts": {
+        "start": "nodemon index.js",
+     }
+```
+
+## create and apply as shown below
+
+### your folder structure will look as shown below
+
+```al
+📂project
+│                                 
+├──📂routes
+│   └──📄 song-route.js
+├──📂controllers
+│   └──📄 song-controller.js
+├──📂models
+│   └──📄 song-model.js
+│
+├──📄 like-routes.js
+├──📄 user-routes.js
+├──📄 app.js                 // Main application file
+├──📄 index.js               // The starting file
+└──📄 package.json           // Node.js package configuration
+```
 
 ## `index.js`
 
@@ -20,7 +57,7 @@ const app = require('./app');
 const PORT = 3434;
 app.listen(PORT, () => {
     console.log("my app is listening in port no : " + PORT);
-})
+});
 ```
 
 ## `app.js`
@@ -37,13 +74,13 @@ const mongoose = require("mongoose");
 const songRouter = require("./routes/song-route");
 
 // mongodb connection 
-// TODO: enter your database name below 👇
-const DB_NAME = "Musthafa";
+// TODO: enter your 👇 database name below 
+const DB_NAME = "your-db-name";
 const URI = "mongodb://127.0.0.1:27017/" + DB_NAME;
 mongoose.connect(URI);
 mongoose.connection.on("connected", () => {
     console.log("mongodb is connected successfully");
-})
+});
 
 // declaration
 const app = express();
@@ -51,7 +88,6 @@ const app = express();
 app.use(morgan("tiny"));
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static('public'))
 
 // routers
 // TODO: add your router below 👇
@@ -62,7 +98,7 @@ app.use('/song', songRouter);
 module.exports = app;
 ```
 
-## `routes/song-route.js`
+## `routes\song-route.js`
 
 ```javascript
 const express = require('express');
@@ -84,7 +120,7 @@ module.exports = songRouter;
 
 ```
 
-## `controllers/song-controller.js`
+## `controllers\song-controller.js`
 
 ```javascript
 const SongModel = require("../models/song-model");
@@ -149,7 +185,7 @@ async function deleteSong(req, res) {
 module.exports = { getAllSongs, addSong, updateSong, deleteSong };
 ```
 
-### `models\song-model.js`
+## `models\song-model.js`
 
 ```javascript
 const mongoose = require('mongoose');
