@@ -39,6 +39,7 @@ function ChildComp() {
         </>
     );
 }
+
 function ParentComp() {
     const [count, setCount] = useState(1000);
     return (
