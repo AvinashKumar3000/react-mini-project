@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 const userRouter = require("./user-routes");
-const todoRouter = require("./todo-routes");
 
 // 🔖 mongodb connection 
 const DB_NAME = "to-do-list";   //  👈⬅️⬅️⬅️⬅️ TODO : update your data base name
@@ -31,7 +30,6 @@ app.use(express.static('public'));
 // TODO: add your routers below 👇
 // eg: 🧑‍💻 ▶️ app.use('/like', likeRouter);
 app.use('/user', userRouter);
-app.use('/todo', todoRouter);
 
 // 🔖 exports
 module.exports = app;

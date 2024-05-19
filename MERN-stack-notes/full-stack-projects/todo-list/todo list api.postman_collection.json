@@ -8,7 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "user requests",
+			"name": "todo users",
 			"item": [
 				{
 					"name": "sign-up",
@@ -67,69 +67,15 @@
 						}
 					},
 					"response": []
-				}
-			]
-		},
-		{
-			"name": "todo list requests",
-			"item": [
-				{
-					"name": "get items by user id",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3434/todo/664a2d722f6466334c79e1fb",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3434",
-							"path": [
-								"todo",
-								"664a2d722f6466334c79e1fb"
-							]
-						}
-					},
-					"response": []
 				},
 				{
-					"name": "add item",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"content\" : \"water bottle\",\r\n    \"userId\" : \"664a2d722f6466334c79e1fb\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3434/todo/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3434",
-							"path": [
-								"todo",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "update item",
+					"name": "update items",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"content\": \"playing football match\",\r\n        \"_id\": \"664a2e8bc01921a5fb6b3906\"\r\n    }",
+							"raw": "{ \r\n    \"_id\" : \"664a38b085d03960f9fcbd96\",\r\n    \"items\" : [ \"lets go to home\", \"no this is so hard to do please.\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -137,44 +83,36 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3434/todo/",
+							"raw": "http://localhost:3434/user/items",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "3434",
 							"path": [
-								"todo",
-								""
+								"user",
+								"items"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "delete item",
+					"name": "get all items",
 					"request": {
-						"method": "DELETE",
+						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n            \"_id\": \"6644f1fc7a9ec757ec88570a\",\r\n            \"content\": \"playing football match\",\r\n            \"createdAt\": \"15 05 2024\",\r\n            \"createdBy\": \"6644ed93891a9de9aec3bbfb\",\r\n            \"__v\": 0\r\n        }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:3434/todo/",
+							"raw": "http://localhost:3434/user/items/664a38b085d03960f9fcbd96",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "3434",
 							"path": [
-								"todo",
-								""
+								"user",
+								"items",
+								"664a38b085d03960f9fcbd96"
 							]
 						}
 					},

@@ -1,12 +1,58 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './custom-style.css';
 
 // ---------------------------------------------------
 //               MAIN REACT COMPONENT
 // ---------------------------------------------------
-function ToDoList({ setPageTab }) {
+function ToDoList({ userId, setPageTab }) {
     const [arr, setArr] = useState([]);
     const [inputValue, setInputValue] = useState("");
+
+    useEffect(() => {
+        const requestOptions = {
+            method: "GET",
+            redirect: "follow"
+        };
+
+        fetch("http://localhost:3434/user/items/" + userId, requestOptions)
+            .then((response) => response.json())
+            .then((result) => {
+                if (result.status) {
+                    setArr(result.data.items);
+                } else {
+                    alert(result.msg);
+                }
+            })
+            .catch((error) => console.error(error));
+    }, []);
+
+    function handleSaveBtn() {
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        const raw = JSON.stringify({
+            "_id": userId,
+            "items": arr
+        });
+
+        const requestOptions = {
+            method: "PUT",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow"
+        };
+
+        fetch("http://localhost:3434/user/items", requestOptions)
+            .then((response) => response.json())
+            .then((result) => {
+                if (result.status) {
+                    alert(result.msg);
+                } else {
+                    alert(result.msg);
+                }
+            })
+            .catch((error) => console.error(error));
+    }
 
     function handleAddBtn() {
         // 🏷️ to handle add items in array.
@@ -45,6 +91,8 @@ function ToDoList({ setPageTab }) {
     return (
         <div className="to-do-app">
             <button onClick={() => setPageTab("welcome")}>log-out</button>
+            <br />
+            <button onClick={handleSaveBtn}>save</button>
             <br />
             <label>TODO items:</label>
             <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />

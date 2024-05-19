@@ -9,13 +9,16 @@ const mongoose = require('mongoose');
 // 🔖 Schema code  
 const userSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true },
-    password: { type: String, required: true }
+    password: { type: String, required: true },
+    items: { type: [String], default: [] }
 });
 
 // 🔖 Mongoose provides a comprehensive set of validation options
 // type     : It is used to determine the Type.
 // required : It will make sure, while create new data, this field is mandatory.
 // unique   : it will make sure, if any new data, came, this field should be unique.
+// default  : This says, if use didn't gave any data while creation.
+//              by default we can provide a value by ourself.
 
 // 🔖 create model out of Schema above.
 const UserModel = mongoose.model("user", userSchema);
@@ -64,24 +67,6 @@ userRouter.post('/sign-up', async (req, res) => {
     }
 });
 
-// -----------------------------------------------------------------------------------------------
-// QUESTION  : Why can't we use GET in below case to apply SIGN-IN operation.
-// ANSWER    : When implementing the SIGN-IN logic in your back-end project using 
-//             NodeJS, Express, and 
-//             Mongoose, the best HTTP request method to use is ✨ POST ✨. Here's why:
-//    Security:  The POST method is more secure for sending sensitive information like usernames 
-//               and passwords because the data is sent in the body of the request, not in
-//               the URL. This helps to prevent credentials from being exposed in server logs, 
-//               browser history, or network monitoring tools.
-//    Semantics: According to HTTP/1.1 specification, the POST method is used for actions
-//               that result in the creation of a new resource or submission of 
-//               data to be processed to a specified resource. 
-//               Since signing in involves sending user credentials to be processed 
-//               and authenticated, POST is semantically appropriate.
-// REFERENCE : https://stackoverflow.com/questions/978061/http-get-with-request-body
-//             So, yes, you can send a body with GET, and no, it is never useful to do so.
-// -----------------------------------------------------------------------------------------------
-
 // 📦 CRUD : R -> READ
 // 🪵 Below code is to do authentication process
 //     get information if username and password is correct or wrong.
@@ -110,16 +95,12 @@ userRouter.post('/sign-in', async (req, res) => {
 });
 
 // 📦 CRUD : U -> UPDATE
-// 🪵 below code for change password.
-//  ✨ 🤵 : CHANGE-PASSWORD  ✨
-userRouter.put('/', async (req, res) => {
+// 🪵 below code to update items of the user
+userRouter.put('/items', async (req, res) => {
     try {
         const payload = req.body;
-        const condition = {
-            username: payload.username,
-            password: payload.password
-        };
-        const newObj = { password: payload.newPassword };
+        const condition = { _id: payload._id };
+        const newObj = { items: payload.items };
         const result = await UserModel.updateOne(condition, newObj);
         /**     👆  --> desc about how you will get result in above code.
          * Below is the data format which you will get as a result
@@ -146,24 +127,16 @@ userRouter.put('/', async (req, res) => {
     }
 });
 
-// 📦 CRUD : D -> DELETE
-// 🪵 below code is to remove account
-userRouter.delete('/', async (req, res) => {
+// 📦 CRUD : R -> READ
+// 🪵 get user items from db.
+userRouter.get('/items/:id', async (req, res) => {
     try {
-        const payload = req.body;
         const condition = {
-            username: payload.username,
-            password: payload.password
+            _id: req.params.id
         };
-        const result = await UserModel.deleteOne(condition);
-        /**     👆  --> desc about how you will get result in above code.
-         * Below is the data format which you will get as a result
-            {
-               "acknowledged": true,
-               "deletedCount": 1
-            }
-        */
-        const status = result.deletedCount === 1;
+        const result = await UserModel.findOne(condition);
+        //     👆  --> This will return an object store in db or null
+        const status = result !== null;
         res.json({
             status: status,
             msg: status ? "success" : "fail",

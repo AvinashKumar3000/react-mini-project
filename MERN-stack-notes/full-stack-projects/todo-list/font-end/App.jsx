@@ -1,18 +1,50 @@
 
 import { useState } from 'react';
 import './App.css';
-import ToDoList from './ToDoList';
+import ToDoList from './TODOLIST/ToDoList';
 
 function SignInPage({ setPageTab, setUserId }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+
     function handleSubmit() {
-        if (username === 'admin' && password === 'admin') {
+        if (username !== '' && password !== '') {
+            // 🔖 API CONNECTION CODE
+            // ---------------------------------------------------------------------
+            // 🏷️ START 
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            const raw = JSON.stringify({
+                "username": username,
+                "password": password
+            });
+
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: raw,
+                redirect: "follow"
+            };
+
+            fetch("http://localhost:3434/user/sign-in", requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    if (result.status) {
+                        setUserId(result.data._id);
+                        setPageTab("todo");
+                    }
+                    else {
+                        alert(result.msg);
+                    }
+                })
+                .catch((error) => console.error(error));
+            // 🏷️ end
+            // ---------------------------------------------------------------------
             // Actually this user id will be coming from back-end
-            setUserId("1234sdfgbr34");
-            setPageTab("todo");
+
         }
     }
+
     return (
         <div>
             <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} placeholder='username' />
@@ -35,8 +67,37 @@ function SignUpPage({ setPageTab, setUserId }) {
         if (password === confirmPassword) {
             // allow only if password and confirmPassword is same.
             // then perform back-end operation and get userId.
-            setUserId("1234sdfgbr34");
-            setPageTab("todo");
+            // 🔖 API CONNECTION CODE
+            // ---------------------------------------------------------------------
+            // 🏷️ START 
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            const raw = JSON.stringify({
+                "username": username,
+                "password": password
+            });
+
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: raw,
+                redirect: "follow"
+            };
+
+            fetch("http://localhost:3434/user/sign-up", requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    if (result.status) {
+                        setUserId(result.data._id);
+                        setPageTab("todo");
+                    } else {
+                        alert(result.msg);
+                    }
+                })
+                .catch((error) => console.error(error));
+            // ---------------------------------------------------------------------
+            // 🏷️ END 
         }
     }
     return (
