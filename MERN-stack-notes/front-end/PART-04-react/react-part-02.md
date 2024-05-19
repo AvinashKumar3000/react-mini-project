@@ -158,6 +158,12 @@ When the state changes, the component re-renders.
 
 Often, you’ll want your component to “**remember**” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
 
+|   ` useState `              |  explanation  | example  |
+|--------------------------|---------------|----------|
+|what is this ?            |  The state is where you store property values that belong to the component.             |          |
+|why are we using this ?   |    Often, you’ll want your component to “**remember**” some information and display it.           |          |
+|when do we use this ?     |    For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.           |          |
+
 ## syntax
 
     const [ variable , setVariable ] = useState( initialValue );
@@ -168,6 +174,31 @@ Often, you’ll want your component to “**remember**” some information and d
     function handleLike() {    
             setCount(count + 1);
     }
+
+```javascript
+// using state to make like 
+import { useState } from "react";
+
+function Sample() {
+    const [count, setCount] = useState(0);
+    const [isLiked, setIsLiked] = useState(false);
+    function handleClick() {
+        if (isLiked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+        setIsLiked(!isLiked);
+    }
+    return (
+        <div className="container">
+            <i className={isLiked ? "fa-solid fa-heart" : "fa-regular fa-heart"} onClick={handleClick}></i>
+        </div>
+    );
+}
+
+export default Sample;
+```
 
 ### rules to follow for states
 
@@ -215,26 +246,83 @@ syntax;
 
 - `function ComponentName({ setCount, handleClick })`
 
+```javascript
+import { useState } from "react";
+
+function ChildComp({ count, setCount }) {
+    // but using this function 👆
+    // we are able to state value which in PARENT component
+    function handleIncrBtn() {
+        setCount(count + 1);
+    }
+    function handleDecrBtn() {
+        setCount(count - 1);
+    }
+    return (
+        <>
+            <button onClick={handleIncrBtn}> incr </button>
+            <button onClick={handleDecrBtn}> decr </button>
+        </>
+    );
+}
+function ParentComp() {
+    const [count, setCount] = useState(0);
+    return (
+        <>
+            <p> my count : {count} </p>
+            {/*          👇 here count state is being passed PARENT to CHILD component from  */}
+            <ChildComp count={count} setCount={setCount} />
+            {/* We are passing our setCount function 👆 here. 
+                so that I can update my count state which is in PARENT component, 
+                inside CHILD component.
+                
+                This is literally like passing value from CHILD to PARENT component.
+            */}
+        </>
+    );
+}
+
+function Sample() {
+    return <ParentComp />;
+}
+
+export default Sample;
+```
+
 # how to get inputvalue from input tag
 
-<pre>
-        import { useState } from "react";
-        function ParentComp() {
-          const [value, setValue] = useState("");
-          return (
-                &lt;div&gt;
-                    &lt;input
-                          type="text"
-                          placeholder="input value"
-                          value={ value }
-                          onChange={ ( e )  => setValue( e.target.value ) }
-                        /&gt;&lt;br/&gt;
-                    &lt;p&gt; component has this value : {value} &lt;/p&gt;
-                &lt;/div&gt;
-          );
-        }
-        export default ParentComp;
-</pre>  
+```javascript
+import { useState } from "react";
+function ParentComp() {
+    // 🏷️ we are using below state to store input value.
+    const [value, setValue] = useState("");
+    // In below code. 
+    // ⚠️ we must follow onChange syntax as shown below ⚠️ 
+    // then only we will able to store our input value in state.
+    // eg: onChange={(e) => setValue(e.target.value)}
+
+    // we mostly use these kind of code. 
+    // in get username and password.
+    return (
+        <div>
+            <input
+                type="text"
+                placeholder="input value"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+            /><br />
+            <p> component has this value : {value} </p>
+        </div>
+    );
+}
+
+
+function Sample() {
+    return <ParentComp />;
+}
+
+export default Sample;
+```
 
 # React Dev Tools
 
@@ -246,9 +334,36 @@ A browser extension used to debug react application.
 
 # Remove React.StrictMode
 
-- to avoid loading twice
+- to avoid loading ☠️ twice ☠️
+- If you don't want to render your component twice
+- then remove it.
+- this `<React.StrictMode>` will be available in `index.js`
 
 `<React.StrictMode>` lets you find common bugs in your components early during development.
+
+## `index.js`
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+// here in below case. we have used. 
+root.render(
+  <React.StrictMode>  
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+```
 
 ## Strict Mode enables the following development-only behaviors
 
@@ -260,14 +375,14 @@ A browser extension used to debug react application.
 
 # rendering
 
-First time React display the content in webpage by reading components.
+- First time React display the content in webpage by reading components.
+- First time displaying content is called rendering.
 
 # re-rendering
 
-On any change in props, state or useEffect will reload the component.
-
-This is called re-rendering
+- On any change in `props`, `state` or `useEffect` will reload the component.
+- This is called re-rendering
 
 # re-conciliation
 
-The process of displaying page using virtual DOM and diff algorithm.
+- The process of displaying page using virtual DOM and diff algorithm.

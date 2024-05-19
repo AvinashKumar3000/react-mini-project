@@ -226,9 +226,6 @@ const UserModel = mongoose.model("user", userSchema);
 // ----------------------------------------------------------------------------------------------
 //           YOUR ROUTER CODE
 // ----------------------------------------------------------------------------------------------
-const userRouter = express.Router();
-// 🔖 your router code goes here 👇
-
 // ⚠️ ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ ⚠️
 // ⚠️ RULES TO FOLLOW WHILE WRITING ROUTER CODE ⚠️
 // 1️⃣ your arrow function should start with [ async ] 
@@ -241,6 +238,8 @@ const userRouter = express.Router();
 //     In all code it is better to write database code inside try catch block.
 // ⚠️ ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ ⚠️
 
+// 🔖 your router code goes here 👇
+const userRouter = express.Router();
 // 📦 CRUD : C -> CREATE
 // 🪵 Below code is to create new user
 //  ✨ 🤵 : SIGN-UP  ✨
@@ -314,13 +313,16 @@ userRouter.post('/sign-in', async (req, res) => {
 });
 
 // 📦 CRUD : U -> UPDATE
-// 🪵 below code for forget password.
-//  ✨ 🤵 : FORGET-PASSWORD  ✨
+// 🪵 below code for change password.
+//  ✨ 🤵 : CHANGE-PASSWORD  ✨
 userRouter.put('/', async (req, res) => {
     try {
         const payload = req.body;
-        const condition = { username: payload.username };
-        const newObj = { password: payload.password };
+        const condition = { 
+            username: payload.username,
+            password: payload.password
+        };
+        const newObj = { password: payload.newPassword };
         const result = await UserModel.updateOne(condition, newObj);
         /**     👆  --> desc about how you will get result in above code.
          * Below is the data format which you will get as a result
