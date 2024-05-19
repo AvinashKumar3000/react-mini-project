@@ -7,9 +7,14 @@ The function signature is:
 `express.static(root, [options])`
 
 ```javascript
-app.use(express.static('public'))
-app.use('/static',express.static('public'))
+app.use(express.static('public'));
 ```
+
+## BELOW ARE LITTLE ADVANCE TOPICS
+
+You can achieve things without below concepts mostly.
+
+Below topics will help you manage and write your code very easily.
 
 ## Custom middle ware
 
@@ -23,7 +28,6 @@ what exactly is middle ware.
 
 ### callback parameters : req, res, next
 
-- create custom middle ware
 - req
 - res
 - next

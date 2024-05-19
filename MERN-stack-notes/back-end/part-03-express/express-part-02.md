@@ -40,7 +40,7 @@ Route definition takes the following structure:
 Respond with Hello World! on the homepage:
 
 ```javascript
-app.get('/', (req, res) => {
+sampleRouter.get('/', (req, res) => {
   res.send('Hello World!')
 })
 ```
@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
 Respond to POST request on the root route (/), the application’s home page:
 
 ```javascript
-app.post('/', (req, res) => {
+sampleRouter.post('/', (req, res) => {
   res.send('Got a POST request')
 })
 ```
@@ -56,7 +56,7 @@ app.post('/', (req, res) => {
 Respond to a PUT request to the /user route:
 
 ```javascript
-app.put('/', (req, res) => {
+sampleRouter.put('/', (req, res) => {
   res.send('Got a PUT request at /')
 })
 ```
@@ -64,7 +64,7 @@ app.put('/', (req, res) => {
 Respond to a DELETE request to the / route:
 
 ```javascript
-app.delete('/', (req, res) => {
+sampleRouter.delete('/', (req, res) => {
   res.send('Got a DELETE request at /user')
 })
 ```

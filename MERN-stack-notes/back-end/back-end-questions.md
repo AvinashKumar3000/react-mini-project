@@ -7,7 +7,6 @@
 - Any real time example for Client and server ?
 - What is API ?
 - what is REST API ?
--
 
 ## node js
 
@@ -20,7 +19,6 @@
 - what is work of event-loop in NODE JS ?
 - how do we import in NODE JS ?
 - how do we export in NODE JS ?
--
 
 ## express and project
 
@@ -46,4 +44,12 @@
 - what is the use of app.listen()
 - what is the use of app.use()
 - what is the use of express.Router()
-- what is the use of
+
+## mongodb
+
+- what is the use of mongoose ?
+- what is mongodb ?
+- Schema in mongoose ?
+- Why are we using mongoose Schema ?
+- what is CORS ?
+- what is mean by cross origin ?

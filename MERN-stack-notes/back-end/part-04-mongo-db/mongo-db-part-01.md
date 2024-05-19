@@ -92,19 +92,7 @@ Reference data example
 }
 ```
 
-LINKS:
+## there are 2 ways to use mongodb
 
-- <https://www.mongodb.com/>  
-  - `start free` or `try free`
-  - sign up with your google account
-
-Once inside mongodb cloud
-
-- create cluster in `DEPLOYMENT >  Database`
-- create database user in `SECURITY > Database access`
-- `mongodb+srv://admin:<password>@sample-cluster0.r8ppmuh.mongodb.net/?retryWrites=true&w=majority&appName=sample-Cluster0`
-- update network access
-  - allow access from anywhere
-Official MongoDB youtube.
-
-- <https://www.youtube.com/watch?v=xrc7dIO_tXk&list=PL4RCxklHWZ9vmzBP7lybE08CxbIU17PIf>
+1. local mongodb.
+1. using cloud version.
