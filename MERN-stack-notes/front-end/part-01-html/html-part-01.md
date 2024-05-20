@@ -2,7 +2,7 @@
 
 ## Whitespace
 
-- HTML ignores extra whitespace (spaces, tabs, line breaks) between elements.
+- HTML ignores  extra whitespace (spaces, tabs, line breaks) between elements.
 - Proper indentation and formatting are used for readability and maintainability.
 
 ## Validation
