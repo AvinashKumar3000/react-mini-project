@@ -28,3 +28,14 @@
 1. Chat Application
 1. Career Guidance website
 1. GS Horse Feeds Website
+
+## MINI PROJECT USING TODO-LIST STRUCTURE
+
+1. phone number management.
+1. Simple music player
+1. Store favorite Movie list
+1. grocery list
+1. study planner
+1. fitness tracker
+1. recipe manager
+1. homework planner.
