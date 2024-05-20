@@ -445,7 +445,7 @@ Other data types:
 |   `switch`               |  explanation  | example  |
 |--------------------------|---------------|----------|
 |what is this ?            | Is a alternate solution to if else ladder |          |
-|why are we using this ?   | To simplify `if else` ladder              |          |
+|why are we using this ?   | to handle diff cases  ladder              |          |
 |when do we use this ?     | like to switch tab in `React`             |          |
 
 ```javascript
