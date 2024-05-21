@@ -7,7 +7,6 @@ useEffect is a React Hook that lets you synchronize a component with an external
 2. Execute a code during creation of a component. mostly to load data from back-end using APIs.
 3. Execute a code during deletion of a component
 
-## Example for API connect using useEffect
 
 ### Do something when there is a change in dependencies
 
