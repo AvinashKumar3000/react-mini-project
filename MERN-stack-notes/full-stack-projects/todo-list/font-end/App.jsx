@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 import './App.css';
-import ToDoList from './TODOLIST/ToDoList';
+import ToDoList from './ToDoComponent';
 
 function SignInPage({ setPageTab, setUserId }) {
     const [username, setUsername] = useState("");
@@ -124,7 +123,7 @@ function WelcomePage({ setPageTab }) {
     );
 }
 
-function App() {
+function MainComp() {
     const [pageTab, setPageTab] = useState("");
     const [userId, setUserId] = useState("");
 
@@ -138,6 +137,16 @@ function App() {
         default:
             return <WelcomePage setPageTab={setPageTab} />;
     }
+}
+
+function App() {
+    return (
+        <div className="App">
+            <div className="App-header">
+                <MainComp />
+            </div>
+        </div>
+    );
 }
 
 export default App;
