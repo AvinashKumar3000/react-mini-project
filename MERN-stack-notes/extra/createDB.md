@@ -34,7 +34,7 @@
 	 - $nor
 	 - $not
  - Evaluation
-	 - $regex
+	 - $regex   	
 	 - $text
 	 - $where
 -update operators
@@ -50,14 +50,13 @@
 	 - $pull
 	 - $push
 -Aggregation pipelines
+ - match
  - group
  - limit
  - porject
  - sort
- - match
  - addFields
  - count
  - lookup
  - out
 
- - 
