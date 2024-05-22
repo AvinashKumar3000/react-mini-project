@@ -37,6 +37,11 @@ Interview order morning batch-22-05-2024
 35. Muthu Siva Sankar
 36. Kovarthanan K
 37. Arthi Balaraman
+38. Arintha perumal
+39. Ajith kumar T
+1. Santhana perumal
+1. Janani
+1.
 
 Interview order Evening batch-22-05-2024
 
@@ -81,7 +86,7 @@ React JS Topics
 - components
 - virtual dom
 - JSX
-- adding styles 
+- adding styles
 - functional component diff with class component
 - conditional rendering
 - list rendering
@@ -89,18 +94,18 @@ React JS Topics
 - fragments
 - import, export
 - props
- 	- parent -> child
- 	- child  -> parent
+  - parent -> child
+  - child  -> parent
 - hooks
- 	- useState
- 	- useEffect
- 	- useRef
- 	-
+  - useState
+  - useEffect
+  - useRef
+  -
 - rendering, re-rendering, re-conciliation
 - event handling
- 	- onClick
- 	- onChange
- 	- prevent default
+  - onClick
+  - onChange
+  - prevent default
 - context api
 
 Node JS Topics
