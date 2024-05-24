@@ -22,11 +22,15 @@ function App() {
   const [auth, setAuth] = useState(false);
 
   return (
-    <AuthContext.Provider
-      value={{ auth, setAuth }}
-    >
-      <RouterProvider router={router} />
-    </AuthContext.Provider>
+    // <AuthContext.Provider
+    //   value={{ auth, setAuth }}
+    // >
+    //   <RouterProvider router={router} />
+    // </AuthContext.Provider>
+    <div>
+      <p></p>
+
+    </div>
   );
 }
 
