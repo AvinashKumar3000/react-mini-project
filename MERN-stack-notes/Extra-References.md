@@ -7,7 +7,6 @@ topics
 - class components basics
 - forms in react
 - react router
-- react memo
 
 hooks
 
