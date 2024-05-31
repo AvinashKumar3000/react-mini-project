@@ -9,6 +9,7 @@ export default function Tracker({ setTab, setAuth, userId }) {
             method: "GET",
             redirect: "follow"
         };
+        // change this 👇 URL to your back end hosted url. ⚠️ This url will not work for you. ⚠️
 
         fetch("https://back-end-push-up-tracker.vercel.app/gym/" + userId, requestOptions)
             .then((response) => response.json())
@@ -45,6 +46,7 @@ export default function Tracker({ setTab, setAuth, userId }) {
             body: raw,
             redirect: "follow"
         };
+        // change this 👇 URL to your back end hosted url. ⚠️ This url will not work for you. ⚠️
 
         fetch("https://back-end-push-up-tracker.vercel.app/gym/update-count", requestOptions)
             .then((response) => response.json())

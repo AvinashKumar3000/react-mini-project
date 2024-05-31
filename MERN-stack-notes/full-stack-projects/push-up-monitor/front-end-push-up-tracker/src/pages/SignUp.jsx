@@ -21,6 +21,7 @@ export default function SignUp({ setTab, setAuth, setUserId }) {
                     body: raw,
                     redirect: "follow"
                 };
+                // change this 👇 URL to your back end hosted url. ⚠️ This url will not work for you. ⚠️
 
                 fetch("https://back-end-push-up-tracker.vercel.app/gym/sign-up", requestOptions)
                     .then((response) => response.json())
