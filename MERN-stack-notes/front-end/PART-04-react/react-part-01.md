@@ -15,6 +15,13 @@ download and install node js in your computer.
  `npx create-react-app my-app`
 
 ---
+other ways to open the react app in vscode.
+
+- `npx create-react-app my-app`
+- `cd my-app`  will change Directory to my-app
+- `code .`   will open vs code
+
+---
 
 ## MY FIRST REACT PROJECT
 
