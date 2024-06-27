@@ -116,8 +116,12 @@ mozilla
 ```
 
 - type conversion
-  - toString
-  - parseInt
+  - Easy way is
+    - Number("234")
+    - String(123)
+  - Alternate way 
+    - (123).toString()
+    - parseInt("123")
 - == and ===
 - conditional and loops and switch
   - if, if else, if else ladder
