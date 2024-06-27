@@ -136,7 +136,7 @@ mozilla
 - arrow function
 - alert, prompt, confirm
 - Objects
-- nullish coalescing operator ??
+- check for values using chaining ?.
 - typeof
 - Exception handling
 
