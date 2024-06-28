@@ -85,6 +85,7 @@
 
 ### multi-paradigm
 
+- below are paradigm supported by javascript
 - ***object oriented programming*** - real time object based programming
 - ***functional programming*** - lambda calculus based programming
 - ***imperative programming*** - simple imperative statement like code.
@@ -110,7 +111,7 @@
 
 - java vs js : no similarities
 - js - created only to run in browser
-- node js - is a software used to run JS in os.
+- node js - is a software used to run JS in operating system.
 - js is scripting language
 - vanilla js : writing code using pure js.
 - js is a `synchronous` `single threaded language`
@@ -154,7 +155,7 @@
 |why are we using this ?   |     sometimes to make our code non executable.           | above eg         |
 |when do we use this ?     |      for documentation          | above eg         |
 
-    NOTE : always use semicolon at end of statement
+    NOTE ⚠️: always use semicolon at end of statement
 
 |   ` ; SEMICOLON `              |  explanation  | example  |
 |--------------------------|---------------|----------|
@@ -182,6 +183,7 @@
 variable declaration
 
 ```javascript
+    a = 100; // we can directly declare and assign without any keyword.
     var b;  // declaring a variable b
     let a;  // declaring a variable a
     const PI = 3.14; // declaring a variable PI and assigning 3.14 value
@@ -199,13 +201,37 @@ variable declaration
 // Example: eg-01
 
     if(true) {
+      var a = 123; // var keyword used to declaration
+    }
+    console.log(a); 
+    // will give output as 123
+```
+
+## declaring `without` any keyword
+
+```javascript
+// Example: eg-01
+
+    if(true) {
       a = 123; // no keyword used to declaration
     }
     console.log(a); 
     // will give output as 123
     // because, if no keyword mentioned. then it is using var keyword.
-
 ```
+
+## common table
+
+|                           |var      |let      |const     |
+|---------------------------|---------|---------|----------|
+|Stored in Global Scope     |  ✅     |   ❌   |  ❌     |
+|Function Scope             |    ✅   |  ✅    | ✅      |
+|Block Scope                |    ❌   |   ✅   |    ✅   |
+|Can Be Reassigned?         |    ✅   |    ✅  |    ❌   |
+|Can Be Redeclare ?         |  ✅     |   ❌   |   ❌    |
+|Can Be hoisted             |   ✅    |    ❌  |    ❌   |
+
+---
 
 |   ` assingment operators = `              |  explanation  | example  |
 |--------------------------|---------------|----------|
@@ -311,12 +337,25 @@ OFFICIAL DOCUMENTATION 👇
   - `double quotes` : used to so that I can include single quotes
   - `back tick` : to include both single and double quotes. <https://www.w3schools.com/js/js_string_templates.asp>
   - string methods : <https://w3schools.com/js/js_string_methods.asp>
+
+```javascript
+let values = `
+You can store a string in multi line using
+a back tick.
+`;
+
+console.log(`And also you can use javascript expression ${ 1 + 23 } within this.`);
+// This back tick string is also called as template string.
+```
+
 - `Number` : <https://www.w3schools.com/js/js_number_methods.asp>
 - Bigint
 - `Boolean` : <https://www.w3schools.com/js/js_booleans.asp>
 - `undefined` : by default if a variable is declared by not defined. it will be assigned with `undefined`.
 - `Symbol`
 - `null` : is a type object.
+
+---
 
 `Non primitive type`
 
@@ -331,6 +370,8 @@ OFFICIAL DOCUMENTATION 👇
 object reference
 <https://www.w3schools.com/js/js_objects.asp>
 
+---
+
 `An array` : methods reference <https://www.w3schools.com/js/js_array_methods.asp>
 
 |   ` ARRAY `              |  explanation  | example  |
@@ -342,6 +383,70 @@ object reference
 Other data types:
 
 - Date : <https://www.w3schools.com/js/js_dates.asp>
+
+```javascript
+
+// objects
+cat = {
+    legs: 4,
+    ears: 2,
+    name: 'tom'
+};
+// // access    .    [string] 
+console.log(cat.legs); // 4
+console.log(cat["name"]); // 'tom'
+// // update
+cat.name = "kio1";
+console.log(cat.name); // kio1
+cat["name"] = "kio2";
+console.log(cat.name); // kio2
+// add new values
+cat.color = "black";
+cat["age"] = 5;
+console.log(`my cat who's name is ${cat.name} and its color is ${cat.color}`);
+console.log(cat);
+
+// array
+let a = [1, 2, 3, 4] // creation of array
+console.log(a);
+console.log(a[0]); // access using index
+a.push(20);
+a.push(20);
+console.log(a);
+
+// nested array
+a = [[1, 2], [3, 4], [5, 6]];
+console.log(a[0]); // [1, 2]
+console.log(a[0][0]); // 1
+a = [
+    { name: 'nobita', height: 120 },
+    { name: 'doremon', height: 113 },
+    { name: 'geon', height: 150 }
+];
+console.log(a[0]); // { name: 'nobita', height: 120 }
+console.log(a[0].name); // nobita
+
+// nested object
+obj = {
+    address: {
+        vehicles: ['honda bike', 'audi car'],
+        city: {
+            district: 'salem',
+            town: 'sankari',
+            pincode: 60012
+        }
+    }
+};
+// // correct 
+console.log(obj.address.vehicles); // 123
+console.log(obj.address.city.district); // salem
+console.log(obj.address.city.town); // sankari
+console.log(obj.address.city.pincode); // 60012
+console.log(obj.address.city.street); // undefined
+console.log(obj.address.sity.street); // error
+```
+
+---
 
 ## Operators and Operands
 
@@ -356,11 +461,42 @@ Other data types:
   - eg: string to number
     - `parseInt()`
 
+```javascript
+// conversion using class
+console.log( Number("123") ); // 123
+console.log( Number("123.43") ); // 123.43
+console.log( Number("123.34") ); // 123.34
+console.log( String(123.34) ); // '123.
+console.log( String(123) );  // '123'
+console.log( String(12e2) ); // '1200'
+Boolean(123); // true
+```
+
+```javascript
+parseInt(2133.123); // 2133
+parseFloat("12.21"); // 12.21
+(234.2342342).toPrecision(7); // '234.2342'
+(213).toString(); // '123'
+```
+
 ### == vs === double equal vs triple equal
 
 - `==` and `===`
 - `==` used for compare values
 - `===` used for compare its data types and values
+
+---
+
+### console.log variations
+
+```javascript
+// all types of console
+console.log("hello world! 1");
+console.info("my info");
+console.warn("my warning");
+console.error("my error");
+console.table([0, 1, 2, 3]);
+```
 
 ## control flow statements
 
@@ -546,18 +682,69 @@ for (let i = 0; i < 5; i++) {
     - passing function as arguments
     - return a function from a
 
+```javascript
+function 
+
+```
+
 ### Normal Function Declaration
 
     A normal function declaration defines a function using the function keyword followed by a name and a function body.
 
+    Normal functions are hoisted, meaning they can be called before they are declared in the code.
+
 ```javascript
 // Example:
-function add(a, b) {
-    return a + b;
+function fn(a,b,c) {
+  // the above is function definition
+  // the values a,b,c is parameters
+  console.log(a,b,c);
 }
+
+fn()  // undefined undefined undefined
+fn(1) // 1 undefined undefined
+fn(1,2) // 1 2 undefined
+fn(1,2,3) // 1 2 3 
+fn(1,2,3,4) // 1 2 3
+// the above values 1,2,3,4 are the arguments
 ```
 
-    Normal functions are hoisted, meaning they can be called before they are declared in the code.
+```javascript
+function fn(a,b,c=12) {
+  console.log(a,b,c);
+}
+
+fn()  // undefined undefined 12
+fn(1) // 1  undefined 12
+fn(1,2) // 1 2 12
+fn(1,2,3) // 1 2 3
+fn(1,2,3,4) // 1 2 3
+```
+
+```javascript
+function fn(a,b=10,...c) {
+    // here ... triple dot used to represent rest parameter.
+    console.log(a,b,c);
+}
+
+fn()  // undefined 10 []
+fn(1) // 1 10 []
+fn(1,2) // 1 2 []
+fn(1,2,3) // 1 2 [ 3 ]
+fn(1,2,3,4) // 1 2 [ 3, 4 ]
+```
+
+```javascript
+function fn(a,b=10,...c) {
+  // the above is function definition
+  // the values a,b,c is parameters
+
+  console.log(a,b,c);
+}
+
+fn(...[1,2,3]); // 1 2 [3]
+fn(...[1,2,3,3,4,55]); // 1 2 [ 3, 3, 4, 55 ]
+```
 
 ---
 
@@ -583,6 +770,51 @@ const multiply = function(a, b) {
 
 // Example:
 const square = (x) => x * x;
+```
+
+```javascript
+// different combination of javascript arrow function
+const fn = () => 100; // () bracket is mandatory when you don't have any parameter
+const fn = x => x*10; // () bracket is optional when you have only one parameter
+const fn = (x) => x*10;
+const fn = (a,b) => a+b;
+
+// In all above case you can write with curly braces {} as shown below
+const fn = (a,b) => {
+    return a+b; // but if you are using {} then 
+    // you have give return keyword to return something.
+}
+
+// Very exceptional case / rare case 
+const fn = () => {}; // you might be wondering it will return a empty object.
+fn(); // but above code will return undefined.
+// 🙄 that's because, In javascript {} curly braces has 2 work.
+//    One to enclose function logics. The other one to create object.
+// Here in above case. It used to enclose function logic.
+
+// if you want to return empty object 
+// then write below code.
+const fn = () => { 
+    return {};
+}
+fn(); // return {} empty object.
+```
+
+### `CONCEPTS IN FUNCTIONS`
+
+- anonymous function
+  - A function without name is called `anonymous function`
+
+```javascript
+function fn() {
+    return 100;
+}
+console.log(fn); // ƒ fn() { return 100; }
+
+console.log(function () { return 100; }); // fn () { return 100; }
+//  in last example. this is anonymous function.
+// A function is directly passed to console.log 
+// Hence you will get a output as function without any name.
 ```
 
 ---
@@ -630,5 +862,5 @@ some function used to display and get user input data in javascript
 - `foreach`, `map`, `filter`, `reduce`
 - default parameters
 - function rest parameters
-- ... operator
+- ... operator [ rest, spread ]
 - destructuring
