@@ -115,8 +115,12 @@ console.log(obj.address.sity.street); // error
 ```
 
 - type conversion
-  - toString
-  - parseInt
+  - Easy way is
+    - Number("234")
+    - String(123)
+  - Alternate way 
+    - (123).toString()
+    - parseInt("123")
 - == and ===
 - conditional and loops and switch
   - if, if else, if else ladder
@@ -131,7 +135,7 @@ console.log(obj.address.sity.street); // error
 - arrow function
 - alert, prompt, confirm
 - Objects
-- nullish coalescing operator ??
+- check for values using chaining ?.
 - typeof
 - Exception handling
 
