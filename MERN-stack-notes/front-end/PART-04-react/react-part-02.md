@@ -1,5 +1,22 @@
 
 # IMPORTANT TOPICS IN REACT
+## steps to follow to create new component in new file.
+
+1. Lets decide to create a component name `Sample`.
+2. First create a file named `Sample.jsx`
+3. Open `Sample.jsx`.
+```javascript
+// Sample.jsx
+export default function Sample() { // default comp...
+    return <p> Sample Component </p>;
+}
+```
+
+
+
+
+
+
 
 ## Importing and exporting components
 
