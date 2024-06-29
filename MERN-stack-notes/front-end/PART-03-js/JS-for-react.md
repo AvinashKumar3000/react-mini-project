@@ -292,3 +292,36 @@ if (true) {
 let a = 100;
 let b = a;
 ```
+
+
+
+## REact code
+
+```javascript
+// component basic example
+function List() {
+  return <li>item</li>;
+}
+
+function Box() {  // component
+  return (
+    <ul>
+      <List></List>
+      <List></List>
+      <List></List>
+      <List></List>
+    </ul>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <Box></Box>
+    </>
+  );
+}
+
+export default App;
+
+```
