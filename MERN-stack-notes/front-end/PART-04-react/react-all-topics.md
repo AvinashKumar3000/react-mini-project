@@ -32,5 +32,6 @@
         1. Suspense
     1. state management
         1. react redux ( library )
+        2. react redux toolkit
     1. writing service file ( api connection logic )
     1. lazy
