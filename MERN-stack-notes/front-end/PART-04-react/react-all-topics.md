@@ -34,3 +34,42 @@
         1. react redux ( library )
     1. writing service file ( api connection logic )
     1. lazy
+
+## task
+
+### part 01
+
+<hr>
+<h2> react task 01 </h2>
+<div>
+    <p> The count is 0 </p>
+    <button>incr</button>
+    <button>decr</button>
+</div>
+<hr>
+
+<h2> react task 02 </h2>
+<div>
+    <p> the value is 10 and it is even </p>
+    <button>incr</button>
+    <button>decr</button>
+</div>
+<hr>
+
+only allow positive values, No negative values
+
+<h2> react task 03 </h2>
+<div>
+    <p> the value is 10 and it is even </p>
+    <button>incr</button>
+    <button>decr</button>
+</div>
+<hr>
+
+<h2> react task 03 </h2>
+<div>
+    <p> the value is 10 and it is even </p>
+    <button>incr</button>
+    <button>decr</button>
+</div>
+<hr>
