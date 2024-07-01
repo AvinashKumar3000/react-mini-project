@@ -450,4 +450,5 @@ export default function Card({ movie }) {
 .movie-name::before {
     content: "🎬";
 }
+</style>
 ```
