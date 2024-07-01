@@ -416,9 +416,7 @@ export default function Card({ movie }) {
 
 ## `MovieRating/cardStyle.css`
 
-```html
-<style>
-/*  Use below code alone. Please don't copy above style tag '<style>'*/
+```markdown
 .card {
     font-family: monospace;
     margin: 10px;
@@ -450,5 +448,5 @@ export default function Card({ movie }) {
 .movie-name::before {
     content: "🎬";
 }
-</style>
+
 ```
