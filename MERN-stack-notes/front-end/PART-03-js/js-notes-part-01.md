@@ -859,7 +859,6 @@ some function used to display and get user input data in javascript
 - let
 - const
 - arrow functions
-- `foreach`, `map`, `filter`, `reduce`
 - default parameters
 - function rest parameters
 - ... operator [ rest, spread ]
