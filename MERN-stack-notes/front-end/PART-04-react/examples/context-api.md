@@ -1,6 +1,6 @@
 # context api [ `useContext`, `createContext`]
 
-## `LikeContext`
+## `LikeContext.jsx`
 
 ```javascript
 import { createContext, useState } from "react";
