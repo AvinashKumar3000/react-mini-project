@@ -20,7 +20,7 @@ function ParentComp() {
     }
     function handleEditItems(idx) {
         let updatedContent = prompt("your new content");
-        if (updatedContent !== "") {
+        if (updatedContent.trim() !== "") {
             arr[idx] = updatedContent;
             setArr([...arr]);
         }
