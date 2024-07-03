@@ -54,7 +54,7 @@ function Form({ addItems }) {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [prefix, setPrefix] = useState("");
-    const [category, setCategory] = useState("");
+    const [category, setCategory] = useState("others");
     const [phoneNumber, setPhoneNumber] = useState("");
 
     function handleSubmit(event) {
@@ -69,11 +69,18 @@ function Form({ addItems }) {
                 lastName: lastName,
                 prefix: prefix
             },
-            category: category === "" ? "others" : category,
+            category: category,
             phoneNumber: phoneNumber
         }
         addItems(obj);
+        // reset inputs
+        setFirstName("");
+        setLastName("");
+        setPrefix("");
+        setPhoneNumber("");
+        setCategory("others");
     }
+
     return (
         <form onSubmit={handleSubmit}>
             <fieldset>
@@ -139,10 +146,7 @@ function Form({ addItems }) {
 }
 
 
-function Card({ index, data, deleteItems, editItems, }) {
-    // Here    ☝️    key is coming as props.
-    // Usually in parent component, we will be sending index value as key.
-    // in Card component. where ever I need index value. I can use key.
+function Card({ index, data, deleteItems, editItems }) {
     function handleEdit() {
         let firstName = prompt("Enter firstName field");
         let lastName = prompt("Enter lastName field");
@@ -180,6 +184,20 @@ function Card({ index, data, deleteItems, editItems, }) {
             </ul>
             <button style={customStyle.button} onClick={handleEdit}>edit</button>
             <button style={customStyle.button} onClick={() => deleteItems(index)}>delete</button>
+            {/*                                         ☝️ here 
+                                            ⚠️ ALways use arrow function, 
+                                               If you want to send some arguments to function.
+
+                                            🏷️ In our case, `deleteItems` function. 
+                                               we are passing   `index` as arguments.
+                                               Hence we have to use arrows function
+
+                                            ☠️ If you write a code as below.
+                                               It won't through any error or warning.
+                                               It won't work properly.
+                                            ❌ onClick={deleteItems(index)} ❌
+                 
+            */}
         </div>
     );
 }
@@ -204,12 +222,16 @@ function TODOlist() {
         <>
             <label>CONTACT LIST</label>
             <Form addItems={handleAddItems} />
-            <ol>
+            <div>
                 {
                     arr.map((value, index) => {
                         return (
                             <Card
                                 key={index}
+                                // ☝️ here we must send key,
+                                // Or else you will receive a warning. 
+                                // And key should be unique to all items.
+                                // Mostly all developers will pass index as key.
                                 index={index}
                                 data={value}
                                 deleteItems={handleDeleteItems}
@@ -218,7 +240,7 @@ function TODOlist() {
                         );
                     })
                 }
-            </ol>
+            </div>
         </>
     );
 }
