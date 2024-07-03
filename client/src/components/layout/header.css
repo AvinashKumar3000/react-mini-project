@@ -1,0 +1,25 @@
+header {
+    padding: 10px;
+    background-color: silver;
+    color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+header i {
+    margin-right: 10px;
+}
+
+header .fa-user {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+header .app-name {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}

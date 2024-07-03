@@ -1,0 +1,24 @@
+.slide-bar {
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+
+.slide-bar button {
+    padding: 5px;
+    background-color: skyblue;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+@keyframes slide-in {
+    0% {
+        left: -500px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}

@@ -1,0 +1,30 @@
+.notification-container {
+    width: fit-content;
+    position: fixed;
+    z-index: 5000;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+}
+
+.notify-bar {
+    background-color: rgba(255, 255, 255, 0.611);
+    border: 2px solid rgba(0, 0, 0, 0.335);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    margin-right: 0px;
+    text-transform: capitalize;
+}
+
+.notify-bar .close {
+    cursor: pointer;
+    float: right;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-family: monospace;
+}

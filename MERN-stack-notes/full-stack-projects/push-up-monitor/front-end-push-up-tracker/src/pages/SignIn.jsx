@@ -6,35 +6,37 @@ export default function SignIn({ setTab, setAuth, setUserId }) {
     function handleSubmit() {
         if (username !== "" && password !== "") {
             // TODO: perform logic
-            const myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/json");
+            // const myHeaders = new Headers();
+            // myHeaders.append("Content-Type", "application/json");
 
-            const raw = JSON.stringify({
-                "username": username,
-                "password": password
-            });
+            // const raw = JSON.stringify({
+            //     "username": username,
+            //     "password": password
+            // });
 
-            const requestOptions = {
-                method: "POST",
-                headers: myHeaders,
-                body: raw,
-                redirect: "follow"
-            };
-            // change this 👇 URL to your back end hosted url. ⚠️ This url will not work for you. ⚠️
-            fetch("https://back-end-push-up-tracker.vercel.app/gym/sign-in", requestOptions)
-                .then((response) => response.json())
-                .then((result) => {
-                    if (result.status) {
-                        alert(result.msg);
-                        setUserId(result.data._id);
-                        setAuth(true);
-                        setTab('tracker');
-                    } else {
-                        alert(result.msg);
-                    }
-                })
-                .catch((error) => console.error(error));
+            // const requestOptions = {
+            //     method: "POST",
+            //     headers: myHeaders,
+            //     body: raw,
+            //     redirect: "follow"
+            // };
+            // // change this 👇 URL to your back end hosted url. ⚠️ This url will not work for you. ⚠️
+            // fetch("https://back-end-push-up-tracker.vercel.app/gym/sign-in", requestOptions)
+            //     .then((response) => response.json())
+            //     .then((result) => {
+            //         // logic
+            //     })
+            //     .catch((error) => console.error(error));
 
+            // condition
+            // if (result.status) {
+            alert(result.msg);
+            setUserId(result.data._id);
+            setAuth(true);
+            setTab('tracker');
+            // } else {
+            //     alert(result.msg);
+            // }
         }
     }
     return (

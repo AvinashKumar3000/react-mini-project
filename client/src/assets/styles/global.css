@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: ghostwhite;
+    color: slategray;
+}
+
+#root {
+    margin: 0px;
+}
+
+.global-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flx-center {
+    justify-content: center;
+    align-items: center;
+}

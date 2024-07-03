@@ -1,0 +1,36 @@
+.card {
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: fit-content;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card .info {
+    width: fit-content;
+}
+
+.card marquee {
+    margin-top: 10px;
+}
+
+.card strong {
+    text-transform: uppercase;
+}
+
+.card footer {
+    width: 100%;
+    margin: 10px;
+    text-align: right;
+    font-size: xx-large;
+}
+
+.card footer span {
+    margin-left: 10px;
+}
