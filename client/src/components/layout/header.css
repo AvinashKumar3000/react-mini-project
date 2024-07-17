@@ -1,25 +1,41 @@
+/* header */
 header {
-    padding: 10px;
-    background-color: silver;
-    color: black;
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
 
-header i {
-    margin-right: 10px;
-}
+    & img {
+        height: 50px;
+    }
 
-header .fa-user {
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 50%;
-}
+    & .navigation {
+        display: flex;
 
-header .app-name {
-    margin-left: 20px;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    letter-spacing: 1px;
+        div {
+            margin: 10px;
+            margin-left: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+    }
+
+    & .profile {
+        img {
+            border-radius: 50%;
+            border: 2px solid gainsboro;
+            padding: 2px;
+        }
+
+        button {
+            width: 160px;
+            padding: 10px;
+            text-transform: capitalize;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+    }
 }

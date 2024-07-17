@@ -1,0 +1,105 @@
+/* section */
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+/* high-lights section */
+.high-lights {
+    background-color: gainsboro;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .content {
+        margin-right: 20px;
+
+        & h3 {
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+
+        & button {
+            background-color: red;
+            color: white;
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100px;
+        }
+    }
+
+    & .image {
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
+
+/* end of high-lights section */
+
+/* other-high-lights */
+.other-high-lights {
+    display: flex;
+    justify-content: space-between;
+
+    &>.card {
+        display: flex;
+        background-color: blanchedalmond;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 32%;
+        text-align: center;
+
+        &>* {
+            margin: 10px;
+        }
+
+        & img {
+            height: 200px;
+        }
+    }
+}
+
+/* end of other-high-lights */
+
+/* All products */
+.all-products {
+    margin-top: 100px;
+
+    & h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    & .sub-section {
+        & .group {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.sub-section>.group>.sub-card {
+    margin: 10px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    & .image {
+        padding: 20px;
+    }
+
+    & img {
+        height: 200px;
+    }
+}
+
+/* end of all products */

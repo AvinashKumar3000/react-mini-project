@@ -9,23 +9,12 @@ import LandingPage from "./pages/LandingPage.jsx";
 import { NotificationProvider } from "./context/NotificationContext.jsx";
 import Header from "./components/layout/Header.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
-import ApplicationPage from "./pages/ApplicationPage.jsx";
 
 // 📍 react router for routing
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "app",
-    element: <ApplicationPage />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "player/:musicId",
-    element: <p>music id</p>,
     errorElement: <ErrorPage />,
   }
 ]);

@@ -1,8 +1,9 @@
 .notification-container {
+    margin-top: 50px;
     width: fit-content;
     position: fixed;
     z-index: 5000;
-    right: 0px;
+    left: 0px;
     top: 0px;
     padding: 10px;
 }

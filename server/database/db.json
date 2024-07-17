@@ -1,0 +1,339 @@
+{
+    "users": [
+        {
+            "id": "f742",
+            "username": "admin",
+            "password": "admin"
+        },
+        {
+            "id": "ccff",
+            "username": "user1",
+            "password": "password1"
+        },
+        {
+            "id": "5321",
+            "username": "user2",
+            "password": "password2"
+        }
+    ],
+    "mobiles": [
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/4/d/-original-imaghx9qygjjg8hz.jpeg?q=70",
+            "name": "Phone Model 1",
+            "brand": "Brand A",
+            "price": "$299",
+            "id": "0"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/b/0/-original-imaghx9qnhzxegu2.jpeg?q=70",
+            "name": "Phone Model 2",
+            "brand": "Brand B",
+            "price": "$399",
+            "id": "1"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/v/8/-original-imaghx9qudmydgc4.jpeg?q=70",
+            "name": "Phone Model 3",
+            "brand": "Brand C",
+            "price": "$499",
+            "id": "2"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/b/0/-original-imaghx9qnhzxegu2.jpeg?q=70",
+            "name": "Phone Model 2",
+            "brand": "Brand B",
+            "price": "$399",
+            "id": "3"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8duby8qbn4.jpeg?q=70",
+            "name": "iPhone 12",
+            "brand": "Apple",
+            "price": "$799",
+            "id": "4"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70",
+            "name": "Phone Model 4",
+            "brand": "Brand D",
+            "price": "$599",
+            "id": "5"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
+            "name": "Phone Model 5",
+            "brand": "Brand E",
+            "price": "$699",
+            "id": "6"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+            "name": "Phone Model 6",
+            "brand": "Brand F",
+            "price": "$499",
+            "id": "7"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70",
+            "name": "iPhone 12",
+            "brand": "Apple",
+            "price": "$799",
+            "id": "8"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/312/312/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70",
+            "name": "iPhone 12",
+            "brand": "Apple",
+            "price": "$799",
+            "id": "9"
+        }
+    ],
+    "cloths": [
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/h/x/c/4xl-formal-shirt-metronaut-original-imah2p9prjqfeurp.jpeg?q=70",
+            "name": "Formal Shirt",
+            "brand": "Metronaut",
+            "price": "$29",
+            "id": "0"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/z/b/t/xl-mhs-601-yellow-metronaut-original-imahfmgyvjmez6s9.jpeg?q=70",
+            "name": "Casual Shirt",
+            "brand": "Metronaut",
+            "price": "$19",
+            "id": "1"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/g/b/j/xxl-or89-technosport-original-imagt63nyy4yemug.jpeg?q=70",
+            "name": "Track Pant",
+            "brand": "Technosport",
+            "price": "$25",
+            "id": "2"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/2/3/p/m-or89-technosport-original-imagt63ntbbhpus3.jpeg?q=70",
+            "name": "Track Pant",
+            "brand": "Technosport",
+            "price": "$25",
+            "id": "3"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/i/m/8/m-or25-technosport-original-imagz4a8znkhksc4.jpeg?q=70",
+            "name": "Track Pant",
+            "brand": "Technosport",
+            "price": "$30",
+            "id": "4"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/q/h/r/3xl-mrt19-tp04-bck-metronaut-original-imaft4qt9hzm4wfx-bb.jpeg?q=70",
+            "name": "Track Pant",
+            "brand": "Metronaut",
+            "price": "$28",
+            "id": "5"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/1/9/d/xl-formal-shirt-metronaut-original-imah2paq865jvjag.jpeg?q=70",
+            "name": "Formal Shirt",
+            "brand": "Metronaut",
+            "price": "$29",
+            "id": "6"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/x/a/d/28-we-trouser-371-380-we-perfect-original-imagx7kzdcshqw8c.jpeg?q=70",
+            "name": "Trouser",
+            "brand": "WE Perfect",
+            "price": "$35",
+            "id": "7"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/s/p/j/l-or25-technosport-original-imaghkh3avpvngxf.jpeg?q=70",
+            "name": "Track Pant",
+            "brand": "Technosport",
+            "price": "$30",
+            "id": "8"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/9/c/m/m-or25-technosport-original-imaghkh3ufn5dgaq.jpeg?q=70",
+            "name": "Track Pant",
+            "brand": "Technosport",
+            "price": "$30",
+            "id": "9"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-dress/d/r/t/4-5-years-dezine-light-blue-front-button-dress-billion-original-imahyhhxsekadymy.jpeg?q=70",
+            "name": "Kids Dress",
+            "brand": "Billion",
+            "price": "$15",
+            "id": "10"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/b/w/o/s-c301-white-dennis-lingo-original-imafw2ggrk5epcfu-bb.jpeg?q=70",
+            "name": "Casual Shirt",
+            "brand": "Dennis Lingo",
+            "price": "$25",
+            "id": "11"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/a/v/b/xxl-p590-technosport-original-imagxhyzfxnehfzs.jpeg?q=70",
+            "name": "Track Pant",
+            "brand": "Technosport",
+            "price": "$28",
+            "id": "12"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/l1dwknk0/kids-t-shirt/w/6/q/9-10-years-billion190redwhite-billion-original-imagcybkpfgschk5.jpeg?q=70",
+            "name": "Kids T-Shirt",
+            "brand": "Billion",
+            "price": "$10",
+            "id": "13"
+        }
+    ],
+    "groceries": [
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/fmcg-combo/a/k/q/corn-polenta-cornmeal-polenta-corn-porridge-or-makka-ka-daliya-3-original-imah2hf2rgefhwpx.jpeg?q=70",
+            "name": "Corn Polenta Cornmeal Polenta Corn Porridge",
+            "weight": "500g",
+            "price": "₹150",
+            "id": "0"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/k98tdow0/fmcg-combo/r/p/k/premium-quality-masoor-dal-and-malka-dal-combo-750g-each-goshudh-original-imafr2w8q3jebzq5.jpeg?q=70",
+            "name": "Premium Quality Masoor Dal and Malka Dal Combo",
+            "weight": "750g each",
+            "price": "₹300",
+            "id": "1"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/kchzhjk0/fmcg-combo/c/f/d/combo-pack-turmeric-powder-250gm-chilli-powder-100gm-curry-original-imaftm6ccaan3gcz.jpeg?q=70",
+            "name": "Combo Pack Turmeric Powder 250gm & Chilli Powder 100gm",
+            "weight": "250g & 100g",
+            "price": "₹200",
+            "id": "2"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/kchzhjk0/fmcg-combo/e/p/3/combo-pack-turmeric-powder-250gm-chilli-powder-100gm-fish-masala-original-imaftm6cqqgngybt.jpeg?q=70",
+            "name": "Combo Pack Turmeric Powder 250gm & Chilli Powder 100gm & Fish Masala",
+            "weight": "250g & 100g & Fish Masala",
+            "price": "₹250",
+            "id": "3"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/kksmikw0/fmcg-combo/c/v/x/festival-combo-of-sweets-and-namkeen-pack-of-4-1300gm-yuvraj-original-imagyfj8sta9gdgu.jpeg?q=70",
+            "name": "Festival Combo of Sweets and Namkeen Pack",
+            "weight": "1300g",
+            "price": "₹500",
+            "id": "4"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/kqgyhe80/fmcg-combo/l/6/q/sweets-gulab-jamun-1-kg-with-rakhi-combo-couple-bhiya-or-bhabhi-original-imag4h3hyegbnt5q.jpeg?q=70",
+            "name": "Sweets Gulab Jamun 1 kg with Rakhi Combo",
+            "weight": "1kg",
+            "price": "₹600",
+            "id": "5"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/l071d3k0/fmcg-combo/t/5/1/premium-quality-malka-dal-and-moong-mogar-combo-750g-each-6-original-imagcffjvhhejw6n.jpeg?q=70",
+            "name": "Premium Quality Malka Dal and Moong Mogar Combo",
+            "weight": "750g each",
+            "price": "₹350",
+            "id": "6"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/fmcg-combo/b/e/0/gluten-free-bread-mix-1kg-cake-mix-500g-combo-pack-6-wheafree-original-imagzu9azcaysmrt.jpeg?q=70",
+            "name": "Gluten Free Bread Mix 1kg & Cake Mix 500g Combo",
+            "weight": "1kg & 500g",
+            "price": "₹400",
+            "id": "7"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/kzn17680/fmcg-combo/p/r/4/kerala-banana-chips-made-in-coconut-oil-and-jackfruit-chips-and-original-imagbmftjhzejeev.jpeg?q=70",
+            "name": "Kerala Banana Chips made in Coconut Oil and Jackfruit Chips",
+            "weight": "500g each",
+            "price": "₹450",
+            "id": "8"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/kzn17680/fmcg-combo/p/k/p/kerala-spicy-mixture-and-banana-chips-made-in-coconut-oil-combo-original-imagbmfpz448fbnh.jpeg?q=70",
+            "name": "Kerala Spicy Mixture and Banana Chips made in Coconut Oil Combo",
+            "weight": "500g each",
+            "price": "₹400",
+            "id": "9"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/fmcg-combo/f/z/o/gluten-free-bread-mix-1kg-gluten-free-porridge-dalia-mix-500gm-original-imagzu962h3hvn4f.jpeg?q=70",
+            "name": "Gluten Free Bread Mix 1kg & Gluten Free Porridge Dalia Mix 500gm Combo",
+            "weight": "1kg & 500g",
+            "price": "₹350",
+            "id": "10"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/fmcg-combo/y/9/r/combo-pack-of-sabudana-dalia-sooji-maida-besan-poha-500-g-each-original-imagqww7pext75gh.jpeg?q=70",
+            "name": "Combo Pack of Sabudana, Dalia, Sooji, Maida, Besan, Poha",
+            "weight": "500g each",
+            "price": "₹600",
+            "id": "11"
+        }
+    ],
+    "beauty": [
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/kgpg5u80/combo-kit/g/t/r/ear-wax-removal-ear-pick-stainless-steel-medical-grade-ear-wax-original-imafww3yazkekqvv.jpeg?q=70",
+            "name": "Ear Wax Removal Ear Pick",
+            "weight": "50g",
+            "price": "₹150",
+            "id": "0"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/combo-kit/q/o/o/woody-beard-wash-60-ml-hair-conditioner-100-g-anti-dandruff-hair-original-imagnkyga6baujuz.jpeg?q=70",
+            "name": "Woody Beard Wash 60 ml & Hair Conditioner 100 g",
+            "weight": "60ml & 100g",
+            "price": "₹300",
+            "id": "1"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/combo-kit/f/u/v/must-have-makeup-set-fair-6-8906074713742-iba-original-imahfkd5znnanzcy.jpeg?q=70",
+            "name": "Must Have Makeup Set (Fair 6)",
+            "weight": "100g",
+            "price": "₹500",
+            "id": "2"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/jwzabgw0/combo-kit/z/k/h/women-s-makeup-vanity-kit-of-all-the-beauty-products-mka34-otis-original-imafhjk3hevkpkvh.jpeg?q=70",
+            "name": "Women's Makeup Vanity Kit",
+            "weight": "500g",
+            "price": "₹1000",
+            "id": "3"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/jwqpocw0/combo-kit/z/d/8/women-s-makeup-vanity-kit-of-all-the-beauty-products-mka38-otis-original-imafhdfhg24m8xzg.jpeg?q=70",
+            "name": "Women's Makeup Vanity Kit of All Beauty Products",
+            "weight": "600g",
+            "price": "₹1200",
+            "id": "4"
+        },
+        {
+            "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/combo-kit/l/e/f/rose-gold-eyeshadow-nude-18-color-36h-eyeliner-matte-mini-original-imagxgzymssw6fjt.jpeg?q=70",
+            "name": "Rose Gold Eyeshadow Nude 18 Color & 36H Eyeliner Matte Mini",
+            "weight": "50g",
+            "price": "₹400",
+            "id": "5"
+        }
+    ],
+    "highlights": [
+        {
+            "category": "mobiles",
+            "id": "3"
+        },
+        {
+            "category": "cloths",
+            "id": "0"
+        },
+        {
+            "category": "groceries",
+            "id": "0"
+        },
+        {
+            "category": "beauty",
+            "id": "0"
+        }
+    ]
+}

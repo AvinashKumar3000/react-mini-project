@@ -11,6 +11,7 @@ const customStyle = {
 };
 
 const NotifyBar = function ({ value, onClose }) {
+
     useEffect(() => {
         // executed once component is created
         const timeout = setTimeout(() => {
@@ -22,6 +23,7 @@ const NotifyBar = function ({ value, onClose }) {
             console.log("removing notification: ", value.msg);
         }
     }, []);
+
     return (
         <div
             className="notify-bar"

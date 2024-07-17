@@ -1,19 +1,18 @@
 import { Component, useContext } from "react";
-
-import './slidebar.css';
 import { AuthContext } from "../../context/AuthContext";
 import { NotificationContext } from "../../context/NotificationContext";
+import './slideBar.css';
 
 // some people prefer to style like this also.
 const customStyle = {
     position: 'fixed',
-    left: '0px',
+    right: '0px',
     height: '100vh',
     width: '200px',
-    backgroundColor: 'rgba(192, 192, 192, 1)',
-    padding: '20px'
+    backgroundColor: 'white',
+    padding: '20px',
+    borderLeft: '2px solid gray'
 };
-
 
 function SampleComponent({ data }) {
     const { addNotification } = useContext(NotificationContext);
