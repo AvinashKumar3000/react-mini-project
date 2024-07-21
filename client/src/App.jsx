@@ -9,12 +9,33 @@ import LandingPage from "./pages/LandingPage.jsx";
 import { NotificationProvider } from "./context/NotificationContext.jsx";
 import Header from "./components/layout/Header.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
+import ViewProductPage from "./pages/ViewProductPage.jsx";
 
 // 📍 react router for routing
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/fashion",
+    element: <ViewProductPage product={'fashion'} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/mobiles",
+    element: <ViewProductPage product={'mobiles'} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/beauty",
+    element: <ViewProductPage product={'beauty'} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/groceries",
+    element: <ViewProductPage product={'groceries'} />,
     errorElement: <ErrorPage />,
   }
 ]);

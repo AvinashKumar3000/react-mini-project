@@ -4,9 +4,7 @@ export const notificationSlice = createSlice({
     name: 'notification',
     initialState: {
         count: 1,
-        items: [
-            { id: 0, msg: 'Welcome back', error: false, moment: '' }
-        ]
+        items: []
     },
     reducers: {
         incr: (state, action) => {

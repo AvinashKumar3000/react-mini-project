@@ -88,7 +88,7 @@
             "id": "9"
         }
     ],
-    "cloths": [
+    "fashion": [
         {
             "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/h/x/c/4xl-formal-shirt-metronaut-original-imah2p9prjqfeurp.jpeg?q=70",
             "name": "Formal Shirt",
@@ -324,7 +324,7 @@
             "id": "3"
         },
         {
-            "category": "cloths",
+            "category": "fashion",
             "id": "0"
         },
         {

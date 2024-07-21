@@ -9,7 +9,7 @@ function HighLightSection({ content }) {
 
     useEffect(() => {
         if (Boolean(content)) {
-            productApi.getProduct(content.category, content.id)
+            productApi.getProductById(content.category, content.id)
                 .then(response => {
                     setData(response.data[0]);
                 })
@@ -25,6 +25,7 @@ function HighLightSection({ content }) {
             <div className="content">
                 <div>
                     <h3>{data.name}</h3>
+                    <p>{data.brand ? "brand" : "weight"} : {data.brand ? data.brand : data.weight}</p>
                     <p>price : {convertDollarToINR(data.price)}</p>
                     <button>visit</button>
                 </div>

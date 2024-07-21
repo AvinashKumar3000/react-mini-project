@@ -22,7 +22,7 @@ const NotifyBar = function ({ value, onClose }) {
             clearTimeout(timeout);
             console.log("removing notification: ", value.msg);
         }
-    }, []);
+    }, [onClose, value]);
 
     return (
         <div

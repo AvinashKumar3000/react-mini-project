@@ -12,14 +12,14 @@ export default function LandingPage() {
 
     useEffect(() => {
         // 📒 Here in below code I have used `JS promise` concept.
-        productApi.getHights()
+        productApi.getHighlights()
             .then(response => {
                 setHighlights(response.data);
             }).catch(err => {
                 console.error(err);
                 addNotification("something went wrong", true)
             });
-    }, []);
+    }, [addNotification]);
 
     return (
         <main>
