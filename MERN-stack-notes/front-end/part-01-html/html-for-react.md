@@ -8,7 +8,7 @@
 ## Validation
 
 - Browser won't through error while executing in browser.
-- But make sure to write everything eat and clean.
+- But make sure to write everything neat and clean.
 
 ---
 
@@ -88,6 +88,8 @@ document.
 - `<button>`: Button control.
 - `<select>`: Drop-down list.
 - `<option>`: Option in a `<select>` element.
+- `<fieldset>` : creates outline.
+- `<legend>` : title for fieldset.
 
 ### Interactive Elements
 
