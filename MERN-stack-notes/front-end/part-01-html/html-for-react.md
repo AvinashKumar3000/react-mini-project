@@ -57,10 +57,6 @@ document.
 - `<audio>`: Embeds sound content.
 - `<video>`: Embeds video content.
 
-### Embedded Content
-
-- `<iframe>`: Embeds another HTML document within the current document.
-
 ### List Content
 
 - `<ul>`: Unordered list.
