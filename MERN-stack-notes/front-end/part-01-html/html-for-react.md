@@ -188,7 +188,9 @@ document.
             border-collapse: collapse;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 8px;
         }
@@ -266,7 +268,7 @@ document.
     <section id="shinchan-nohara">
         <h2>Shinchan Nohara</h2>
         <p>Details about Shinchan Nohara.</p>
-
+        <img height="100" width="100" src="https://wallpapers.com/images/hd/shin-chan-amazed-3ifhnlv2ww6kuwb9.jpg">
         <table>
             <thead>
                 <tr>
@@ -332,5 +334,4 @@ document.
 </body>
 
 </html>
-
 ```
