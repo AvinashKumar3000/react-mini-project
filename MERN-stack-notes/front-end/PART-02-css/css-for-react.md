@@ -185,44 +185,22 @@ link:favicon
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./file.css">
     <style>
-        .green {
-            color: green;
-        }
-
-        .red {
-            color: red;
-        }
-
-        .blue {
+        /* internal */
+        p {
             color: blue;
-        }
-
-        .bg-green {
-            background-color: green;
-        }
-
-        .bg-red {
-            background-color: red;
-        }
-
-        .bg-blue {
-            background-color: blue;
         }
     </style>
 </head>
 
 <body>
-    <p class="green bg-blue">item no 01</p>
-    <p class="green">item no 02</p>
-    <p class="green">item no 03</p>
-    <p>item no 04</p>
-    <p class="red bg-green">item no 05</p>
-    <p>item no 06</p>
-    <p>item no 07</p>
-    <p class="blue">item no 08</p>
-    <p>item no 09</p>
-    <p>item no 10</p>
+    <p>item-01</p>
+    <!-- inline styling -->
+    <p style="color: tomato; background-color: black;">item-02</p>
+    <p>item-03</p>
+    <p>item-04</p>
+    <p>item-05</p>
 </body>
 
 </html>
