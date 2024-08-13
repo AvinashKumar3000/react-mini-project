@@ -176,3 +176,54 @@ link:favicon
 - floating:
   - float : right;
   - float : left;
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="green bg-blue">item no 01</p>
+    <p class="green">item no 02</p>
+    <p class="green">item no 03</p>
+    <p>item no 04</p>
+    <p class="red bg-green">item no 05</p>
+    <p>item no 06</p>
+    <p>item no 07</p>
+    <p class="blue">item no 08</p>
+    <p>item no 09</p>
+    <p>item no 10</p>
+</body>
+
+</html>
+```
