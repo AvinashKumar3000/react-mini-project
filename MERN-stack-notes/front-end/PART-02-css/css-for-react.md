@@ -185,22 +185,17 @@ link:favicon
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./file.css">
     <style>
-        /* internal */
-        p {
-            color: blue;
-        }
+        
     </style>
 </head>
 
 <body>
-    <p>item-01</p>
-    <!-- inline styling -->
-    <p style="color: tomato; background-color: black;">item-02</p>
-    <p>item-03</p>
-    <p>item-04</p>
-    <p>item-05</p>
+    <p>hello fr om line 1</p>
+    <p id="line-2">hello from line 2</p>
+    <p>hello from line 3</p>
+    <p class="last">hello from line 4</p>
+    <p class="last">hello from line 5</p>
 </body>
 
 </html>
