@@ -320,5 +320,103 @@ link:favicon
 ```
 
 
+### MAIN TASK
 
+```html
+<!DOCTYPE html>
+<html lang="en" contenteditable>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: black;
+            color: white;
+        }
+
+        ol {
+            /* margin-top: 100px; */
+            background-color: #303841;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 543px;
+        }
+
+        li::marker {
+            content: counter(list-item) "  ";
+            color: #848b93;
+        }
+
+        .red-pink {
+            color: #ec5f66;
+        }
+
+        .orange {
+            color: #f8ae57;
+        }
+
+        .blue {
+            color: #5db4b3;
+        }
+
+        .bg-red-pink {
+            background-color: #ec5f66;
+        }
+
+        .bg-gray {
+            background-color: #404954;
+        }
+
+        .indent-4::before {
+            content: "abcd";
+            opacity: 0;
+        }
+
+        pre {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body onload="start()">
+    <ol>
+        <li><span class="red-pink">#</span> who created world wide web:</li>
+        <li class="bg-gray indent-4">- Tim Berner lee: Working in CERN</li>
+        <li class="bg-gray indent-4">- HTML created1989</li>
+        <li class="orange">-------------------------------------------------</li>
+        <li><span class="red-pink">#</span> world wide web and html:</li>
+        <li class="bg-gray indent-4">- how it is related.</li>
+        <li class="bg-gray indent-4">- Enables content sharing over the Internet through user-friendly ways.</li>
+        <li class="orange">-------------------------------------------------</li>
+        <li><span class="red-pink">#</span> Browser:</li>
+        <li class="bg-gray indent-4">- First browser: Netscape</li>
+        <li><span class="blue">[</span> <span class="orange">browser Engine</span> <span class="blue">]</span>:</li>
+        <li><span style="color: #6396cb;">Browser-engine</span>
+            <span class="bg-red-pink">
+                is core concept of web browser responsible for rendering, web content, interpreting HTML,
+                CSS, and Javascript code, and displaying webpages to user.
+        </li>
+        </span>
+        <li class="bg-gray  indent-4">Examples:</li>
+        <li class="bg-gray">
+            <pre>        - Blink        : developed by google </pre>
+        </li>
+        <li class="bg-gray">
+            <pre>        - Webkit       : developed by Apple </pre>
+        </li>
+        <li class="bg-gray">
+            <pre>        - Gecko        : developed by Mozilla </pre>
+        </li>
+        <li class="bg-gray">
+            <pre>        - Trident      : developed by Microsoft </pre>
+        </li>
+        <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
+```
 
