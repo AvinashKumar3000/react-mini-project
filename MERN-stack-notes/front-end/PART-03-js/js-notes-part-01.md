@@ -354,11 +354,6 @@ console.log(`And also you can use javascript expression ${ 1 + 23 } within this.
 - `undefined` : by default if a variable is declared by not defined. it will be assigned with `undefined`.
 - `Symbol`
 - `null` : is a type object.
-
----
-
-`Non primitive type`
-
 `Object` : reference <https://www.w3schools.com/js/js_objects.asp>
 
 |   ` OBJECT `              |  explanation  | example  |
@@ -371,6 +366,7 @@ object reference
 <https://www.w3schools.com/js/js_objects.asp>
 
 ---
+`Non primitive type`
 
 `An array` : methods reference <https://www.w3schools.com/js/js_array_methods.asp>
 
