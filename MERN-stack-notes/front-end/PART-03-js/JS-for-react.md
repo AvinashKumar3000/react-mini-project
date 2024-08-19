@@ -329,8 +329,10 @@ export default App;
 
 ####
 
+- optional chaining
 - Destructuring
 - map
 - filter
 - setTimeout
 - setInterval
+- 
