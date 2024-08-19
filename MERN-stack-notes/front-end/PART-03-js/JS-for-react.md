@@ -325,3 +325,12 @@ function App() {
 export default App;
 
 ```
+
+
+####
+
+- Destructuring
+- map
+- filter
+- setTimeout
+- setInterval
