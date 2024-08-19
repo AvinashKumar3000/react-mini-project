@@ -335,4 +335,4 @@ export default App;
 - filter
 - setTimeout
 - setInterval
-- 
+
