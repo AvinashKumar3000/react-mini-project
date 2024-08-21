@@ -1,3 +1,10 @@
+# things to do after selecting the project.
+
+- Decide the project title
+- write a documentation about your project.
+- Do wireframe of your project.
+- confirm your project with me. If any changes I will tell u.
+
 # PROJECT TOPICS
 
 1. Hotel Management website
@@ -38,3 +45,5 @@
 1. fitness tracker
 1. recipe manager
 1. homework planner.
+
+
