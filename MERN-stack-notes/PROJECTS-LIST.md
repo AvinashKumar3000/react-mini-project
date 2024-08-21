@@ -25,7 +25,6 @@
 1. NutriCount website
 1. EduTech Website
 1. Student Alumni System
-1. Chat Application
 1. Career Guidance website
 1. GS Horse Feeds Website
 
