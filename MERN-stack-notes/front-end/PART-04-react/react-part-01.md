@@ -11,27 +11,101 @@ download and install node js in your computer.
    In above example my-app is your application name.
 4. If above command is not working. Then follow below steps:
  `npm i create-react-app -g`
- then use
+ then again repeat the previous command. like given here 👉
  `npx create-react-app my-app`
 
 ---
-other ways to open the react app in vscode.
+## Steps to open your react projects.
 
-- `npx create-react-app my-app`
-- `cd my-app`  will change Directory to my-app
-- `code .`   will open vs code
+- Lets consider your react project folder name is `my-app`.
+- First open your VS-CODE.
+- Then, `File > Open Folder`, make sure you are opening correct folder.
+- In our case, my project folder name is `my-app`.
+- Make sure, you project folder name is visible correctly in top middle of VS-Code.
+---
+## Steps to run react project.
 
+- Within VS-Code open terminal. by using any of given steps.
+     1. `view > terminal`
+     2. or using short cut `ctrl + ~` or ( ctrl + backtick )   
+- Give command `npm start`,
+- Then your project will be started. If not wait for few minutes.
+---
+## FAQ while running your REACT project.
+
+If you face any issue while running your project. check below points.
+
+1. Make sure, your changes have been saved properly.
+2. Check your spellings. 
+    - eg: ✅ className  | ❌ classname
+    - eg: ✅ onClick  | ❌ onclick
+3. Stop your running project by using `ctrl + C` within in terminal. Again start react project using `npm start`.
+4. But still not working properly. Then close your VS-Code project and open it again. It will work. 
+--- 
+       📂 node_modules       👈 Important packages to run REACT will be here.
+       📂 public
+        | 
+        `--- 🗒️ index.html   👈 Don't change anything here, untill it is neccessary.
+        `---  other files.
+       📂 src
+        | 
+        `--- 🗒️ App.js       👈 Your main application starting code will be here. Like we have main function in other languages.
+        `--- 🗒️ App.css      👈 Your main application css codes will be here.
+       
 ---
 
-## MY FIRST REACT PROJECT
+### `Like meter code 😍`
 
-- command: npx create-react-app my-app
-- open `my-app` folder and open command prompt within the folder
-- `code .`     [ to open vs code within the folder ]
-- use `ctrl + ~` short cut to open terminal/command-prompt within the vscode.
-- ( or ) `view > terminal`
-- give `npm start` command.
-- Hurray! your first React Application.
+- This code has been written within App.js and App.css file.
+- Inorder to get heart icon. You need to use font-awesome.
+- copy below link code and paste it inside `public/index.html` file, as shown below.
+- Make sure to keep it inside `<head>` tag.
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+```
+![image](https://github.com/user-attachments/assets/4b45500d-64cb-43b6-9930-f644c22f8dbd)
+
+
+#### `App.jsx` I have renamed `App.js` file to `App.jsx`.
+
+```javascript
+import { useState } from "react";
+import "./App.css";
+
+function App() {
+  const [count, setCount] = useState(0); 
+  function handleClick() {
+    setCount(count + 1);              
+  }
+  return (
+    <div className="container">
+      like : {count}
+      <br />
+      <i id="heart" onClick={handleClick} className="fa-solid fa-heart"></i>
+    </div>
+  );
+}
+
+export default App;
+```
+#### `App.css`
+
+```css
+.container {
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+}
+
+#heart:active {
+  color: red;
+}
+```
+---
 
 ## Node JS
 
