@@ -1,8 +1,9 @@
--  The Internet ` 3.45 | https://www.youtube.com/watch?v= Dxcc6ycZ73M `
--  Client & Server `7.06 | https://www.youtube.com/watch?v=kBXQZMmiA4s`
--  IP address and URL `6.45 | https://www.youtube.com/watch?v=5o8CwafCxnU`
+# BASICS OF WEB TECH
 
-# HTML TAGS
+-  The Internet  <https://www.youtube.com/watch?v= Dxcc6ycZ73M>
+-  Client & Server <https://www.youtube.com/watch?v=kBXQZMmiA4s>
+-  IP address and URL  <https://www.youtube.com/watch?v=5o8CwafCxnU>
+
 
 ## Basic HTML Tags
 
