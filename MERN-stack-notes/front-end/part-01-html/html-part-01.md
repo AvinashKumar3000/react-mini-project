@@ -1,6 +1,6 @@
 # BASICS OF WEB TECH
 
--  The Internet  <https://www.youtube.com/watch?v= Dxcc6ycZ73M>
+-  The Internet  <https://www.youtube.com/watch?v=Dxcc6ycZ73M>
 -  Client & Server <https://www.youtube.com/watch?v=kBXQZMmiA4s>
 -  IP address and URL  <https://www.youtube.com/watch?v=5o8CwafCxnU>
 
