@@ -860,6 +860,9 @@ some function used to display and get user input data in javascript
 
 ## ES6 features
 
+You can find list of items introduced in ES6 in this link <https://www.w3schools.com/js/js_es6.asp>
+
+- *where below are some important concepts that you need to know*
 - let
 - const
 - arrow functions
