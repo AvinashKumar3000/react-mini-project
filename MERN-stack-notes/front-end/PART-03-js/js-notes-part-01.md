@@ -92,9 +92,10 @@
 
 ### JS version
 
-**ECMA :** European Computer Manufacturers Association
+JS versions are as follows, ES6, ES7... etc
 
-- ES - ECMA script
+- where ES means, ES - ECMA script
+- **ECMA :** European Computer Manufacturers Association
 - why ES6 is so important ?
   - Major modern js concepts are introduced.
   - E - ECMA
@@ -124,7 +125,8 @@
 ## javascript fundamentals
 
 - where to write
-  - `01` : in separate script file. eg: file.js  
+  - `01` : in separate script file. eg: file.js
+      - eg:  `<script src="./file.js"></script>`
   - `02` : inside `<script></script>` tag
 - Mostly Include javascript at the end of document
   - because, first html body elements should load first.
@@ -133,8 +135,8 @@
   - hello world eg code
     - syntax: `console.log("Hello World!");`
 - comments
-  - single -> `//`
-  - multiple -> `/**/`
+  - single -> `// my single line comment. `
+  - multiple -> `/* multi line comment. */`
 - statements
   - a line of code can be called as statements
 
@@ -316,7 +318,7 @@ In above code, res is stored with "bad boy"
 TOPICS
 
 - `DOM` - Document Object Model
-
+- used to 
 ```javascript
         const element = document.getElementById('root');
         const elements = document.getElementsByClassName('btn');
@@ -346,6 +348,12 @@ a back tick.
 
 console.log(`And also you can use javascript expression ${ 1 + 23 } within this.`);
 // This back tick string is also called as template string.
+
+// Another example is as shown below
+let a = 10;
+let b = 20;
+let value = `the sum of a : ${a} and b : ${b} is ${a+b}`;
+console.log(value); // the sum of a : 10 and b : 20 is 30
 ```
 
 - `Number` : <https://www.w3schools.com/js/js_number_methods.asp>
