@@ -870,3 +870,5 @@ You can find list of items introduced in ES6 in this link <https://www.w3schools
 - function rest parameters
 - ... operator [ rest, spread ]
 - destructuring
+
+most the above topics would have been already covered. And some will be covered in next part.
