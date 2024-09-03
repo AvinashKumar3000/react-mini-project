@@ -1,5 +1,9 @@
 # rating
 
+## Rating app code.
+
+### `Rating.jsx`
+
 ```javascript
 import { useState } from "react";
 
