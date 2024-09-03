@@ -1,8 +1,30 @@
+# Reaction
+
+## `Reaction in like meter code 😎`
+
+- This code has been written seperate file Reaction.jsx.
+- Instead of using font awesome icons, I have used inbuild emojis.
+- To see the output. Make sure to include this code function App.jsx.
+- Below is the sample `App.jsx` code.
+
+### `App.jsx`
+
+```javascript
+import Reaction from "./Reaction";
+
+export default function App() {
+  return (
+    <>
+      <LikeMeter />
+    </>
+  );
+}
+```
+### `Reaction.jsx`
 
 ```javascript
 import { useState } from "react";
-import "../App.css";
-
+import "../App.css"; // 👈 make sure to include correct .css file.
 
 const reactionArray = ["🥲", "😞", "😔", "😟", "☹️", "😊", "😄", "😁", "😀", "😃", "😆", "😂"]
 function Reaction() {
