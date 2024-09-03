@@ -1,5 +1,14 @@
 # MOVIE RATING APP
 
+## things will be covered.
+
+- creating index.jsx ?
+- select drop down as input state
+- map, filter, reduce
+- props
+- JS - get unique values alone as array
+
+
 ## `App.jsx`
 
 ```javascript
