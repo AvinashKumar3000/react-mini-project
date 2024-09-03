@@ -1,5 +1,12 @@
 # Like meter
 
+## things to learn
+
+- event handling. `onclick={handleClick}`
+- basic state concept
+- include external css
+- 
+
 ### `Like meter code 😍`
 
 - This code has been written within App.js and App.css file.
