@@ -1,3 +1,8 @@
+# SPS Game ( Stone paper scissor )
+
+## `SPS game 😍`
+
+### `SPSGame.jsx`
 
 ```javascript
 import { useState } from "react";
@@ -8,6 +13,8 @@ const items = [
     { text: "scissor", emoji: "✂️" }
 ];
 
+// 👇 we will keep a function outside the component
+// If that function has no logic, that access anything inside the component.
 function validateScore(p1Text, p2Text) {
     if (p1Text === p2Text) {
         return 0;
@@ -100,6 +107,3 @@ export default function SPSGame() {
 }
 ```
 
-```css
-
-```
