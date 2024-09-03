@@ -1,5 +1,11 @@
 # HEAT IN app
 
+- component props.
+- store boolean as state value
+- why to split logics into multiple components
+
+
+
 ## `App.jsx`
 
 ```javascript
