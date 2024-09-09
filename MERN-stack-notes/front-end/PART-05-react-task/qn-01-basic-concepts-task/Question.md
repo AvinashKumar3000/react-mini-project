@@ -64,6 +64,7 @@ if(auth) {
 
 ## array 02 task
 
+![image](https://github.com/user-attachments/assets/508e0ed0-af30-4fbf-9cee-c102266f55ab)
 
 
 ## todo list
