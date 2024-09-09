@@ -49,3 +49,7 @@ function CounterComp() {
 
 export default CounterComp;
 ```
+
+
+
+![image](https://github.com/user-attachments/assets/35811e58-9d76-4e28-87b2-1175a3464a7f)
