@@ -12,7 +12,7 @@ function LikeProvider({ children }) {
 
     return (
         <>
-            <LikeContext.Provider value={{ likeCount, setLikeCount }}>
+            <LikeContext.Provider value={[ likeCount, setLikeCount ]}>
                 {children}
             </LikeContext.Provider>
         </>
@@ -29,7 +29,7 @@ import { useContext, useState } from "react";
 import { LikeContext, LikeProvider } from "./LikeContext";
 
 function Heart() {
-    const { likeCount, setLikeCount } = useContext(LikeContext);
+    const [ likeCount, setLikeCount ] = useContext(LikeContext);
     const [like, setLike] = useState(false);
     function handleLike() {
         // false -> true     : like    +1
