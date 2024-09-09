@@ -459,3 +459,6 @@ export default function Card({ movie }) {
 }
 
 ```
+
+![image](https://github.com/user-attachments/assets/39d8a0b6-ee95-4d94-ba5c-058464a5108b)
+

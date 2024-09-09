@@ -33,3 +33,6 @@ export default function Rating() {
     );
 }
 ```
+
+![image](https://github.com/user-attachments/assets/d5e67593-e5d2-4d53-892b-b2f1394fe959)
+
