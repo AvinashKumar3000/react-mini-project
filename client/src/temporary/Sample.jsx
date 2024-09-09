@@ -1,20 +1,15 @@
 import { useState } from "react";
 
-function ParentComp() {
-    const [arr, setArr] = useState([]);
-    function handleClick() {
-        setArr([...arr, "new item"]);
-    }
+function InputSample() {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
     return (
         <>
-            <button onClick={handleClick}>add item</button>
-            <ol>
-                {
-                    arr.map((value, index) => {
-                        return <li key={index}>{value + (index + 1)}</li>
-                    })
-                }
-            </ol>
+            <p>username is : {username}</p>
+            <p>password is : {password}</p>
+            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </>
     );
 }
@@ -23,7 +18,7 @@ function ParentComp() {
 function Sample() {
     return (
         <>
-            <ParentComp></ParentComp>
+            <InputSample></InputSample>
         </>
     );
 }
