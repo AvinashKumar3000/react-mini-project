@@ -6,6 +6,7 @@
 - Instead of using font awesome icons, I have used inbuild emojis.
 - To see the output. Make sure to include this code function App.jsx.
 - Below is the sample `App.jsx` code.
+- 💡 note: css is same as previous example.
 
 ### `App.jsx`
 
@@ -50,3 +51,7 @@ function Reaction() {
 export default Reaction;
 
 ```
+
+
+![image](https://github.com/user-attachments/assets/a59e7329-fde9-4ae0-ab46-a661b49aa1f6)
+
