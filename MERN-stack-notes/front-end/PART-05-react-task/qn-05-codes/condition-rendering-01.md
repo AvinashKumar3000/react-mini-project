@@ -54,3 +54,5 @@ function ParentComp() {
 
 export default ParentComp;
 ```
+
+![image](https://github.com/user-attachments/assets/ef53e385-f30a-435d-8cc6-47ea8cb679fd)
