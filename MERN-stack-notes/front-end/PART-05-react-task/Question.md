@@ -25,5 +25,6 @@
 ```
 
 - output should look like below.
+![image](https://github.com/user-attachments/assets/506cbdaf-a21a-4416-ad5a-7bb9f51622c1)
 
 ---
