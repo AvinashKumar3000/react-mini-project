@@ -4,11 +4,13 @@ import reportWebVitals from './reportWebVitals';
 
 // global css is include here 
 import './assets/styles/global.css';
+import Sample from './temporary/Sample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <App />
+    {/* <App /> */}
+    <Sample></Sample>
   </>
 );
 

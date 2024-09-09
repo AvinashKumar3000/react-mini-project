@@ -1,7 +1,7 @@
 import { Component, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { NotificationContext } from "../../context/NotificationContext";
-import './slideBar.css';
+import './slidebar.css';
 
 // some people prefer to style like this also.
 const customStyle = {
