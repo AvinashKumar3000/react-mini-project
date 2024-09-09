@@ -28,3 +28,34 @@
 ![image](https://github.com/user-attachments/assets/506cbdaf-a21a-4416-ad5a-7bb9f51622c1)
 
 ---
+
+## login task
+
+- 2 components
+  1. `HomePage`, which will return only `<h1>HomePage</h1>`
+  2. `LoginPage`,
+- your work is to create a login page.
+- where if username is `admin`
+- and its password is `admin` then only render homepage.
+- else display alert message `wrong credentials`
+
+💡 notes:
+        3 states,
+           - username `string`, password `string`, auth `boolean`
+        1 function `handleSubmit`
+            - check if both input is `admin` if so.
+            - set auth state to `true`
+            - else. alert `wrong credentials`
+        in `LoginPage` component.
+        you have to return based on condition.
+
+```javascript
+
+if(auth) {
+    return <HomePage />; 
+}else{
+    return (<></>);
+}
+```
+
+---
