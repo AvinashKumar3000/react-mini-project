@@ -7,7 +7,7 @@ function ParentComp() {
     }
     return (
         <>
-            <button onClick={handleClick}>add student</button>
+            <button onClick={handleClick}>add item</button>
             <ol>
                 {
                     arr.map((value, index) => {
