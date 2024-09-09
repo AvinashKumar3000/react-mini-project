@@ -58,3 +58,5 @@ export default function SPSGame() {
 }
 ```
 
+![image](https://github.com/user-attachments/assets/3695d0d5-df8f-4318-b7ad-d06dd9097100)
+
