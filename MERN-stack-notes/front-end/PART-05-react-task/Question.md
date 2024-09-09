@@ -61,3 +61,44 @@ if(auth) {
 ![image](https://github.com/user-attachments/assets/62f2ca34-0500-4ae0-80fa-1f14255b340a)
 
 ---
+
+## array task 02
+
+- 1 component
+- 2 state, `arr` to store items, `inputValue` to get input.
+- 3 event handling function.
+- `handleClick()` ,  
+- `handleDeleteItems(idx)`,
+- `handleEditItems(idx)`
+
+```javascript
+import { useState } from "react";
+
+export default function TodoList() {
+    // arr             state
+    // inputValue      state
+    function handleClick() {
+        if (inputValue !== "") {
+            // add inputValue to arr
+            // reset inputValue to empty string.
+        }
+    }
+    
+    function handleDeleteItems(idx) {
+        // remove item with idx passed in parameter.
+        // update new array in state
+    }
+
+    function handleEditItems(idx) {
+        let updatedContent = prompt("your new content");
+        if (updatedContent !== "") {
+            // update array item with given index.
+            // update the state.
+        }
+    }
+    // html should be written by you.
+    return ();
+}
+
+
+```

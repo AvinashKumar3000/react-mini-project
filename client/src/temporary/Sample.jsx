@@ -1,42 +1,58 @@
 import { useState } from "react";
 
-function HomePage() {
-    return <h1>Home page</h1>;
-}
+function ParentComp() {
+    const [arr, setArr] = useState([]);
+    const [inputValue, setInputValue] = useState("");
 
-function LoginPage() {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [auth, setAuth] = useState(false);
+    function handleClick() {
+        if (inputValue !== "") {
+            setArr([...arr, inputValue]);
+            setInputValue("")
+        }
+    }
+    
+    function handleDeleteItems(idx) {
+        let result_arr = arr.filter((value, index) => {
+            return index !== idx;
+        });
+        setArr(result_arr);
+    }
 
-    function handleSubmit() {
-        if (username === "admin" && password === "admin") {
-            setAuth(true);
-        } else {
-            alert("wrong credentials");
+    function handleEditItems(idx) {
+        let updatedContent = prompt("your new content");
+        if (updatedContent !== "") {
+            arr[idx] = updatedContent;
+            setArr([...arr]);
         }
     }
 
-    if (auth) {
-        return <HomePage />;
-    } else {
-        return (
-            <>
-                <label>username</label><br />
-                <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} /><br />
-                <label>password</label><br />
-                <input type="password" password={password} onChange={(e) => setPassword(e.target.value)} /><br />
-                <button onClick={handleSubmit}>submit</button>
-            </>
-        );
-    }
+    return (
+        <>
+            <label>TODO items:</label>
+            <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+            <button onClick={handleClick}>add</button>
+            <ol>
+                {
+                    arr.map((value, index) => {
+                        return (
+                            <div key={index}>
+                                <li>{value}</li>
+                                <button onClick={() => handleDeleteItems(index)}>delete</button>
+                                <button onClick={() => handleEditItems(index)}>edit</button>
+                            </div>
+                        );
+                    })
+                }
+            </ol>
+        </>
+    );
 }
 
 
 function Sample() {
     return (
         <>
-            <LoginPage />
+            <ParentComp />
         </>
     );
 }
