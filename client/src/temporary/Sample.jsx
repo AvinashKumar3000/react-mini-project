@@ -1,35 +1,49 @@
-import { useState } from "react";
-import "./mycss.css"; // 👈 make sure to include correct .css file.
 
-const reactionArray = ["🥲", "😞", "😔", "😟", "☹️", "😊", "😄", "😁", "😀", "😃", "😆", "😂"]
-function Reaction() {
-    const [count, setCount] = useState(0); // 👈 01
-    const [emoji, setEmoji] = useState(reactionArray[0]);
-    function handleClick() {
-        if (count <= reactionArray.length) {
-            setEmoji(reactionArray[count + 1]);
-        } else {
-            setEmoji(reactionArray[reactionArray.length - 2]);
-        }          // 👈 02
-        setCount(count + 1)
-    }
-    return (
-        <div className="container">
-            like : {count}{emoji}
-            <br />
-            <i id="heart" onClick={handleClick} className="fa-solid fa-heart"></i>
-        </div>
-    );
+// A SAMPLE CODE FOR: CONDITIONAL RENDERING :
+import { useState } from "react";
+
+
+// writing styles inside react
+const DARK_THEME = {
+    backgroundColor: 'black',
+    color: 'white'
+}
+const LIGHT_THEME = {
+    backgroundColor: 'white',
+    color: 'black'
 }
 
-
-// export default App;
-
+function ChildComp({ mode }) {
+    if (mode) {
+        return (
+            <ul>
+                <li> "In order for the light to shine so brightly, the darkness must be present." - Francis Bacon</li>
+                <li> "The dark does not destroy the light; it defines it. It's our fear of the dark that casts our joy into the shadows." - Brené Brown</li>
+                <li> "Even in the darkest night, the stars still shine." - Unknown</li>
+            </ul>
+        );
+    } else {
+        return (
+            <ul>
+                <li>"There are two ways of spreading light: to be the candle or the mirror that reflects it." - Edith Wharton</li>
+                <li>"Light tomorrow with today." - Elizabeth Barrett Browning</li>
+                <li>"Wherever you go, no matter what the weather, always bring your own sunshine." - Anthony J. D'Angelo</li>
+            </ul>
+        )
+    }
+}
 function Sample() {
+    // true  - refers to dark theme
+    // false - refers to light theme
+    const [mode, setMode] = useState(true);
+    function handleClick() {
+        setMode(!mode);
+    }
     return (
-        <>
-            <Reaction />
-        </>
+        <div style={mode ? DARK_THEME : LIGHT_THEME}>
+            <button onClick={handleClick}>change mode to {mode ? "🌤️ light" : "🌙 dark"}</button>
+            <ChildComp mode={mode} />
+        </div>
     );
 }
 

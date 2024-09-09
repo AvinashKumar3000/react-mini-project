@@ -1,0 +1,31 @@
+.card {
+    font-family: monospace;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.card li {
+    list-style-type: '✨';
+}
+
+.key {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: salmon;
+}
+
+.movie-name {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    color: thistle;
+}
+
+.movie-name::before {
+    content: "🎬";
+}
