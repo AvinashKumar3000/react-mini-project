@@ -47,12 +47,15 @@ const companies = [
         employees: "Over 70,000 (2021)"
     }
 ];
+
 function ParentComp() {
     const [index, setIndex] = useState(1);
     let obj = companies[index];
+
     function handleClick(idx) {
         setIndex(idx);
     }
+
     return (
         <>
             <button onClick={() => handleClick(0)}>Google</button>

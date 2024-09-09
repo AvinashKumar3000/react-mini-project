@@ -62,7 +62,11 @@ if(auth) {
 
 ---
 
-## array task 02
+## array 02 task
+
+
+
+## todo list
 
 - 1 component
 - 2 state, `arr` to store items, `inputValue` to get input.
