@@ -102,7 +102,7 @@
 
 ## 5 day plan
 
-- `day-1` design db structure + test api with postman.
+- `day-1` design db structure + implement in ExpressJS + Test api with postman.
 - `day-2` design UI + React Bootstrap
 - `day-3` Adding Features in project.
 - `day-4` API integration
