@@ -47,3 +47,61 @@
 1. homework planner.
 
 
+# BASIC
+
+## SYLLABUS
+
+    Vite+React basics,
+    React Bootstrap,
+    React-Router-DOM,
+    Axios library
+    Json-Server ( act as backend api with JSON as database )
+    API testing with Postman
+
+## 5 day plan
+
+- `day-1` Firebase Fire-store basics
+- `day-2` React Basics, React Bootstrap basics
+- `day-3` Adding Features in project.
+- `day-4` React integration with Fire-store.
+- `day-5` Hosting + debugging
+
+# medium
+
+## SYLLABUS
+
+    Vite+React basics,
+    React Bootstrap,
+    React-Router-Dom,
+    Axios library,
+    Firebase ( Back end as a service )
+    Firebase Fire-store ( NoSQL database )
+    API testing with Postman
+
+## 5 day plan
+
+- `day-1` design db structure + test api with postman.
+- `day-2` design UI + React Bootstrap
+- `day-3` Adding Features in project.
+- `day-4` API integration
+- `day-5` Hosting + debugging
+
+# Advance
+
+## SYLLABUS
+
+    Vite+React,
+    React Bootstrap,
+    React-Router-Dom,
+    Axios library,
+    MongoDB Atlas,
+    Node JS + express using express-generator
+    API testing with Postman
+
+## 5 day plan
+
+- `day-1` design db structure + test api with postman.
+- `day-2` design UI + React Bootstrap
+- `day-3` Adding Features in project.
+- `day-4` API integration
+- `day-5` Hosting + debugging
