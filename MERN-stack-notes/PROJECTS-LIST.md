@@ -60,10 +60,10 @@
 
 ## 5 day plan
 
-- `day-1` Firebase Fire-store basics
-- `day-2` React Basics, React Bootstrap basics
+- `day-1` design db structure + test api with postman.
+- `day-2` design UI + React Bootstrap
 - `day-3` Adding Features in project.
-- `day-4` React integration with Fire-store.
+- `day-4` API integration
 - `day-5` Hosting + debugging
 
 # medium
@@ -80,11 +80,13 @@
 
 ## 5 day plan
 
-- `day-1` design db structure + test api with postman.
-- `day-2` design UI + React Bootstrap
+- `day-1` Firebase Fire-store basics
+- `day-2` React Basics, React Bootstrap basics
 - `day-3` Adding Features in project.
-- `day-4` API integration
+- `day-4` React integration with Fire-store.
 - `day-5` Hosting + debugging
+
+
 
 # Advance
 
