@@ -111,8 +111,8 @@ Ways to write conditional rendering:
 
 <pre>
 {
-      arr.map( ( value ) => {
-         return &lt;li&gt; { value } &lt;/li&gt;
+      arr.map( ( value, index ) => {
+         return &lt;li key={index} &gt; { value } &lt;/li&gt;
       })
 }
 </pre>
