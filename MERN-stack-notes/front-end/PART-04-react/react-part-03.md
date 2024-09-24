@@ -1,12 +1,12 @@
+# little advance concepts
 
-# useEffect
+## 1️⃣ useEffect
 
 useEffect is a React Hook that lets you synchronize a component with an external system.
 
 1. do something when there is a change in dependencies
 2. Execute a code during creation of a component. mostly to load data from back-end using APIs.
 3. Execute a code during deletion of a component
-
 
 ### Do something when there is a change in dependencies
 
@@ -65,7 +65,7 @@ export default Sample;
      }, []);
 </pre>
 
-# useState
+## 2️⃣ useState
 
 - while using state concept in react.
 - By default when we update state value it will execute as asynchronous code.
@@ -84,7 +84,7 @@ export default Sample;
 - In above case we use arrow function to update value in state.
 - which will be executed synchronously.
 
-# useRef
+## 3️⃣ useRef
 
 **usage of useRef :**
 

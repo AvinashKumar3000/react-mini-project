@@ -1,5 +1,6 @@
+# more advance topics
 
-# context api
+## 1️⃣ context api
 
 - How to handle data across multi layer of components
 - to avoid prop drilling we use to create context API.
