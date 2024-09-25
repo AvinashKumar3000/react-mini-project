@@ -121,6 +121,8 @@ export default App;
 - Boolean will only show after using toString method.
 - array with strings will be joined without any space.
 
+![image](https://github.com/user-attachments/assets/a75c5910-538b-428a-91b1-91b8293361d3)
+
 ## 4️⃣ Adding styles
 
 <!-- ### Adding styles inside public/index.html file
