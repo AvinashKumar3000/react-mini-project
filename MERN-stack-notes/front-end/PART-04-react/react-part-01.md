@@ -6,7 +6,7 @@
         - download and install node js in your computer.
         - Need VScode.
 
-## STEPS TO CREATE REACT PROJECT using `create-react-app`
+## 🏷️  STEPS TO CREATE REACT PROJECT using `create-react-app`
 
 1. open any folder 📁
 2. open command prompt 💻 within the folder
@@ -54,7 +54,7 @@ If you face any issue while running your project. check below points.
        
 ---
 
-## STEPS TO CREATE REACT PROJECT using `VITE`
+## 🏷️ STEPS TO CREATE REACT PROJECT using `VITE`
 
 1. open any folder 📁
 2. open command prompt 💻 within the folder
