@@ -9,6 +9,9 @@
 1. create all components and arrange components accordingly.
 1. Then do logics for components.
 
+![image](https://github.com/user-attachments/assets/cee6bf81-4ffb-42c6-87ba-9deb1dba2617)
+
+
 ### `HTML CODE`
 
 ```html
