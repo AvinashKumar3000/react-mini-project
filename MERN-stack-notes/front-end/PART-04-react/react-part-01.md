@@ -152,7 +152,7 @@ Following properties are enabled.
 
 ---
 
-## ALL topics in react
+## ⭐ ALL topics in react ⭐ 
 
 ## React History
 
