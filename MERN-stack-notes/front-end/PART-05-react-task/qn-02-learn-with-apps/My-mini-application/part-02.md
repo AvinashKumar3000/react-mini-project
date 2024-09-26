@@ -21,7 +21,7 @@
             <!-- 📦 App component  -->
             <div id="app">
                 <div class="title">
-                    mY MINI APPLICATION
+                    MY MINI APPLICATION
                 </div>
                 <!-- 📦 Header component  -->
                 <header>
