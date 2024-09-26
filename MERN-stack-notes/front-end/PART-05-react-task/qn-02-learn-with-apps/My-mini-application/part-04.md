@@ -23,7 +23,7 @@ function App() {
 export default App;
 ```
 
-### `📄 components/MyMiniApp/index.jsx`
+### `📄 components/MyMiniApp/index.jsx` 💡TEMPORARY💡
 
 ```jsx
 import FilterSection from "./FilterSection";

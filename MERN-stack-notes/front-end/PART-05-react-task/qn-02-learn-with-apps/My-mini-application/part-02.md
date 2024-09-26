@@ -269,4 +269,11 @@ header>.plus:active {
 .card .selected {
     opacity: 100%;
 }
+
+
+.misc {
+    border-top: 2px solid gray;
+    margin: 2px;
+    padding-top: 5px;
+}
 ```
