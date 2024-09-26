@@ -9,4 +9,5 @@
 1. create all components and arrange components accordingly.
 1. Then do logics for components.
 
-![image](https://github.com/user-attachments/assets/0924ae4a-c7f2-4c50-ad29-03e41e7efd8e)
+![image](https://github.com/user-attachments/assets/144b4893-b882-4f29-8de7-6b1e83999270)
+
