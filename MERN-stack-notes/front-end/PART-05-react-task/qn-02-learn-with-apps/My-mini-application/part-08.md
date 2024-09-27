@@ -14,7 +14,7 @@
 import { useState } from "react";
 import FilterSection from "./FilterSection";
 import Header from "./Header";
-import ListItem from "./ListItems";
+import ListItems from "./ListItems";
 
 const DEFAULT_VALUE = [
     { text: 'buy ice cream 🍧', time: '10:00 AM', important: false, favorite: true, done: false },
@@ -37,7 +37,7 @@ function MyMiniApp() {
                 <div className="title">MY TODO LIST</div>
                 <Header addItem={addItem} />
                 <FilterSection filterItems={filterItems} />
-                <ListItem
+                <ListItems
                     isFavorite={isFavorite}
                     isImportant={isImportant}
                     updateArr={updateArr}
