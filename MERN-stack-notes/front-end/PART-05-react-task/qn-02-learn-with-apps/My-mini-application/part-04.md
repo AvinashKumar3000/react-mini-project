@@ -78,7 +78,7 @@ export default function FilterSection() {
 ```jsx
 import Card from "./Card";
 
-export default function ListItem() {
+export default function ListItems() {
     return (
         <section className="list-items">
             <Card />
