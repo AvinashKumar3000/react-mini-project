@@ -14,7 +14,7 @@
 import PropTypes from "prop-types";
 import Card from "./Card";
 
-export default function ListItem({ items }) { 
+export default function ListItems({ items }) { 
 
     return (
         <section className="list-items">
