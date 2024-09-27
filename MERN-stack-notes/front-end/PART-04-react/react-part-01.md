@@ -152,7 +152,7 @@ Following properties are enabled.
 
 ---
 
-## ⭐ ALL topics in react ⭐ 
+## ⭐ ALL topics in react ⭐
 
 ## React History
 
@@ -250,11 +250,15 @@ RULES:
 
 ## 3️⃣ VIRTUAL DOM
 
+[react virtual dom reference](https://legacy.reactjs.org/docs/faq-internals.html)
+
 *React creates a VIRTUAL DOM in memory.*
 *Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.*
 
-- React only changes what needs to be changed! React finds out what
-- changes have been made, and changes only what needs to be changed.
+- If there is any change to be kept in output, then first it will update in virtual DOM.
+- Then it will compare VIRTUAL DOM with real browser DOM.
+- Then, React only changes Real DOM what needs to be changed.
+- Manipulating DOM is slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen. So each time there is a change in the state of our application, the virtual DOM gets updated first instead of the real DOM.
 
 ---
 

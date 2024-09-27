@@ -24,6 +24,7 @@ function getCurrentTime() {
 export default function Header({ addItem }) {
     const [inputValue, setInputValue] = useState("");
     const handleClick = () => {
+        // It is always recommended to check or validate you input before doing any operation.    
         if (inputValue.trim() !== "") {
             const newObj = {
                 text: inputValue,
@@ -33,6 +34,7 @@ export default function Header({ addItem }) {
                 done: false
             };
             addItem(newObj);
+            // once everything done, reset input field to empty input box.
             setInputValue("");
         } else {
             alert("invalid input");

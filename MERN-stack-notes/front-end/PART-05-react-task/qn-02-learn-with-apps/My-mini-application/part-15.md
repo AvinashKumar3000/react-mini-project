@@ -24,6 +24,24 @@ export default function ListItem({
     return (
         <section className="list-items">
             {
+                /*
+                    What I am doing in below code is ...
+                    I was trying to filter based on just applying the condition.
+
+                    Here the final array we get is one which satisfy the conditions.
+
+                    🪲 WHAT WAS THE BUG 🪲
+                    
+                    - When you click on filter option. 
+                    - You will obviously see the output.
+                    - But the problem comes, when you try to update values like, 
+                        1. changing to favorite or important.
+                        1. changing to done. 
+                    - what happens is these changes are happening based on CARD index values.
+                    - Now as based on condition output array length changing dynamically.
+                    - But original array state is not changing.
+                    - Here Output CARD index will be different compare to the original one. 
+                */
                 items.filter((val) => {
                     return (val?.favorite === isFavorite && val?.important === isImportant);
                 }).map((value, index) => {

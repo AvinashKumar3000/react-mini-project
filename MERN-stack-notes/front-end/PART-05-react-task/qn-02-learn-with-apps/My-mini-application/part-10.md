@@ -197,6 +197,9 @@ function sampleFunction(value, index) {
 // what is happening below 🤔 
 // we are passing a function ( sampleFunction ) to another function ( filter ) like a arguments.
 const result1 = arr.filter(sampleFunction);
+
+// how is this filter function exactly working.
+
 console.log(result1);
 
 // 🎉 same story we can do with arrow function. 🎉

@@ -11,10 +11,10 @@ export default function ListItem({
     updateArr,
     removeItem
 }) {
-
     return (
         <section className="list-items">
             {
+        
                 items.filter((val) => {
                     return (val?.favorite === isFavorite && val?.important === isImportant);
                 }).map((value, index) => {
