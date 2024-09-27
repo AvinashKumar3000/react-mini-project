@@ -1,4 +1,4 @@
-# FilterSection.jsx
+# FilterSection.jsx  🥳🙌 `<` FINAL WORKING CODE `>` 🎉🎉
 
 ```jsx
 import PropTypes from "prop-types";

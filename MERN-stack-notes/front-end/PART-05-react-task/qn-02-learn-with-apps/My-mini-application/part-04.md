@@ -6,6 +6,7 @@
 - Same output what you saw in html.
 - Same output you should see in react also.
 - Not even a single change.
+- For now, we just copied our html code and pasted inside each components.
 
 ### `📜 App.jsx`
 

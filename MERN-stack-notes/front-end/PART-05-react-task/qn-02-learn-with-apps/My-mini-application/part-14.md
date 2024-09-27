@@ -1,4 +1,7 @@
-# Card.jsx
+# Card.jsx  🥳🙌 `<` FINAL WORKING CODE `>` 🎉🎉
+
+-
+-
 
 ```jsx
 import PropTypes from "prop-types";

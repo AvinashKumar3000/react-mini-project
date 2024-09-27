@@ -1,4 +1,4 @@
-# Doing `index.jsx` logic 💡TEMPORARY💡
+# Doing `index.jsx` logic
 
 ## Logics
 
@@ -8,7 +8,7 @@
     - key={index} is mandatory. To help react understand that, all rendered items will be uniquely identified by `key`.
 3. `<ListItem items={[]} />` Make sure to send some sample value in Component props.
 
-### First step, create your state and logics
+### `MyMiniApp.jsx` 💡TEMPORARY💡
 
 ```jsx
 import { useState } from "react";
@@ -50,9 +50,4 @@ function MyMiniApp() {
 }
 
 export default MyMiniApp;
-```
-
-### now create logic for each functions
-
-```jsx
 ```
