@@ -8,7 +8,7 @@
     - key={index} is mandatory. To help react understand that, all rendered items will be uniquely identified by `key`.
 3. `<ListItem items={[]} />` Make sure to send some sample value in Component props.
 
-### `ListItem.jsx` 💡TEMPORARY💡
+### `ListItems.jsx` 💡TEMPORARY💡
 
 ```jsx
 import PropTypes from "prop-types";
@@ -29,7 +29,7 @@ export default function ListItems({ items }) {
 }
 
 // #1
-ListItem.propTypes = {
+ListItems.propTypes = {
     items: PropTypes.array
 };
 ```

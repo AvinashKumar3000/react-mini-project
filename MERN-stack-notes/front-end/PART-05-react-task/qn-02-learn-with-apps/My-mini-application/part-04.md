@@ -29,7 +29,7 @@ export default App;
 ```jsx
 import FilterSection from "./FilterSection";
 import Header from "./Header";
-import ListItem from "./ListItems";
+import ListItems from "./ListItems";
 
 function MyMiniApp() {
     return (
@@ -38,7 +38,7 @@ function MyMiniApp() {
                 <div className="title">MY TODO LIST</div>
                 <Header />
                 <FilterSection />
-                <ListItem />
+                <ListItems />
             </div>
         </div>
     );

@@ -6,7 +6,7 @@
 import { useState } from "react";
 import FilterSection from "./FilterSection";
 import Header from "./Header";
-import ListItem from "./ListItems";
+import ListItems from "./ListItems";
 
 const DEFAULT_VALUE = [
     { text: 'buy ice cream 🍧', time: '10:00 AM', important: false, favorite: false, done: false },
@@ -48,7 +48,7 @@ function MyMiniApp() {
                     isImportant={isImportant}
                     filterItems={filterItems}
                 />
-                <ListItem
+                <ListItems
                     isFavorite={isFavorite}
                     isImportant={isImportant}
                     updateArr={updateArr}
@@ -69,7 +69,7 @@ export default MyMiniApp;
 import { useState } from "react";
 import FilterSection from "./FilterSection";
 import Header from "./Header";
-import ListItem from "./ListItems";
+import ListItems from "./ListItems";
 
 const DEFAULT_VALUE = [
     { text: 'buy ice cream 🍧', time: '10:00 AM', important: false, favorite: false, done: false },
@@ -121,7 +121,7 @@ function MyMiniApp() {
                     isImportant={isImportant}
                     filterItems={filterItems}
                 />
-                <ListItem
+                <ListItems
                     isFavorite={isFavorite}
                     isImportant={isImportant}
                     updateArr={updateArr}
