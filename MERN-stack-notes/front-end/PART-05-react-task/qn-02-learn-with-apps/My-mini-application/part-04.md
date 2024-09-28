@@ -11,13 +11,13 @@
 ### `📜 App.jsx`
 
 ```jsx
-import MyToDoList from "./components/MyToDoList";
+import MyMiniApp from "./components/MyMiniApp";
 import './App.css';
 
 function App() {
   return (
     <>
-      <MyToDoList />
+      <MyMiniApp />
     </>
   );
 }
