@@ -1,11 +1,11 @@
 # REACT NOTES
 
-[React official documentation](https://react.dev/learn)
-[Study react all concepts in Typescript.](https://youtube.com/watch?v=SqcY0GlETPk&t=17s)
-[Beginner REACT in udemy](https://www.udemy.com/course/react-tutorial/)
-[learn react with good projects for your placements.](https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb)
-[Very clear, deep JS concepts. Full advance level](https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
-[Doing big complete project in MERN stack.](https://www.youtube.com/watch?v=R_OERlafbmw&list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
+- [React official documentation](https://react.dev/learn)
+- [Study react all concepts in Typescript.](https://youtube.com/watch?v=SqcY0GlETPk&t=17s)
+- [Beginner REACT in udemy](https://www.udemy.com/course/react-tutorial/)
+- [learn react with good projects for your placements.](https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb)
+- [Very clear, deep JS concepts. Full advance level](https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
+- [Doing big complete project in MERN stack.](https://www.youtube.com/watch?v=R_OERlafbmw&list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
 
     prerequisite:
         - download and install node js in your computer.
