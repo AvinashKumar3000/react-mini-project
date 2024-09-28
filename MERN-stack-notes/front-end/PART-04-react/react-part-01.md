@@ -8,6 +8,8 @@
 - [Doing big complete project in MERN stack.](https://www.youtube.com/watch?v=R_OERlafbmw&list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
 
 - [complete MERN stack](https://www.youtube.com/watch?v=Vi9bxu-M-ag&list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD)
+- [learn git for begineers.](https://www.youtube.com/watch?v=vwj89i2FmG0)
+- [telusko youtube chanel link. All in one](https://www.youtube.com/@Telusko/playlists)
 
     prerequisite:
         - download and install node js in your computer.
