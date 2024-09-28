@@ -10,6 +10,9 @@
 - [complete MERN stack](https://www.youtube.com/watch?v=Vi9bxu-M-ag&list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD)
 - [learn git for begineers.](https://www.youtube.com/watch?v=vwj89i2FmG0)
 - [telusko youtube chanel link. All in one](https://www.youtube.com/@Telusko/playlists)
+- [host a webpage in github pages.](https://www.youtube.com/watch?v=BT4WzyT2g8k)
+- [Do react portifolio](https://www.youtube.com/watch?v=hYv6BM2fWd8&list=PLd0qRSEDFQI7DgB5BKHQrryFlR02n1bK-)
+- [Do portifolio with only HTML, CSS and Vanilla JS.](https://www.youtube.com/watch?v=sF0vW0GgL3U&list=PL07efmqYWHZ_rVeQ1ws0ER9eL6cxo-d5V)
 
     prerequisite:
         - download and install node js in your computer.
