@@ -6,3 +6,8 @@
 ## My JAVA full stack projects github link
 
 - [java full stack my github link](https://github.com/avicreationstudio/java-fullstacks)
+
+## ML and DS reference links
+
+- [krish naik github link](https://github.com/krishnaik06)
+- [krish naik youtube channel](https://www.youtube.com/@krishnaik06/playlists)
