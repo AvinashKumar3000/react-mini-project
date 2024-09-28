@@ -7,6 +7,8 @@
 - [Very clear, deep JS concepts. Full advance level](https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
 - [Doing big complete project in MERN stack.](https://www.youtube.com/watch?v=R_OERlafbmw&list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
 
+- [complete MERN stack](https://www.youtube.com/watch?v=Vi9bxu-M-ag&list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD)
+
     prerequisite:
         - download and install node js in your computer.
         - Need VScode.
