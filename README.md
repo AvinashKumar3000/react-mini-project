@@ -13,64 +13,37 @@
 - [krish naik youtube channel](https://www.youtube.com/@krishnaik06/playlists)
 
 
-### basket codde 
+### `App.jsx` area of circle code.
 
-```html
-<htmL>
+```jsx
+import { useState } from "react";
 
-<head>
-	<title>day 2 class</title>
-	<style>
-.basket {
-	width: 300px;
-	height: 500px;
+const PI = 3.14;
+
+export default function App() {
+  const [radius, setRadius] = useState(0);
+  const [area, setArea] = useState(0);
+
+  const handleClick = () => {
+    setArea(PI * radius * radius);
+  }
+
+  return (
+    <div>
+      <h1>TO FIND AREA OF CIRCLE</h1>
+      <label>radius</label>
+      <input
+        type="number"
+        value={radius}
+        onChange={(e) => setRadius(e.target.value)} />
+      cm
+      <br />
+      <button onClick={handleClick}>calculate</button>
+      <br />
+      <p>
+        The area of circle is with radius : {radius} cm is = {area} cm<sup>2</sup>
+      </p>
+    </div>
+  );
 }
-
-.handle {
-	height: 50%;
-	width: 100%;
-	border: 10px solid orange;
-	border-top-left-radius: 50%;
-	border-top-right-radius: 50%;
-}
-
-.basket-container {
-	border: 10px solid orange;
-	height: 50%;
-	width: 100%;
-	background-color: orange;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap-reverse;
-}
-
-.ball {
-	height: 50px;
-	width: 50px;
-	background-color: red;
-	border-radius: 50%;
-	margin: 10px;
-}
-	</style>
-</head>
-
-<body>
-	<div class="basket">
-		<div class="handle"></div>
-		<div class="basket-container">
-			<div class="ball"></div>
-			<div class="ball"></div>
-			<div class="ball"></div>
-			<div class="ball"></div>
-			<div class="ball"></div>
-			<div class="ball"></div>
-			<div class="ball"></div>
-			<div class="ball"></div>
-			<div class="ball"></div>
-		</div>
-	</div>
-
-</body>
-
-</htmL>
 ```
