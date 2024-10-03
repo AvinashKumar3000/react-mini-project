@@ -1,3 +1,9 @@
+## sample sample mini project...
+
+- [Go to mini project link...](https://github.com/AvinashKumar3000/mini-project)
+
+
+
 # All important short cut links
 
 - [All react reference links](MERN-stack-notes/front-end/PART-04-react/react-part-01.md)
@@ -12,9 +18,6 @@
 - [krish naik github link](https://github.com/krishnaik06)
 - [krish naik youtube channel](https://www.youtube.com/@krishnaik06/playlists)
 
-## sample sample mini project...
-
-- [Go to mini project link...](https://github.com/AvinashKumar3000/mini-project)
 
 ### `App.jsx`
 
