@@ -12,85 +12,42 @@
 - [krish naik github link](https://github.com/krishnaik06)
 - [krish naik youtube channel](https://www.youtube.com/@krishnaik06/playlists)
 
-
-## Like rating application 
-
-### `Heart.jsx`
-
-```jsx
-import { useState } from "react";
-
-export default function Heart({ update }) {
-    const [clicked, setClicked] = useState(false);
-
-    const handleClick = () => {
-        if (clicked) {
-            update(-1);
-        } else {
-            update(+1);
-        }
-        setClicked(!clicked);
-    }
-
-    return (
-        <>
-            <span onClick={handleClick}>
-                {clicked ? "❤️" : "🤍"}
-            </span>
-        </>
-    );
-}
-```
-
-### `LikeRating.jsx`
-
-```jsx
-import { useState } from "react";
-import Heart from "./Heart";
-
-export default function LikeRating() {
-    const [count, setCount] = useState(0);
-
-    const update = (val) => {
-        setCount(count + val);
-    }
-
-    return (
-        <div className="like-rating">
-            <div>Like : {count}</div>
-            <Heart update={update} />
-            <Heart update={update} />
-            <Heart update={update} />
-            <Heart update={update} />
-            <Heart update={update} />
-        </div>
-    );
-}
-```
-
 ### `App.jsx`
 
 ```jsx
-import LikeRating from "./LikeRating";
+import { useEffect } from "react";
+import { useState } from "react";
+
+function Sample() {
+    console.log("first line of component");
+    const [boys, setBoys] = useState(0);
+    const [girls, setGirls] = useState(0);
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        console.log("hello world!");
+    }, []);
+    useEffect(() => {
+        console.log("boys updated", boys);
+    }, [boys]);
+    useEffect(() => {
+        console.log("girls updated", girls);
+    }, [girls]);
+
+    return (
+        <>
+            <div>
+                <button onClick={() => setBoys(boys + 1)}> boys : {boys} </button>
+                <button onClick={() => setGirls(girls + 1)}> girls : {girls} </button>
+                <button onClick={() => setCount(count + 1)}> count : {count} </button>
+            </div>
+        </>
+    );
+}
 
 export default function App() {
     return (
-        <div>
-            <LikeRating />
-            <LikeRating />
-        </div>
+        <Sample />
     );
-}
-```
-
-### `index.css`
-
-```css
-.like-rating {
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: fit-content;
 }
 ```
