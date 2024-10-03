@@ -13,37 +13,84 @@
 - [krish naik youtube channel](https://www.youtube.com/@krishnaik06/playlists)
 
 
-### `App.jsx` area of circle code.
+## Like rating application 
+
+### `Heart.jsx`
 
 ```jsx
 import { useState } from "react";
 
-const PI = 3.14;
+export default function Heart({ update }) {
+    const [clicked, setClicked] = useState(false);
+
+    const handleClick = () => {
+        if (clicked) {
+            update(-1);
+        } else {
+            update(+1);
+        }
+        setClicked(!clicked);
+    }
+
+    return (
+        <>
+            <span onClick={handleClick}>
+                {clicked ? "❤️" : "🤍"}
+            </span>
+        </>
+    );
+}
+```
+
+### `LikeRating.jsx`
+
+```jsx
+import { useState } from "react";
+import Heart from "./Heart";
+
+export default function LikeRating() {
+    const [count, setCount] = useState(0);
+
+    const update = (val) => {
+        setCount(count + val);
+    }
+
+    return (
+        <div className="like-rating">
+            <div>Like : {count}</div>
+            <Heart update={update} />
+            <Heart update={update} />
+            <Heart update={update} />
+            <Heart update={update} />
+            <Heart update={update} />
+        </div>
+    );
+}
+```
+
+### `App.jsx`
+
+```jsx
+import LikeRating from "./LikeRating";
 
 export default function App() {
-  const [radius, setRadius] = useState(0);
-  const [area, setArea] = useState(0);
+    return (
+        <div>
+            <LikeRating />
+            <LikeRating />
+        </div>
+    );
+}
+```
 
-  const handleClick = () => {
-    setArea(PI * radius * radius);
-  }
+### `index.css`
 
-  return (
-    <div>
-      <h1>TO FIND AREA OF CIRCLE</h1>
-      <label>radius</label>
-      <input
-        type="number"
-        value={radius}
-        onChange={(e) => setRadius(e.target.value)} />
-      cm
-      <br />
-      <button onClick={handleClick}>calculate</button>
-      <br />
-      <p>
-        The area of circle is with radius : {radius} cm is = {area} cm<sup>2</sup>
-      </p>
-    </div>
-  );
+```css
+.like-rating {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: fit-content;
 }
 ```
