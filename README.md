@@ -21,42 +21,26 @@ https://meet.google.com/tkz-swxq-ajq
 - [krish naik youtube channel](https://www.youtube.com/@krishnaik06/playlists)
 
 
-### `App.jsx`
+### `index.js`
 
-```jsx
-import { useEffect } from "react";
-import { useState } from "react";
+```js
+const jsonServer = require("json-server");
+const cors = require("cors");
+const path = require("path");
+const morgan = require("morgan");
+const server = jsonServer.create();
+const router = jsonServer.router(path.join(__dirname, "db", "db.json"));
+const middlewares = jsonServer.defaults();
 
-function Sample() {
-    console.log("first line of component");
-    const [boys, setBoys] = useState(0);
-    const [girls, setGirls] = useState(0);
-    const [count, setCount] = useState(0);
+server.use(cors());
+server.use(jsonServer.bodyParser);
+server.use(middlewares);
+server.use(router);
+server.use(morgan("tiny"));
 
-    useEffect(() => {
-        console.log("hello world!");
-    }, []);
-    useEffect(() => {
-        console.log("boys updated", boys);
-    }, [boys]);
-    useEffect(() => {
-        console.log("girls updated", girls);
-    }, [girls]);
+const PORT = process.env.PORT || 3000;
 
-    return (
-        <>
-            <div>
-                <button onClick={() => setBoys(boys + 1)}> boys : {boys} </button>
-                <button onClick={() => setGirls(girls + 1)}> girls : {girls} </button>
-                <button onClick={() => setCount(count + 1)}> count : {count} </button>
-            </div>
-        </>
-    );
-}
-
-export default function App() {
-    return (
-        <Sample />
-    );
-}
-```
+server.listen(PORT, () => {
+    console.log(`🚀 JSON Server is running 🏃‍➡️🏃‍➡️🏃‍➡️`)
+    console.log(`🔗 http://localhost:${PORT}`);
+});```
