@@ -21,27 +21,41 @@ https://meet.google.com/tkz-swxq-ajq
 - [krish naik youtube channel](https://www.youtube.com/@krishnaik06/playlists)
 
 
-### `index.js`
+### `package.json`
 
-```js
-const jsonServer = require("json-server");
-const cors = require("cors");
-const path = require("path");
-const morgan = require("morgan");
-const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "db", "db.json"));
-const middlewares = jsonServer.defaults();
+```json
+{
+  "name": "json-server-api",
+  "version": "1.0.0",
+  "description": "A simple json server application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avicreationstudio/JSON-server-API.git"
+  },
+  "keywords": [
+    "json-server"
+  ],
+  "author": "Avinash Kumar 3000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avicreationstudio/JSON-server-API/issues"
+  },
+  "homepage": "https://github.com/avicreationstudio/JSON-server-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "json-server": "^0.16.3",
+    "json-server-api": "file:",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  }
+}
 
-server.use(cors());
-server.use(jsonServer.bodyParser);
-server.use(middlewares);
-server.use(router);
-server.use(morgan("tiny"));
-
-const PORT = process.env.PORT || 3000;
-
-server.listen(PORT, () => {
-    console.log(`🚀 JSON Server is running 🏃‍➡️🏃‍➡️🏃‍➡️`)
-    console.log(`🔗 http://localhost:${PORT}`);
-});
 ```
