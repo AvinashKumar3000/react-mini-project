@@ -1,6 +1,10 @@
 https://meet.google.com/tkz-swxq-ajq
 
-## sample sample mini project...
+## simple json -server api github link
+
+https://github.com/avicreationstudio/JSON-server-API
+
+## sample mini project...
 
 - [Go to mini project link...](https://github.com/AvinashKumar3000/mini-project)
 
