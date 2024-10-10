@@ -29,9 +29,10 @@
 ## pre-requisite
 
 - install some required packages.
-- `npm install firebase`
 - `npm install bootstrap bootstrap-react`
 - `npm install formik`
+- below are related to firebase...
+- `npm install firebase`  
 - `npm install -g firebase-tools`
 
 ## The files and its code
