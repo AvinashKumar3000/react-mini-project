@@ -70,7 +70,7 @@ export default function Dashboard() {
 
     useEffect(() => {
         async function getData() {
-            const querySnapShot = await getDocs(collection(db, "animes"))
+            const querySnapShot = await getDocs(collection(db, COLLECTION_NAME))
             const result = [];
             querySnapShot.forEach((doc) => {
                 result.push(doc.data());
@@ -90,7 +90,7 @@ export default function Dashboard() {
 
             for (let i = 0; i < animeList.length; i++) {
                 const anime = animeList[i];
-                await setDoc(doc(db, 'animes', anime.name), {
+                await setDoc(doc(db, COLLECTION_NAME, anime.name), {
                     ...anime
                 });
             }
@@ -102,9 +102,9 @@ export default function Dashboard() {
 
     const deleteCard = async (doc_id) => {
         try {
-            await deleteDoc(doc(db, 'animes', doc_id));
+            await deleteDoc(doc(db, COLLECTION_NAME, doc_id));
             async function getData() {
-                const querySnapShot = await getDocs(collection(db, "animes"))
+                const querySnapShot = await getDocs(collection(db, COLLECTION_NAME))
                 const result = [];
                 querySnapShot.forEach((doc) => {
                     result.push(doc.data());
@@ -149,6 +149,7 @@ export default function Dashboard() {
         </>
     );
 }
+
 ```
 
 ### `MyCard.jsx`
