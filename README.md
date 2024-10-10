@@ -1,4 +1,9 @@
-<https://meet.google.com/tkz-swxq-ajq>
+
+# ALL IMPORTANT LINKS
+
+## firestore - project link
+
+[A simple application to store the anime you like](MERN-stack-notes/full-stack-projects/anime-list-firestore/part-01.md)
 
 ## simple json -server api github link
 
