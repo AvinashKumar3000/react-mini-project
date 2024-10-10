@@ -10,10 +10,9 @@
 
 📁 src
 \
-|   App.css
-|   App.jsx
-|   file_structure.txt
-|   firebase.js            
+|   App.css  
+|   📝 App.jsx  
+|   📝 firebase.js            
 |   index.css
 |   main.jsx
 |   
@@ -21,10 +20,9 @@
 |       react.svg
 |       
 \---components
-        Dashboard.jsx
-        MyCard.jsx
-        New.jsx
-    
+        📝 Dashboard.jsx
+        📝 MyCard.jsx
+        📝 New.jsx
 
 ```
 
