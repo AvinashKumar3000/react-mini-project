@@ -13,7 +13,7 @@
 
 - [Go to mini project link...](https://github.com/AvinashKumar3000/mini-project)
 
-# All important short cut links
+# All important study material links
 
 - [All react reference links](MERN-stack-notes/front-end/PART-04-react/react-part-01.md)
 - [Design full functional with good design - My mini application](MERN-stack-notes/front-end/PART-05-react-task/qn-02-learn-with-apps/My-mini-application/part-01.md)
