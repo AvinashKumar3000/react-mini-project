@@ -1,5 +1,16 @@
 # advance
 
+## map / filter / reduce / for each `table`
+
+
+|  |fn returns  |   callback arg | callback return type |
+|---------|---------|---------|----------|
+|map        | arr of same len     |val,idx,arr| any type |
+|filter     | arr of same or less len  |val,idx,arr| boolean type |
+|reduce    | single output (no array)  |prev,curr| any type | 
+|foreach   | nothing gets returned | val,idx,arr | any type |
+
+
 ## TOPICS
 
 - Event Loop in JS ? <https://www.youtube.com/watch?v=eiC58R16hb8&t=56s>
