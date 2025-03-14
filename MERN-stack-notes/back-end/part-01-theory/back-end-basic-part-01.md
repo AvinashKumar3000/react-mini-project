@@ -1,5 +1,70 @@
 # BackEnd basics
 
+## concepts
+
+# API & REST API notes
+
+## what is an API ?
+
+- API ( application programming interface )
+  - A set of rules and protocols that allow one software application to interact with others.
+  - API enable communication betweeen different software systems. Such as client (front-end) and server(back-end)
+  - APIs can return data in formats like JSON, XML (or) HTML.
+
+Types of API:
+  - [Web API] : used for web-based communications (REST Api, SOAP, GraphQL )
+  - [library API] : Used within the prog lang ( python request )
+  - [OS system api] : Used to interact with the OS (windows API).
+
+## what is rest API 
+  - An architectural style for designing networked applications.
+  - It use HTTP protocols and are stateless, meaning each request from a client contains all the information needed for process request.
+  - Rest APIs are resource-based and resource are identified by 
+  URLs  (uniform resource locater )
+
+### Key principles of REST Apis:
+  -[stateless] : server will not store request details 
+                  about client.
+  -[client server architecture] :
+                  hosts: ( client & server )
+                        - client: requesting
+                        - server: responding
+  -[uniform interface]: consistent and standarized way of interacting with resource.
+  -[Resource based]: Everything is a resource ( users, products ) identified by urls.
+  -[HTTP Methods]: Use standard HTTP Methods for CRUD operations.
+    -`GET`: Retrive a resource
+    -`POST`: create a new resource
+    -`PUT/PATCH`: updating an existing resource
+    -`DELETE`: delete a resource
+  -[Representation]: Resource are be represented in multiple formats (JSON, XML)
+
+### RestApi examples:
+
+- GET     /users
+- GET     /users/12
+- POST    /users
+- PUT     /users/1
+- DELETE  /users/1
+
+
+HTTP status code
+----------------
+- 2xx (success)
+  * 200 OK : Request successfull
+  * 201 CREATED : Resource created successfull
+- 4xx (client error)
+    408 
+- 5xx (server error)
+
+
+Javascript Object notation ( jSON )
+
+ {
+    "name":number, string, object, array
+ }
+
+## definitions
+
 - Client:
   - A device or software application that requests services or resources from a server.
   - Clients can range from personal computers, smartphones, tablets, to specialized hardware devices.
